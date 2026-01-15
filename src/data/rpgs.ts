@@ -2,12 +2,14 @@ import rpgWoc from "./rpg/World of Clans/rpg"
 const rpg = [
   {
     id: 1,
+    image: rpgWoc.image,
     name: rpgWoc.name,
     master: rpgWoc.master,
     description: rpgWoc.description,
   },
   {
     id: 2,
+    image: "/images/bg-woc.jpeg",
     name: "Rpg Minecraft",
     master: "João vitor",
     description:
