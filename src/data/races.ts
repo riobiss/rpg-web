@@ -1,5 +1,6 @@
 const races = [
   {
+    id: 1,
     name: "Humano",
     description:
       "Versáteis e adaptáveis, dominam diversas áreas com facilidade.",
@@ -13,6 +14,7 @@ const races = [
     height: { min: 1.6, max: 1.9 },
   },
   {
+    id: 2,
     name: "Elfo",
     description: "Seres longevos com forte ligação à magia e à natureza.",
     abilities: {
@@ -25,6 +27,7 @@ const races = [
     height: { min: 1.7, max: 2.1 },
   },
   {
+    id: 3,
     name: "Anão",
     description: "Robustos e especialistas em defesa e forja.",
     abilities: {
@@ -37,6 +40,7 @@ const races = [
     height: { min: 1.3, max: 1.5 },
   },
   {
+    id: 4,
     name: "Orc",
     description: "Guerreiros brutais focados em força e combate direto.",
     abilities: {
@@ -49,6 +53,7 @@ const races = [
     height: { min: 1.9, max: 2.4 },
   },
   {
+    id: 5,
     name: "Goblin",
     description: "Criaturas pequenas, rápidas e traiçoeiras.",
     abilities: {
@@ -61,6 +66,7 @@ const races = [
     height: { min: 1.1, max: 1.3 },
   },
   {
+    id: 6,
     name: "Tiefling",
     description: "Marcados por sangue demoníaco e magia sombria.",
     abilities: {
@@ -73,6 +79,7 @@ const races = [
     height: { min: 1.6, max: 1.9 },
   },
   {
+    id: 7,
     name: "Draconiano",
     description: "Descendentes de dragões com poder elemental.",
     abilities: {
@@ -85,6 +92,7 @@ const races = [
     height: { min: 1.8, max: 2.3 },
   },
   {
+    id: 8,
     name: "Feralino",
     description: "Humanoides com traços animais e sentidos aguçados.",
     abilities: {
@@ -97,6 +105,7 @@ const races = [
     height: { min: 1.5, max: 2.0 },
   },
   {
+    id: 9,
     name: "Nefelin",
     description: "Seres tocados pela luz celestial.",
     abilities: {
@@ -109,6 +118,7 @@ const races = [
     height: { min: 1.7, max: 2.1 },
   },
   {
+    id: 10,
     name: "Sombríneo",
     description: "Habitantes das sombras e do plano obscuro.",
     abilities: {
