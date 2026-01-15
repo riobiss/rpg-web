@@ -1,13 +1,23 @@
 import Link from "next/link"
 import styles from "./page.module.css"
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div className={styles.page}>
+      <header className={styles.header}>
+        <nav>
+          <ul>
+            <li>
+              <Link href="/rpg">RPGs</Link>
+            </li>
+            <li>
+              <Link href="/docs">DOCs</Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
       <main className={styles.main}>
-        <Link href="/rpg">auxilio de combat</Link>
-        <Link href="/combat">auxilio de combat</Link>
-        <Link href="/combat">auxilio de combat</Link>
+        <h1 className={styles.title}>RPG HELPER</h1>
       </main>
     </div>
   )
