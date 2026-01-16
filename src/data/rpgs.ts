@@ -11,7 +11,7 @@ const rpg = [
   },
   {
     id: 2,
-    image: "/images/bg-woc.jpeg",
+    image: "/images/bg-mine.png",
     name: "Rpg Minecraft",
     master: "João vitor",
     description:
