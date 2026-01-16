@@ -2,10 +2,11 @@ import rpgs from "@/data/rpgs"
 import { notFound } from "next/navigation"
 import styles from "./page.module.css"
 import Image from "next/image"
+
 type Params = {
-  params: {
+  params: Promise<{
     id: string
-  }
+  }>
 }
 
 export const generateMetadata = () => {
@@ -23,41 +24,39 @@ export default async function ViewInRpg({ params }: Params) {
   }
 
   return (
-    <div>
-      <header>
+    <div className={styles.container}>
+      <header className={styles.header}>
         <h1>{rpg.name}</h1>
       </header>
-      <p>{rpg.description}</p>
-      <main>
-        <h2>Crônicas do Mundo</h2>
-        <div>
-          <p>Biblioteca</p>
-          <Image
-            src="/images/bg-library.jpg"
-            alt="Biblioteca"
-            width={200}
-            height={100}
-          />
-        </div>
-        <div>
-          <p>Regiões</p>
-          <Image
-            src="/images/bg-regioes.jpg"
-            alt="Regiões"
-            width={200}
-            height={100}
-          />
-        </div>
-        <div>
-          <p>Raças</p>
-          <Image
-            src="/images/bg-races.jpg"
-            alt="Raças"
-            width={200}
-            height={100}
-          />
-        </div>
-      </main>
+      <p className={styles.description}>{rpg.description}</p>
+      <h2>Crônicas do Mundo</h2>
+      <div className={styles.library}>
+        <p>Biblioteca</p>
+        <Image
+          src="/images/bg-library.jpg"
+          alt="Biblioteca"
+          width={200}
+          height={100}
+        />
+      </div>
+      <div className={styles.map}>
+        <Image
+          src="/images/bg-regioes.jpg"
+          alt="Regiões"
+          width={200}
+          height={100}
+        />
+        <p>Regiões</p>
+      </div>
+      <div className={styles.races}>
+        <p>Raças</p>
+        <Image
+          src="/images/bg-races.jpg"
+          alt="Raças"
+          width={200}
+          height={100}
+        />
+      </div>
     </div>
   )
 }

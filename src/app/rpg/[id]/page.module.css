@@ -2,3 +2,28 @@
   display: grid;
   gap: 24px;
 }
+.header {
+  h1 {
+    text-align: center;
+  }
+}
+.container {
+  h2 {
+    text-align: center;
+  }
+}
+.description {
+  text-align: center;
+}
+
+.library,
+.map,
+.races {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  p {
+    font-size: 2rem;
+  }
+}
