@@ -1,6 +1,7 @@
 import rpg from "@/data/rpgs"
 import Image from "next/image"
 import styles from "./page.module.css"
+import Link from "next/link"
 export default function ViewRpg() {
   return (
     <div>
@@ -19,12 +20,14 @@ export default function ViewRpg() {
                 <p>{rpg.name}</p>
                 <p>{rpg.master}</p>
               </div>
-              <Image
-                src={rpg.image}
-                width={250}
-                height={300}
-                alt="Image do woc"
-              ></Image>
+              <Link href={`/rpg/${rpg.id}`}>
+                <Image
+                  src={rpg.image}
+                  width={250}
+                  height={300}
+                  alt={rpg.name}
+                />
+              </Link>
             </div>
           )
         })}
