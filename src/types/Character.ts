@@ -2,6 +2,7 @@ import type { Shields } from "./Shields"
 import type { Swords } from "./Swords"
 
 export type Character = {
+  id: number
   alive: boolean
   initiative: number
   name: string

@@ -18,9 +18,8 @@ export default function HomePage() {
       </header>
       <main className={styles.main}>
         <h1 className={styles.title}>RPG HELPER</h1>
-
         <h2 className={styles.start}>
-          <Link href="/">Começar</Link>
+          <Link href="/combat">Começar</Link>
         </h2>
       </main>
     </div>
