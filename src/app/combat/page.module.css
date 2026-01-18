@@ -1,7 +1,19 @@
 .container {
   display: flex;
   flex-direction: row;
+  gap: 20px;
 }
 .sideBar {
   background-color: grey;
+  height: max-content;
+}
+.containerInput {
+  display: flex;
+  flex-direction: column;
+}
+.containerCharacter {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }

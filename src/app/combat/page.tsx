@@ -10,8 +10,8 @@ export default function CombatPage() {
 
   function pushTurn(p: Character) {
     setTurnos((prev) => {
-      const jaFoi = prev.some((t) => t.id === p.id)
-      if (jaFoi) return prev
+      const rpgSelect = prev.some((t) => t.id === p.id)
+      if (rpgSelect) return prev
       return [...prev, p]
     })
   }
@@ -28,12 +28,19 @@ export default function CombatPage() {
         <p>Players que batalharam:</p>
         {players.map((p) => {
           return (
-            <div key={p.id}>
-              <p>{p.name}</p>
-              <button onClick={() => pushTurn(p)}>Clica aqui</button>
+            <div className={styles.containerCharacter} key={p.id}>
+              <p
+                style={{
+                  color: turnos.find((c) => c.id === p.id) ? "green" : "red",
+                }}
+              >
+                {p.name}
+              </p>
+              <button onClick={() => pushTurn(p)}>Selecione</button>
             </div>
           )
         })}
+        <button>Começar</button>
       </div>
     </div>
   )
