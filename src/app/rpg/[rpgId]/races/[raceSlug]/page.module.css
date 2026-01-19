@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  p {
+    text-align: start;
+  }
+}
+.list {
+  text-align: start;
+  list-style-type: disc;
+  padding-left: 2rem;
+}
