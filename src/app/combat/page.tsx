@@ -1,70 +1,104 @@
 "use client"
 
-import players from "@/data/rpg/World of Clans/entites/player"
+import { useState } from "react"
+import playersData from "@/data/rpg/World of Clans/entites/player"
+import enemiesData from "@/data/rpg/World of Clans/entites/enemy"
 import styles from "./page.module.css"
 import { Character } from "@/types/Character"
-import { useState } from "react"
-import enemy from "@/data/rpg/World of Clans/entites/enemy"
+import initTurnQueue from "@/lib/turns/initTurnQueue"
+import { Turn } from "@/types/Turn"
+
+type SelectionStep = "players" | "enemies" | "done"
 
 export default function CombatPage() {
-  const [turnos, setTurnos] = useState<Character[]>([])
-  const [character, setCharacter] = useState<"selectPlayers" | "selectEnemy">(
-    "selectPlayers",
-  )
+  const [turnOrder, setTurnOrder] = useState<Character[]>([])
+  const [selectionStep, setSelectionStep] = useState<SelectionStep>("players")
+  const [turnQueue, setTurnQueue] = useState<Turn[]>([])
 
-  function pushTurn(p: Character) {
-    p.alive = true
-    setTurnos((prev) => {
-      const rpgSelect = prev.some((t) => t.name === p.name)
-      if (rpgSelect) return prev
-      return [...prev, p]
+  function initCombat() {
+    const queue = initTurnQueue(turnOrder)
+    setTurnQueue(queue)
+    setTurnOrder(queue.map((t) => t.entity))
+    setSelectionStep("done")
+  }
+
+  function addCharacterToTurnOrder(character: Character) {
+    setTurnOrder((current) => {
+      if (current.some((c) => c.id === character.id)) return current
+      return [
+        ...current,
+        {
+          ...character,
+          alive: true,
+        },
+      ]
     })
   }
 
+  function isCharacterSelected(id: number) {
+    return turnOrder.some((c) => c.id === id)
+  }
+
+  if (selectionStep === "done") {
+    return (
+      <div className={styles.container}>
+        <aside className={styles.sideBar}>
+          <button>Turnos</button>
+          {turnOrder.map((character) => (
+            <p key={character.id}>{character.name}</p>
+          ))}
+        </aside>
+        Ola combate
+      </div>
+    )
+  }
   return (
     <div className={styles.container}>
-      <div className={styles.sideBar}>
+      <aside className={styles.sideBar}>
         <button>Turnos</button>
-        {turnos.map((t, i) => {
-          return <p key={i}> {t.name}</p>
-        })}
-      </div>
-      <div className={styles.containerInput}>
-        <p>Selecione quem batalhara</p>
-        {character === "selectPlayers" &&
-          players.map((p) => {
-            return (
-              <div className={styles.containerCharacter} key={p.id}>
-                <p
-                  style={{
-                    color: turnos.find((c) => c.id === p.id) ? "green" : "red",
-                  }}
-                >
-                  {p.name}
-                </p>
-                <button onClick={() => pushTurn(p)}>Selecione</button>
-              </div>
-            )
-          })}
-        {character === "selectEnemy" &&
-          enemy.map((e) => {
-            return (
-              <div className={styles.containerCharacter} key={e.id}>
-                <p
-                  style={{
-                    color: turnos.find((c) => c.name === e.name)
-                      ? "green"
-                      : "red",
-                  }}
-                >
-                  {e.name}
-                </p>
-                <button onClick={() => pushTurn(e)}>Selecione</button>
-              </div>
-            )
-          })}
-        <button onClick={() => setCharacter("selectEnemy")}>Próximo</button>
-      </div>
+        {turnOrder.map((character) => (
+          <p key={character.id}>{character.name}</p>
+        ))}
+      </aside>
+
+      <section className={styles.containerInput}>
+        <p>Selecione quem batalhará</p>
+        {selectionStep === "players" &&
+          playersData.map((player) => (
+            <div className={styles.containerCharacter} key={player.id}>
+              <p
+                style={{
+                  color: isCharacterSelected(player.id) ? "green" : "red",
+                }}
+              >
+                {player.name}
+              </p>
+
+              <button onClick={() => addCharacterToTurnOrder(player)}>
+                Selecionar
+              </button>
+            </div>
+          ))}
+        {selectionStep === "enemies" &&
+          enemiesData.map((enemy) => (
+            <div className={styles.containerCharacter} key={enemy.id}>
+              <p
+                style={{
+                  color: isCharacterSelected(enemy.id) ? "green" : "red",
+                }}
+              >
+                {enemy.name}
+              </p>
+              <button onClick={() => addCharacterToTurnOrder(enemy)}>
+                Selecionar
+              </button>
+            </div>
+          ))}
+        <button onClick={() => setSelectionStep("enemies")}>Próximo</button>
+        {selectionStep === "enemies" && (
+          <button onClick={initCombat}>Pronto</button>
+        )}
+      </section>
     </div>
   )
 }

@@ -3,7 +3,7 @@ import shields from "../shields"
 import weapons from "../weapons"
 const enemy: Character[] = [
   {
-    id: 1,
+    id: 5001,
     alive: false,
     initiative: 5,
     name: "Goblin",
@@ -16,7 +16,7 @@ const enemy: Character[] = [
     },
   },
   {
-    id: 2,
+    id: 5002,
     alive: false,
     initiative: 1,
     name: "Ogro",
@@ -29,7 +29,7 @@ const enemy: Character[] = [
     },
   },
   {
-    id: 3,
+    id: 5003,
     alive: false,
     initiative: 3,
     name: "Golem",
