@@ -2,12 +2,8 @@ import rpgs from "@/data/rpgs"
 import { notFound } from "next/navigation"
 import styles from "./page.module.css"
 import Image from "next/image"
-
-type Params = {
-  params: Promise<{
-    id: string
-  }>
-}
+import Link from "next/link"
+import { Params } from "@/types/Params"
 
 export const generateMetadata = () => {
   return {
@@ -15,10 +11,8 @@ export const generateMetadata = () => {
   }
 }
 export default async function ViewInRpg({ params }: Params) {
-  const { id } = await params
-
-  const rpg = rpgs.find((r) => r.id === Number(id))
-
+  const { rpgId } = await params
+  const rpg = rpgs.find((r) => r.id === Number(rpgId))
   if (!rpg) {
     notFound()
   }
@@ -50,12 +44,14 @@ export default async function ViewInRpg({ params }: Params) {
       </div>
       <div className={styles.races}>
         <p>Raças</p>
-        <Image
-          src="/images/bg-races.jpg"
-          alt="Raças"
-          width={200}
-          height={100}
-        />
+        <Link href={`/rpg/${rpg.id}/races`}>
+          <Image
+            src="/images/bg-races.jpg"
+            alt="Raças"
+            width={200}
+            height={100}
+          />
+        </Link>
       </div>
     </div>
   )
