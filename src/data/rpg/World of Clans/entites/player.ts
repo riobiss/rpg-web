@@ -4,7 +4,7 @@ const players: Character[] = [
   {
     id: 1,
     alive: false,
-    initiative: 6,
+    initiative: 0,
     name: "Cristo",
     health: 70,
     damage: {
@@ -34,7 +34,7 @@ const players: Character[] = [
   {
     id: 3,
     alive: false,
-    initiative: 4,
+    initiative: 0,
     name: "Jales",
     health: 60,
     damage: {
