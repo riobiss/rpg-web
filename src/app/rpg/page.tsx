@@ -4,10 +4,8 @@ import styles from "./page.module.css"
 import Link from "next/link"
 export default function ViewRpg() {
   return (
-    <div>
-      <header className={styles.header}>
-        <h2 className={styles.title}>RPGs</h2>
-      </header>
+    <div className={styles.container}>
+      <h2 className={styles.title}>RPGs</h2>
       <main className={styles.containerMain}>
         {rpg.map((rpg) => {
           return (

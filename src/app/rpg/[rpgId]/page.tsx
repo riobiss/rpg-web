@@ -19,9 +19,7 @@ export default async function ViewInRpg({ params }: Params) {
 
   return (
     <div className={styles.container}>
-      <header className={styles.header}>
-        <h2>{rpg.name}</h2>
-      </header>
+        <h2 className={styles.title}>{rpg.name}</h2>
       <p className={styles.description}>{rpg.description}</p>
       <h3>Crônicas do Mundo</h3>
       <div className={styles.library}>
