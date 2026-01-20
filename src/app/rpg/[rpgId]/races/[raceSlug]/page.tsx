@@ -16,7 +16,7 @@ export default async function Page({
   if (!race) return <div>Não Encontrado</div>
   return (
     <div className={styles.container}>
-      <h1>{race.name}</h1>
+      <h2>{race.name}</h2>
       <div>
         <h2>ORIGEM</h2>
         <p>
@@ -252,7 +252,7 @@ export default async function Page({
         <h2>ESTAÇÂO</h2>
         <h3>Primavera</h3>
         <p>
-          Os Eladrin da Primavera sã seres mais leves guiados pela emoção, pelo
+          Os Eladrin da Primavera são seres mais leves guiados pela emoção, pelo
           impulso e pelo amor à liberdade mas também grande guerreiros e um povo
           muito forte. +2 Carisma +1 Destreza ou Instinto •Vantagem contra
           efeitos de controle mental •Comunicação básica com plantas e pequenos

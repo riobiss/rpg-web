@@ -6,19 +6,14 @@ export default function ViewRpg() {
   return (
     <div>
       <header className={styles.header}>
-        <h1 className={styles.title}>RPGs</h1>
+        <h2 className={styles.title}>RPGs</h2>
       </header>
       <main className={styles.containerMain}>
         {rpg.map((rpg) => {
           return (
             <div className={styles.containerRpg} key={rpg.id}>
               <div>
-                <p>Rpg</p>
-                <p>Mestre</p>
-              </div>
-              <div>
-                <p>{rpg.name}</p>
-                <p>{rpg.master}</p>
+                <h3>{rpg.name}</h3>
               </div>
               <Link href={`/rpg/${rpg.id}`}>
                 <Image

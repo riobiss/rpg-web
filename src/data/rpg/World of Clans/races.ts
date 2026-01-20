@@ -34,7 +34,7 @@ const races = [
     id: 6,
     name: "Eladrin",
     description: "Seres élficos ligados à magia e aos planos feéricos.",
-    img: "/races/eladrin.webp",
+    img: "/images/races/eladrin.webp",
   },
   {
     id: 7,

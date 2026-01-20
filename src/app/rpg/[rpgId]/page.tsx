@@ -20,10 +20,10 @@ export default async function ViewInRpg({ params }: Params) {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <h1>{rpg.name}</h1>
+        <h2>{rpg.name}</h2>
       </header>
       <p className={styles.description}>{rpg.description}</p>
-      <h2>Crônicas do Mundo</h2>
+      <h3>Crônicas do Mundo</h3>
       <div className={styles.library}>
         <p>Biblioteca</p>
         <Image

@@ -1,23 +1,4 @@
-.header {
-  nav {
-    background-color: grey;
-    ul {
-      display: flex;
-      flex-direction: row;
-      text-decoration: none;
-      justify-content: space-between;
-      li {
-        border: 2px solid black;
-        width: 50%;
-        list-style-type: none;
-        text-align: center;
-        a {
-          display: block;
-        }
-      }
-    }
-  }
-}
+
 .main {
   background-image: url("/background.png");
   display: flex;

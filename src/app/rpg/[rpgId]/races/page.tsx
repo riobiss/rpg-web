@@ -10,7 +10,7 @@ export default async function RacesPage({ params }: Params) {
   if (!rpg) return <div>rpg não encontrado</div>
   return (
     <div>
-      <h1>Raças</h1>
+      <h2>Raças</h2>
       {rpg.races?.map((races) => {
         return (
           <div key={races.id}>
