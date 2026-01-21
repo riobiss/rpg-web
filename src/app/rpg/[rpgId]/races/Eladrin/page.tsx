@@ -153,8 +153,8 @@ export default async function Page() {
           </p>
         </article>
         <article>
-          <h3>Cultura</h3>
-          <ul>
+          <h4>Cultura</h4>
+          <ul className={styles.list}>
             <li>
               Cada comunidade mantém Conselhos Elementais, onde druidas e magos
               interpretam os sinais da natureza antes de qualquer decisão
@@ -177,43 +177,20 @@ export default async function Page() {
             </li>
           </ul>
         </article>
+        <h4>Nomes comuns</h4>
         <article>
-          <section>
-            <h2>NOMES COMUNS</h2>
-            <h3>Masculinos</h3>
-            <ul className={styles.list}>
-              <li>Aelthir</li>
-              <li>Caelion</li>
-              <li>Ithrael</li>
-              <li>Vaelor</li>
-              <li>Thirien</li>
-              <li>Lioren</li>
-              <li>Maerith</li>
-              <li>Sylvaron</li>
-              <li>Eryndor</li>
-              <li>Kaelith</li>
-              <li>Nymarion</li>
-              <li>Faelros</li>
-            </ul>
-            <h3>Femininos</h3>
-            <ul className={styles.list}>
-              <li>Aelyra</li>
-              <li>Saelune</li>
-              <li>Ithilwen</li>
-              <li>Vaelora</li>
-              <li>Liora</li>
-              <li>Nyssara</li>
-              <li>Elaria</li>
-              <li>Sylphae</li>
-              <li>Myrieth</li>
-              <li>Caelyth</li>
-              <li>Faelira</li>
-              <li>Thyssiel</li>
-            </ul>
-          </section>
+          <ul className={styles.list}>
+            <li>
+              Masculinos: Aelthir, Caelion, Ithrael, Vaelor, Thirien, Lioren,
+              Maerith, Sylvaron, Eryndor, Kaelith, Nymarion, Faelros
+            </li>
+            <li>
+              Femininos: Aelyra, Saelune, Ithilwen, Vaelora, Liora, Nyssara,
+              Elaria, Sylphae, Myrieth, Caelyth, Faelira, Thyssiel
+            </li>
+          </ul>
         </article>
       </section>
-
       <section>
         <h2>FIGURAS MARCANTES</h2>
         <ul>
@@ -224,56 +201,86 @@ export default async function Page() {
       </section>
       <section>
         <h2>TRAÇOS RACIAIS DOS ELADRIN</h2>
-        <dl>
-          <dt>Idade</dt>
-          <dd>
-            Os eladrin atingem a maturidade física aos 20 anos, mas seu processo
-            de envelhecimento se estabiliza após 100. Quando se consideram
-            adulto e vivem até 600 anos.
-          </dd>
-          <dt>Visão</dt>
-          <dd> Visão no escuro de até 18 metros em tons de cinza</dd>
-          <dt>Atributos</dt>
-          <dd> +2 Arcanismo +4 natureza</dd>
-          <dt>Habilidade Racial</dt>
-          <dd>
-            Suas alturas varia entre 1,60 ate 1,90 Tem a capacidade de se mover
-            entre uma camada fraca do plano etéreo se Teletransportando ate 5
-            metros pelo campo, não podendo ser atacado oportunidade e fica
-            invisível quando acaba seu turno durando só seu turno e só sendo
-            usado apenas uma vez por descanso longo.
-          </dd>
-          <dt>Descanso</dt>
-          <dd>
-            Em vez de dormir, os eladrin entram num estado de meditação
-            conhecido como transe, bastando apensas 4 horas para um descanso
-            curto e 6 horas para um longo.
-          </dd>
-        </dl>
+        <article>
+          <dl>
+            <dt>Idade</dt>
+            <dd>
+              Os eladrin atingem a maturidade física aos 20 anos, mas seu
+              processo de envelhecimento se estabiliza após 100. Quando se
+              consideram adulto e vivem até 600 anos.
+            </dd>
+            <dt>Visão</dt>
+            <dd> Visão no escuro de até 18 metros em tons de cinza</dd>
+            <dt>Atributos</dt>
+            <dd> +2 Arcanismo +4 natureza</dd>
+            <dt>Habilidade Racial</dt>
+            <dd>
+              Suas alturas varia entre 1,60 ate 1,90 Tem a capacidade de se
+              mover entre uma camada fraca do plano etéreo se Teletransportando
+              ate 5 metros pelo campo, não podendo ser atacado oportunidade e
+              fica invisível quando acaba seu turno durando só seu turno e só
+              sendo usado apenas uma vez por descanso longo.
+            </dd>
+            <dt>Descanso</dt>
+            <dd>
+              Em vez de dormir, os eladrin entram num estado de meditação
+              conhecido como transe, bastando apensas 4 horas para um descanso
+              curto e 6 horas para um longo.
+            </dd>
+          </dl>
+        </article>
       </section>
       <section>
         <h2>Classes</h2>
         <ul className={styles.list}>
-          <li>Arqueiros</li>
-          <li>Arqueiro mágico</li>
-          <li>Guerreiro</li>
-          <li>Cavaleiro</li>
-          <li>Lanceiro</li>
-          <li>Mago</li>
-          <li>Mago espiritual</li>
-          <li>Mago infernal</li>
-          <li>Bardo</li>
+          <li>
+            Arqueiros
+            <ul>
+              <li>Arqueiro mágico</li>
+            </ul>
+          </li>
+          <li>
+            Guerreiro
+            <ul>
+              <li>Cavaleiro</li>
+              <li>Lanceiro</li>
+            </ul>
+          </li>
+
+          <li>
+            Mago
+            <ul>
+              <li>Mago espiritual</li>
+              <li>Mago infernal</li>
+              <li>Bardo</li>
+            </ul>
+          </li>
+
           <li>Feiticeiro</li>
-          <li>Druida</li>
-          <li>Xamã</li>
-          <li>Druida sombrio</li>
+          <li>
+            Druida
+            <ul>
+              <li>Xamã</li>
+              <li>Druida sombrio</li>
+            </ul>
+          </li>
+
           <li>Bruxo</li>
-          <li>Caçador</li>
-          <li>Domador de monstros</li>
-          <li>Cozinheiro de feras</li>
-          <li>Caçador espiritual</li>
-          <li>Ladino</li>
-          <li>Pirata</li>
+          <li>
+            Caçador
+            <ul>
+              <li>Domador de monstros</li>
+              <li>Cozinheiro de feras</li>
+              <li>Caçador espiritual</li>
+            </ul>
+          </li>
+
+          <li>
+            Ladino
+            <ul>
+              <li>Pirata</li>
+            </ul>
+          </li>
         </ul>
       </section>
       <section>
@@ -283,38 +290,55 @@ export default async function Page() {
           <p>
             Os Eladrin da Primavera são seres mais leves guiados pela emoção,
             pelo impulso e pelo amor à liberdade mas também grande guerreiros e
-            um povo muito forte. +2 Carisma +1 Destreza ou Instinto •Vantagem
-            contra efeitos de controle mental •Comunicação básica com plantas e
-            pequenos animais.
+            um povo muito forte.
           </p>
+          <ul className={styles.list}>
+            <li>+2 Carisma</li> <li>+1 Destreza ou Instinto</li>{" "}
+            <li>Vantagem contra efeitos de controle mental</li>{" "}
+            <li>Comunicação básica com plantas e pequenos animais.</li>
+          </ul>
         </article>
         <article>
           <h3>Verão</h3>
           <p>
             Os Eladrin do Verão carregam o peso da glória e da guerra, lutando
             desde o início com todos e nunca recuando, o emblema dourado vai
-            além do calor. +2 força ou Carisma +1 Constituição •Quando ferido
-            gravemente, recebe bônus temporário de ataque ou dano quando chega a
-            10 de vida. •possui resistência ao calor, reduz dano de fogo.
+            além do calor.
           </p>
+          <ul className={styles.list}>
+            <li>+2 força ou Carisma</li> <li>+1 Constituição</li>
+            <li>
+              Quando ferido gravemente, recebe bônus temporário de ataque ou
+              dano quando chega a 10 de vida.
+            </li>
+            <li>possui resistência ao calor, reduz dano de fogo.</li>
+          </ul>
+          <p></p>
         </article>
         <article>
           <h3>Outono</h3>
           <p>
             Os Eladrin do Outono falam baixo, mas suas palavras moldam a
             diplomacia, os maiores magos e conhecedores da magia entre todos os
-            eladrin. +2 Instinto +1 carisma ou conhecimento • +2 percepção •
-            Vantagem contra efeitos de ilusão e confusão.
+            eladrin.
           </p>
+          <ul className={styles.list}>
+            <li>+2 Instinto </li>
+            <li> +1 carisma ou conhecimento</li> <li> +2 percepção</li>
+            <li>Vantagem contra efeitos de ilusão e confusão.</li>
+          </ul>
         </article>
         <article>
           <h3>Inverno</h3>
           <p>
             Os Eladrin do Inverno conhecem o silêncio, tão resistentes quanto as
-            árvores, e tão honrados quanto um Paladino. +2 Constituição ou
-            Instinto +1 conhecimento • Imunidade ou bônus contra efeitos de
-            charme. • Resistência a dano de frio e vantagem contra medo
+            árvores, e tão honrados quanto um Paladino.
           </p>
+          <ul className={styles.list}>
+            <li>+2 Constituição ou Instinto</li> <li>+1 conhecimento</li>
+            <li> Imunidade ou bônus contra efeitos de charme.</li>
+            <li> Resistência a dano de frio e vantagem contra medo</li>
+          </ul>
         </article>
       </section>
     </main>

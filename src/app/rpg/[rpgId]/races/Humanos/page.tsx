@@ -8,7 +8,7 @@ export const generateMetadata = () => {
 export default function Page() {
   return (
     <main className={styles.container}>
-      <h2>Humano</h2>
+      <h2>Humanos</h2>
       <p>
         &quot;Entre todas as raças que moldam os reinos de Sakaar, a raça humana
         é talvez a mais contraditória e, por isso mesmo, a mais imprevisível.
@@ -76,7 +76,8 @@ export default function Page() {
             culinária, a poesia e a etiqueta são armas tão fortes quanto
             espadas.
           </p>
-
+        </article>
+        <article>
           <h4>Cultura</h4>
           <ul className={styles.list}>
             <li>Obsessão por honra e duelos.</li>
@@ -93,7 +94,8 @@ export default function Page() {
           </ul>
 
           <p>Obs: O reino mais elegante e mais perigoso dos salões nobres.</p>
-
+        </article>
+        <article>
           <h4>Características físicas</h4>
           <ul className={styles.list}>
             <li>
@@ -104,7 +106,8 @@ export default function Page() {
             <li>Traços finos, postura elegante e roupas mais refinadas.</li>
             <li>Altura média.</li>
           </ul>
-
+        </article>
+        <article>
           <h4>Nomes comuns</h4>
           <ul className={styles.list}>
             <li>Masculinos: Alphon, Lucien, Marceau, Édran, Thierris</li>
@@ -123,7 +126,8 @@ export default function Page() {
             constantemente competem por autonomia. É um lugar de oportunidades —
             e caos político.
           </p>
-
+        </article>
+        <article>
           <h4>Cultura</h4>
           <ul className={styles.list}>
             <li>Grande diversidade étnica.</li>
@@ -133,7 +137,8 @@ export default function Page() {
           </ul>
 
           <p>Obs: Terra de oportunidades e conflitos internos.</p>
-
+        </article>
+        <article>
           <h4>Características físicas</h4>
           <ul className={styles.list}>
             <li>Grande diversidade: pele clara, bronzeada ou escura.</li>
@@ -144,7 +149,8 @@ export default function Page() {
             <li>Corpo forte e resistente devido à vida de fronteira.</li>
             <li>Estilo prático, roupas simples de couro e tecido grosso.</li>
           </ul>
-
+        </article>
+        <article>
           <h4>Nomes comuns</h4>
           <ul className={styles.list}>
             <li>Masculinos: Jameson, Alder, Brann, Cole, Marcus</li>
@@ -163,36 +169,39 @@ export default function Page() {
             colossais e florestas de bambu onde espíritos antigos ainda
             sussurram.
           </p>
+          <article>
+            <h4>Cultura</h4>
+            <ul className={styles.list}>
+              <li>Profundo respeito aos ancestrais e à ordem imperial.</li>
+              <li>Busca por equilíbrio entre o mundo espiritual e material.</li>
+              <li>Armas e armaduras decoradas com símbolos dracônicos.</li>
+              <li>Artes marciais e magia ritual são amplamente praticadas.</li>
+            </ul>
 
-          <h4>Cultura</h4>
-          <ul className={styles.list}>
-            <li>Profundo respeito aos ancestrais e à ordem imperial.</li>
-            <li>Busca por equilíbrio entre o mundo espiritual e material.</li>
-            <li>Armas e armaduras decoradas com símbolos dracônicos.</li>
-            <li>Artes marciais e magia ritual são amplamente praticadas.</li>
-          </ul>
-
-          <p>
-            Obs: O possível império mais antigo humano e misterioso do
-            continente.
-          </p>
-
-          <h4>Características físicas</h4>
-          <ul className={styles.list}>
-            <li>Pele clara a bronze clara.</li>
-            <li>Cabelos lisos, na maioria pretos.</li>
-            <li>Olhos escuros, expressivos e serenos.</li>
-            <li>
-              Postura reta e roupas com bordados dracônicos e tecidos longos.
-            </li>
-          </ul>
-
-          <h4>Nomes comuns</h4>
-          <ul className={styles.list}>
-            <li>Masculinos: Jian, Wei, Long, Chen, Xian</li>
-            <li>Femininos: Mei, Lin, Hua, Xue, Lián</li>
-            <li>Sobrenomes: Zhao, Wen, Liang, Sun</li>
-          </ul>
+            <p>
+              Obs: O possível império mais antigo humano e misterioso do
+              continente.
+            </p>
+          </article>
+          <article>
+            <h4>Características físicas</h4>
+            <ul className={styles.list}>
+              <li>Pele clara a bronze clara.</li>
+              <li>Cabelos lisos, na maioria pretos.</li>
+              <li>Olhos escuros, expressivos e serenos.</li>
+              <li>
+                Postura reta e roupas com bordados dracônicos e tecidos longos.
+              </li>
+            </ul>
+          </article>
+          <article>
+            <h4>Nomes comuns</h4>
+            <ul className={styles.list}>
+              <li>Masculinos: Jian, Wei, Long, Chen, Xian</li>
+              <li>Femininos: Mei, Lin, Hua, Xue, Lián</li>
+              <li>Sobrenomes: Zhao, Wen, Liang, Sun</li>
+            </ul>
+          </article>
         </article>
 
         <article>
@@ -204,34 +213,39 @@ export default function Page() {
             Cavaleiros juramentados, druidas da velha fé e magos cortesãos
             disputam influência sobre o trono.
           </p>
+          <article>
+            <h4>Cultura</h4>
+            <ul className={styles.list}>
+              <li>Tradições antigas coexistem com uma nobreza moderna.</li>
+              <li>Ampla presença de ordens cavaleirescas.</li>
+              <li>
+                Lendas de fadas, espectros e reinos ocultos fazem parte da vida
+                cotidiana.
+              </li>
+              <li>O povo é resistente e muito leal às suas ilhas.</li>
+            </ul>
 
-          <h4>Cultura</h4>
-          <ul className={styles.list}>
-            <li>Tradições antigas coexistem com uma nobreza moderna.</li>
-            <li>Ampla presença de ordens cavaleirescas.</li>
-            <li>
-              Lendas de fadas, espectros e reinos ocultos fazem parte da vida
-              cotidiana.
-            </li>
-            <li>O povo é resistente e muito leal às suas ilhas.</li>
-          </ul>
+            <p>Obs: Lar de reis lendários e alianças traiçoeiras.</p>
+          </article>
 
-          <p>Obs: Lar de reis lendários e alianças traiçoeiras.</p>
+          <article>
+            <h4>Características físicas</h4>
+            <ul className={styles.list}>
+              <li>Pele clara ou pálida.</li>
+              <li>Cabelos loiros, castanhos ou ruivos.</li>
+              <li>Olhos claros (azuis, verdes, acinzentados).</li>
+              <li>Estrutura corporal magra ou média, com aparência austera.</li>
+            </ul>
+          </article>
 
-          <h4>Características físicas</h4>
-          <ul className={styles.list}>
-            <li>Pele clara ou pálida.</li>
-            <li>Cabelos loiros, castanhos ou ruivos.</li>
-            <li>Olhos claros (azuis, verdes, acinzentados).</li>
-            <li>Estrutura corporal magra ou média, com aparência austera.</li>
-          </ul>
-
-          <h4>Nomes comuns</h4>
-          <ul className={styles.list}>
-            <li>Masculinos: Edmund, Arthur, Cedric, Rowan, Harold</li>
-            <li>Femininos: Elinor, Maerwen, Gwendra, Isolde, Miriam</li>
-            <li>Sobrenomes: Thornfield, Crownhill, Brackenridge, Oakhart</li>
-          </ul>
+          <article>
+            <h4>Nomes comuns</h4>
+            <ul className={styles.list}>
+              <li>Masculinos: Edmund, Arthur, Cedric, Rowan, Harold</li>
+              <li>Femininos: Elinor, Maerwen, Gwendra, Isolde, Miriam</li>
+              <li>Sobrenomes: Thornfield, Crownhill, Brackenridge, Oakhart</li>
+            </ul>
+          </article>
         </article>
 
         <article>
@@ -245,37 +259,41 @@ export default function Page() {
             conselhos urbanos.
           </p>
 
-          <h4>Cultura</h4>
-          <ul className={styles.list}>
-            <li>Mistura de povos, crenças e tradições.</li>
-            <li>Forte presença de magia natural e espiritual.</li>
-            <li>Grandes festas e celebrações marcam todas as estações.</li>
-            <li>Guerreiros conhecidos pela coragem e adaptabilidade.</li>
-          </ul>
+          <article>
+            <h4>Cultura</h4>
+            <ul className={styles.list}>
+              <li>Mistura de povos, crenças e tradições.</li>
+              <li>Forte presença de magia natural e espiritual.</li>
+              <li>Grandes festas e celebrações marcam todas as estações.</li>
+              <li>Guerreiros conhecidos pela coragem e adaptabilidade.</li>
+            </ul>
+            <p>Obs: Um reino vibrante, imprevisível e cheio de recursos.</p>
+          </article>
 
-          <p>Obs: Um reino vibrante, imprevisível e cheio de recursos.</p>
-
-          <h4>Características físicas</h4>
-          <ul className={styles.list}>
-            <li>
-              Grande mistura de traços: pele clara, morena, parda ou escura.
-            </li>
-            <li>
-              Cabelos variando do crespo ao liso, pretos ou castanhos na
-              maioria.
-            </li>
-            <li>Olhos escuros e vivos.</li>
-            <li>Corpo resistente, adaptado ao calor e ao esforço físico.</li>
-          </ul>
-
-          <h4>Nomes comuns</h4>
-          <ul className={styles.list}>
-            <li>Masculinos: Aruá, Tadeo, Raviel, Bento, Jandir</li>
-            <li>Femininos: Iara, Mirian, Talua, Brisa, Celina</li>
-            <li>
-              Sobrenomes: Dos Montes, Arcofundo, Solnascente, do Vale Verde
-            </li>
-          </ul>
+          <article>
+            <h4>Características físicas</h4>
+            <ul className={styles.list}>
+              <li>
+                Grande mistura de traços: pele clara, morena, parda ou escura.
+              </li>
+              <li>
+                Cabelos variando do crespo ao liso, pretos ou castanhos na
+                maioria.
+              </li>
+              <li>Olhos escuros e vivos.</li>
+              <li>Corpo resistente, adaptado ao calor e ao esforço físico.</li>
+            </ul>
+          </article>
+          <article>
+            <h4>Nomes comuns</h4>
+            <ul className={styles.list}>
+              <li>Masculinos: Aruá, Tadeo, Raviel, Bento, Jandir</li>
+              <li>Femininos: Iara, Mirian, Talua, Brisa, Celina</li>
+              <li>
+                Sobrenomes: Dos Montes, Arcofundo, Solnascente, do Vale Verde
+              </li>
+            </ul>
+          </article>
         </article>
 
         <article>
@@ -287,35 +305,41 @@ export default function Page() {
             um reino profundamente espiritual, onde sacrifícios rituais são
             vistos como parte natural da ordem do mundo.
           </p>
+          <article>
+            <h4>Cultura</h4>
+            <ul className={styles.list}>
+              <li>Arquitetura grandiosa em pedra vulcânica.</li>
+              <li>
+                Guerreiros-jaguar e guerreiros-águia dominam os campos de
+                batalha.
+              </li>
+              <li>Cerimônias religiosas elaboradas, com cantos e danças.</li>
+              <li>Valorização extrema da bravura</li>
+            </ul>
 
-          <h4>Cultura</h4>
-          <ul className={styles.list}>
-            <li>Arquitetura grandiosa em pedra vulcânica.</li>
-            <li>
-              Guerreiros-jaguar e guerreiros-águia dominam os campos de batalha.
-            </li>
-            <li>Cerimônias religiosas elaboradas, com cantos e danças.</li>
-            <li>Valorização extrema da bravura</li>
-          </ul>
+            <p>Obs: Povo feroz, disciplinado e guiado pelo sagrado.</p>
+          </article>
 
-          <p>Obs: Povo feroz, disciplinado e guiado pelo sagrado.</p>
+          <article>
+            <h4>Características físicas</h4>
+            <ul className={styles.list}>
+              <li>Pele bronzeada ou morena.</li>
+              <li>Cabelos pretos, lisos ou ondulados.</li>
+              <li>Olhos escuros, marcantes.</li>
+              <li>Corpo forte e compacto devido ao treinamento marcial.</li>
+            </ul>
+          </article>
 
-          <h4>Características físicas</h4>
-          <ul className={styles.list}>
-            <li>Pele bronzeada ou morena.</li>
-            <li>Cabelos pretos, lisos ou ondulados.</li>
-            <li>Olhos escuros, marcantes.</li>
-            <li>Corpo forte e compacto devido ao treinamento marcial.</li>
-          </ul>
-
-          <h4>Nomes comuns</h4>
-          <ul className={styles.list}>
-            <li>Masculinos: Cuautli, Tenoch, Ilaro, Maxtli, Zonco</li>
-            <li>
-              Femininos: Citlali, Nayah, Ixchel, Meztli, Yara (variação local)
-            </li>
-            <li>Sobrenomes: Tecuani, Solpiedra, Quauhtémoc, Xocotzin</li>
-          </ul>
+          <article>
+            <h4>Nomes comuns</h4>
+            <ul className={styles.list}>
+              <li>Masculinos: Cuautli, Tenoch, Ilaro, Maxtli, Zonco</li>
+              <li>
+                Femininos: Citlali, Nayah, Ixchel, Meztli, Yara (variação local)
+              </li>
+              <li>Sobrenomes: Tecuani, Solpiedra, Quauhtémoc, Xocotzin</li>
+            </ul>
+          </article>
         </article>
 
         <article>
@@ -327,36 +351,42 @@ export default function Page() {
             derrete completamente. O governo é rígido, centralizado e muitas
             vezes tirânico, mas o povo é incrivelmente resiliente e solidário.
           </p>
+          <article>
+            <h4>Cultura</h4>
+            <ul className={styles.list}>
+              <li>Forte senso de coletividade e sacrifício.</li>
+              <li>Milícias gigantescas formadas por camponeses endurecidos.</li>
+              <li>Arquitetura pesada, com torres de pedra e ferro.</li>
+              <li>
+                Magos rúnicos e xamãs do gelo moldam o clima e protegem
+                fronteiras.
+              </li>
+            </ul>
 
-          <h4>Cultura</h4>
-          <ul className={styles.list}>
-            <li>Forte senso de coletividade e sacrifício.</li>
-            <li>Milícias gigantescas formadas por camponeses endurecidos.</li>
-            <li>Arquitetura pesada, com torres de pedra e ferro.</li>
-            <li>
-              Magos rúnicos e xamãs do gelo moldam o clima e protegem
-              fronteiras.
-            </li>
-          </ul>
+            <p>Obs: Uma potência fria, dura e temida.</p>
+          </article>
 
-          <p>Obs: Uma potência fria, dura e temida.</p>
-
-          <h4>Características físicas</h4>
-          <ul className={styles.list}>
-            <li>Pele clara, frequentemente avermelhada pelo frio.</li>
-            <li>Cabelos loiros claros, castanho-escuros ou ruivos intensos.</li>
-            <li>Barbas grossas nos homens.</li>
-            <li>
-              Corpo robusto, ombros largos e aparência endurecida pelo clima.
-            </li>
-          </ul>
-
-          <h4>Nomes comuns</h4>
-          <ul className={styles.list}>
-            <li>Masculinos: Mikhail, Olegar, Yuriak, Borin, Draskev</li>
-            <li>Femininos: Svetta, Ilyana, Katerin, Masha, Varyna</li>
-            <li>Sobrenomes: Vostrov, Dragonov, Karskin, Morav</li>
-          </ul>
+          <article>
+            <h4>Características físicas</h4>
+            <ul className={styles.list}>
+              <li>Pele clara, frequentemente avermelhada pelo frio.</li>
+              <li>
+                Cabelos loiros claros, castanho-escuros ou ruivos intensos.
+              </li>
+              <li>Barbas grossas nos homens.</li>
+              <li>
+                Corpo robusto, ombros largos e aparência endurecida pelo clima.
+              </li>
+            </ul>
+          </article>
+          <article>
+            <h4>Nomes comuns</h4>
+            <ul className={styles.list}>
+              <li>Masculinos: Mikhail, Olegar, Yuriak, Borin, Draskev</li>
+              <li>Femininos: Svetta, Ilyana, Katerin, Masha, Varyna</li>
+              <li>Sobrenomes: Vostrov, Dragonov, Karskin, Morav</li>
+            </ul>
+          </article>
         </article>
 
         <article>
@@ -370,36 +400,41 @@ export default function Page() {
             que nunca abandona o trono.
           </p>
 
-          <h4>Cultura</h4>
-          <ul className={styles.list}>
-            <li>Bravura, a honra e a profundidade das runas mágicas.</li>
-            <li>Seus navios longos são temidos em todos os mares.</li>
-            <li>
-              As canções são sagradas, Bardos são chamados Skalds, e seus poemas
-              são considerados quase mágicos.
-            </li>
-            <li>São um povo que amam a guerra e a batalha.</li>
-          </ul>
+          <article>
+            <h4>Cultura</h4>
+            <ul className={styles.list}>
+              <li>Bravura, a honra e a profundidade das runas mágicas.</li>
+              <li>Seus navios longos são temidos em todos os mares.</li>
+              <li>
+                As canções são sagradas, Bardos são chamados Skalds, e seus
+                poemas são considerados quase mágicos.
+              </li>
+              <li>São um povo que amam a guerra e a batalha.</li>
+            </ul>
+          </article>
 
           <p>
             Obs: Terra dos navegadores indomáveis e um reino onde o frio cria
             homens de ferro.
           </p>
 
-          <h4>Características físicas</h4>
-          <ul className={styles.list}>
-            <li>Pele muito clara, às vezes com sardas.</li>
-            <li>Cabelos loiros, ruivos ou castanho-claros.</li>
-            <li>Olhos claros (azul-gelo, verde-acinzentado).</li>
-            <li>Corpo atlético e resistente ao frio.</li>
-          </ul>
-
-          <h4>Nomes comuns</h4>
-          <ul className={styles.list}>
-            <li>Masculinos: Ragnar, Ulfrid, Soren, Bjarke, Stellan</li>
-            <li>Femininos: Freyja, Sigrid, Astryn, Brynhild, Kaela</li>
-            <li>Sobrenomes: Frostborn, Stormdal, Haldersson, Skovgaard</li>
-          </ul>
+          <article>
+            <h4>Características físicas</h4>
+            <ul className={styles.list}>
+              <li>Pele muito clara, às vezes com sardas.</li>
+              <li>Cabelos loiros, ruivos ou castanho-claros.</li>
+              <li>Olhos claros (azul-gelo, verde-acinzentado).</li>
+              <li>Corpo atlético e resistente ao frio.</li>
+            </ul>
+          </article>
+          <article>
+            <h4>Nomes comuns</h4>
+            <ul className={styles.list}>
+              <li>Masculinos: Ragnar, Ulfrid, Soren, Bjarke, Stellan</li>
+              <li>Femininos: Freyja, Sigrid, Astryn, Brynhild, Kaela</li>
+              <li>Sobrenomes: Frostborn, Stormdal, Haldersson, Skovgaard</li>
+            </ul>
+          </article>
         </article>
       </section>
 
@@ -521,7 +556,6 @@ export default function Page() {
           </li>
         </ul>
       </section>
-
       <section>
         <h2>VARIAÇÕES DE HUMANOS</h2>
         <p>

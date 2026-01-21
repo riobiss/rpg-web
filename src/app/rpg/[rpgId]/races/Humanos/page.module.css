@@ -10,11 +10,17 @@
   gap: 2rem;
 }
 
+.container h2,
+.container h3,
+.container h4 {
+  font-family: "Cinzel", serif;
+  text-transform: uppercase;
+}
+
 .container > h2 {
   font-size: 2.2rem;
   color: var(--text-title);
   letter-spacing: 0.04em;
-    text-transform: uppercase;
 }
 
 .container article {
@@ -41,7 +47,6 @@
   font-size: 1.4rem;
 
   color: var(--accent-main);
-  text-transform: uppercase;
   letter-spacing: 0.08em;
 }
 

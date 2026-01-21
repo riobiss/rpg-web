@@ -103,7 +103,7 @@ export default async function Page() {
         </article>
 
         <article>
-          <h3>Cultura</h3>
+          <h4>Cultura</h4>
           <ul className={styles.list}>
             <li>
               Vilas aconchegantes construídas em troncos de pinheiros gigantes
@@ -125,7 +125,7 @@ export default async function Page() {
         </article>
 
         <article>
-          <h3>Características físicas</h3>
+          <h4>Características físicas</h4>
           <ul className={styles.list}>
             <li>Altura: Entre 90 cm e 1,10 m.</li>
             <li>
@@ -144,7 +144,7 @@ export default async function Page() {
         </article>
 
         <article>
-          <h3>Vestuário</h3>
+          <h4>Vestuário</h4>
           <p>
             O estilo é funcional, elegante e cheio de detalhes culturais, uma
             das raças que presa bastante pela boa aparência. Sendo seus
@@ -175,53 +175,23 @@ export default async function Page() {
             </li>
           </ul>
         </article>
-
         <article>
-          <section>
-            <h2>NOMES COMUNS</h2>
-
-            <h3>Masculinos</h3>
-            <ul className={styles.list}>
-              <li>Merrin</li>
-              <li>Tobren</li>
-              <li>Faldric</li>
-              <li>Joryn</li>
-              <li>Alben</li>
-              <li>Roddin</li>
-              <li>Pelren</li>
-              <li>Kelvo</li>
-              <li>Thamri</li>
-              <li>Yorwick</li>
-            </ul>
-
-            <h3>Femininos</h3>
-            <ul className={styles.list}>
-              <li>Marella</li>
-              <li>Dorynne</li>
-              <li>Sella</li>
-              <li>Veska</li>
-              <li>Ilwen</li>
-              <li>Fiorra</li>
-              <li>Talia Snowbarrel</li>
-              <li>Lydda</li>
-              <li>Elireen</li>
-              <li>Perribel</li>
-            </ul>
-
-            <h3>Sobrenomes</h3>
-            <ul className={styles.list}>
-              <li>Permafrio</li>
-              <li>Folha-Doce</li>
-              <li>Dorseneve</li>
-              <li>Vinhoclaro</li>
-              <li>Barrilgelado</li>
-              <li>Ramosuave</li>
-              <li>Auroracopo</li>
-              <li>Gelirrin</li>
-              <li>Raizborralha</li>
-              <li>Cascalustre</li>
-            </ul>
-          </section>
+          <h2>NOMES COMUNS</h2>
+          <ul className={styles.list}>
+            <li>
+              Masculinos: Merrin, Tobren, Faldric, Joryn, Alben, Roddin, Pelren,
+              Kelvo, Thamri, Yorwick
+            </li>
+            <li>
+              Femininos: Marella, Dorynne, Sella, Veska, Ilwen, Fiorra, Talia
+              Snowbarrel, Lydda, Elireen, Perribel
+            </li>
+            <li>
+              Sobrenomes: Permafrio, Folha-Doce, Dorseneve, Vinhoclaro,
+              Barrilgelado, Ramosuave, Auroracopo, Gelirrin, Raizborralha,
+              Cascalustre
+            </li>
+          </ul>
         </article>
 
         <article>
@@ -245,7 +215,7 @@ export default async function Page() {
         </article>
 
         <article>
-          <h3>Cultura</h3>
+          <h4>Cultura</h4>
           <ul className={styles.list}>
             <li>serem diretos e francos demais, às vezes bruscos;</li>
             <li>honrarem a palavra dada acima de qualquer coisa;</li>
@@ -263,7 +233,7 @@ export default async function Page() {
         </article>
 
         <article>
-          <h3>Características físicas</h3>
+          <h4>Características físicas</h4>
           <ul className={styles.list}>
             <li>Altura entre 95 cm e 1,15 m, corpo compacto e musculoso.</li>
             <li>Pele em tons de castanho claro a bronzeado escuro.</li>
@@ -276,7 +246,7 @@ export default async function Page() {
         </article>
 
         <article>
-          <h3>Vestuário</h3>
+          <h4>Vestuário</h4>
           <ul className={styles.list}>
             <li>
               Homens: Camisas sem mangas ou de mangas curtas, Coletes de couro
@@ -292,53 +262,23 @@ export default async function Page() {
             </li>
           </ul>
         </article>
-
         <article>
-          <section>
-            <h2>NOMES COMUNS</h2>
+          <h2>NOMES COMUNS</h2>
 
-            <h3>Masculinos</h3>
-            <ul className={styles.list}>
-              <li>Ravel</li>
-              <li>Dornik</li>
-              <li>Malco</li>
-              <li>Jarek</li>
-              <li>Thomar</li>
-              <li>Cavel</li>
-              <li>Brannik</li>
-              <li>Orven</li>
-              <li>Kael</li>
-              <li>Sorrin etc</li>
-            </ul>
-
-            <h3>Femininos</h3>
-            <ul className={styles.list}>
-              <li>Yalena</li>
-              <li>Maris</li>
-              <li>Korra</li>
-              <li>Selka</li>
-              <li>Neris</li>
-              <li>Ivela</li>
-              <li>Taryn</li>
-              <li>Vessa</li>
-              <li>Calya</li>
-              <li>Rinna etc</li>
-            </ul>
-
-            <h3>Sobrenomes</h3>
-            <ul className={styles.list}>
-              <li>Salmor</li>
-              <li>Salferro</li>
-              <li>Ondaparda</li>
-              <li>Marquedo</li>
-              <li>Fundoazul</li>
-              <li>Conchadura</li>
-              <li>Tempesmar</li>
-              <li>Anzolnegro</li>
-              <li>Reciforte</li>
-              <li>Salvigo etc</li>
-            </ul>
-          </section>
+          <ul className={styles.list}>
+            <li>
+              Masculinos: Ravel, Dornik, Malco, Jarek, Thomar, Cavel, Brannik,
+              Orven, Kael, Sorrin etc
+            </li>
+            <li>
+              Femininos: Yalena, Maris, Korra, Selka, Neris, Ivela, Taryn,
+              Vessa, Calya, Rinna etc
+            </li>
+            <li>
+              Sobrenomes: Salmor, Salferro, Ondaparda, Marquedo, Fundoazul,
+              Conchadura, Tempesmar, Anzolnegro, Reciforte, Salvigo etc
+            </li>
+          </ul>
         </article>
 
         <article>
@@ -355,7 +295,7 @@ export default async function Page() {
         </article>
 
         <article>
-          <h3>Cultura</h3>
+          <h4>Cultura</h4>
           <ul className={styles.list}>
             <li>
               Mannikaarianos são respeitados como curandeiros, alquimistas,
@@ -376,7 +316,7 @@ export default async function Page() {
         </article>
 
         <article>
-          <h3>Características físicas</h3>
+          <h4>Características físicas</h4>
           <ul className={styles.list}>
             <li>Altura média entre 90 cm e 1,10 m.</li>
             <li>Pele: variam do castanho médio ao peles mais escuras.</li>
@@ -389,7 +329,7 @@ export default async function Page() {
         </article>
 
         <article>
-          <h3>Vestuário</h3>
+          <h4>Vestuário</h4>
           <ul className={styles.list}>
             <li>
               Homens: Túnicas leves sem mangas ou de mangas curtas, Faixas
@@ -404,52 +344,22 @@ export default async function Page() {
             </li>
           </ul>
         </article>
-
         <article>
-          <section>
-            <h2>NOMES COMUNS</h2>
-
-            <h3>Masculinos</h3>
-            <ul className={styles.list}>
-              <li>Kairo</li>
-              <li>Zemek</li>
-              <li>Ravelin</li>
-              <li>Tamaru</li>
-              <li>Obrek</li>
-              <li>Sahen</li>
-              <li>Jorai</li>
-              <li>Malek</li>
-              <li>Aro</li>
-              <li>Keshan</li>
-            </ul>
-
-            <h3>Femininos</h3>
-            <ul className={styles.list}>
-              <li>Nyara</li>
-              <li>Selah</li>
-              <li>Korae</li>
-              <li>Ishra</li>
-              <li>Amaya</li>
-              <li>Virel</li>
-              <li>Tashé</li>
-              <li>Liora</li>
-              <li>Zani</li>
-              <li>Marai</li>
-            </ul>
-
-            <h3>Sobrenomes</h3>
-            <ul className={styles.list}>
-              <li>Brasa-Clara</li>
-              <li>Cinzasol</li>
-              <li>Fogoantigo</li>
-              <li>Pedraquente</li>
-              <li>Chamarra</li>
-              <li>Lumibrasa</li>
-              <li>Coração-Ígneo</li>
-              <li>Cinzelda</li>
-              <li>Marquechama.</li>
-            </ul>
-          </section>
+          <h2>NOMES COMUNS</h2>
+          <ul className={styles.list}>
+            <li>
+              Masculinos: Kairo, Zemek, Ravelin, Tamaru, Obrek, Sahen, Jorai,
+              Malek, Aro, Keshan
+            </li>
+            <li>
+              Femininos: Nyara, Selah, Korae, Ishra, Amaya, Virel, Tashé, Liora,
+              Zani, Marai
+            </li>
+            <li>
+              Sobrenomes: Brasa-Clara, Cinzasol, Fogoantigo, Pedraquente,
+              Chamarra, Lumibrasa, Coração-Ígneo, Cinzelda, Marquechama
+            </li>
+          </ul>
         </article>
 
         <article>
@@ -465,7 +375,7 @@ export default async function Page() {
         </article>
 
         <article>
-          <h3>Cultura</h3>
+          <h4>Cultura</h4>
           <ul className={styles.list}>
             <li>
               Os pequenos de Elisaar, são normalmente observadores e
@@ -485,7 +395,7 @@ export default async function Page() {
         </article>
 
         <article>
-          <h3>Características físicas</h3>
+          <h4>Características físicas</h4>
           <ul className={styles.list}>
             <li>Altura: 95cm e 1,10cm</li>
             <li>Pele: castanho claro a oliva escura.</li>
@@ -495,7 +405,7 @@ export default async function Page() {
         </article>
 
         <article>
-          <h3>Vestuário</h3>
+          <h4>Vestuário</h4>
           <ul className={styles.list}>
             <li>
               Homens: Túnicas curtas ou camisas leves, Calças ajustadas abaixo
@@ -511,50 +421,21 @@ export default async function Page() {
         </article>
 
         <article>
-          <section>
-            <h2>NOMES COMUNS</h2>
-
-            <h3>Masculinos</h3>
-            <ul className={styles.list}>
-              <li>Edrin</li>
-              <li>Calwen</li>
-              <li>Torik</li>
-              <li>Balen</li>
-              <li>Jorwen</li>
-              <li>Maelis</li>
-              <li>Orvan</li>
-              <li>Selric</li>
-              <li>Tovin</li>
-              <li>Kalen</li>
-            </ul>
-
-            <h3>Femininos</h3>
-            <ul className={styles.list}>
-              <li>Lysa</li>
-              <li>Marwen</li>
-              <li>Elin</li>
-              <li>Serah</li>
-              <li>Nyel</li>
-              <li>Tressa</li>
-              <li>Varyn</li>
-              <li>Ilyra</li>
-              <li>Kessa</li>
-              <li>Rinel.</li>
-            </ul>
-
-            <h3>Sobrenomes</h3>
-            <ul className={styles.list}>
-              <li>Doismares</li>
-              <li>Pedraviva</li>
-              <li>Vigiarco</li>
-              <li>Caminholongo</li>
-              <li>Folhasombra</li>
-              <li>Rioselo</li>
-              <li>Portacerta</li>
-              <li>Passolento</li>
-              <li>Olhoquieto</li>
-            </ul>
-          </section>
+          <h2>NOMES COMUNS</h2>
+          <ul className={styles.list}>
+            <li>
+              Masculinos: Edrin, Calwen, Torik, Balen, Jorwen, Maelis, Orvan,
+              Selric, Tovin, Kalen
+            </li>
+            <li>
+              Femininos: Lysa, Marwen, Elin, Serah, Nyel, Tressa, Varyn, Ilyra,
+              Kessa, Rinel
+            </li>
+            <li>
+              Sobrenomes: Doismares, Pedraviva, Vigiarco, Caminholongo,
+              Folhasombra, Rioselo, Portacerta, Passolento, Olhoquieto
+            </li>
+          </ul>
         </article>
       </section>
 
