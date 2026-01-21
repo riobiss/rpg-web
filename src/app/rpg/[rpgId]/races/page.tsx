@@ -19,8 +19,7 @@ export default async function RacesPage({ params }: Params) {
               <Image
                 src={race.img}
                 alt={`Imagem da raça ${race.name}`}
-                width={350}
-                height={350}
+                fill
                 className={styles.image}
               />
               <h2>{race.name}</h2>
