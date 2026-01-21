@@ -19,36 +19,40 @@ export default async function ViewInRpg({ params }: Params) {
 
   return (
     <div className={styles.container}>
-        <h2 className={styles.title}>{rpg.name}</h2>
+      <h2 className={styles.title}>{rpg.name}</h2>
       <p className={styles.description}>{rpg.description}</p>
-      <h3>Crônicas do Mundo</h3>
-      <div className={styles.library}>
-        <p>Biblioteca</p>
-        <Image
-          src="/images/bg-library.jpg"
-          alt="Biblioteca"
-          width={200}
-          height={100}
-        />
-      </div>
-      <div className={styles.map}>
-        <Image
-          src="/images/bg-regioes.jpg"
-          alt="Regiões"
-          width={200}
-          height={100}
-        />
-        <p>Regiões</p>
-      </div>
-      <div className={styles.races}>
-        <p>Raças</p>
-        <Link href={`/rpg/${rpg.id}/races`}>
+
+      <h3 className={styles.sectionTitle}>Crônicas do Mundo</h3>
+
+      <div className={styles.cards}>
+        <div className={styles.card}>
+          <Image
+            src="/images/bg-library.jpg"
+            alt="Biblioteca"
+            fill
+            className={styles.cardImage}
+          />
+          <span>Biblioteca</span>
+        </div>
+
+        <div className={styles.card}>
+          <Image
+            src="/images/bg-regioes.jpg"
+            alt="Regiões"
+            fill
+            className={styles.cardImage}
+          />
+          <span>Regiões</span>
+        </div>
+
+        <Link href={`/rpg/${rpg.id}/races`} className={styles.card}>
           <Image
             src="/images/bg-races.jpg"
             alt="Raças"
-            width={200}
-            height={100}
+            fill
+            className={styles.cardImage}
           />
+          <span>Raças</span>
         </Link>
       </div>
     </div>
