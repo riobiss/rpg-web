@@ -7,23 +7,26 @@ export default function ViewRpg() {
     <div className={styles.container}>
       <h2 className={styles.title}>RPGs</h2>
       <main className={styles.containerMain}>
-        {rpg.map((rpg) => {
-          return (
-            <div className={styles.containerRpg} key={rpg.id}>
-              <div>
-                <h3>{rpg.name}</h3>
-              </div>
-              <Link href={`/rpg/${rpg.id}`}>
-                <Image
-                  src={rpg.image}
-                  width={250}
-                  height={300}
-                  alt={rpg.name}
-                />
-              </Link>
+        {rpg.map((item) => (
+          <Link
+            href={`/rpg/${item.id}`}
+            key={item.id}
+            className={styles.containerRpg}
+          >
+            <div className={styles.imageWrapper}>
+              <Image
+                src={item.image}
+                width={300}
+                height={420}
+                alt={item.name}
+              />
             </div>
-          )
-        })}
+
+            <h3 className={styles.rpgTitle}>{item.name}</h3>
+
+            <p className={styles.rpgDescription}>{item.description}</p>
+          </Link>
+        ))}
       </main>
     </div>
   )

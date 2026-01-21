@@ -14,8 +14,7 @@ const rpg = [
     image: "/images/bg-mine.png",
     name: "Rpg Minecraft",
     master: "João vitor",
-    description:
-      "Em World of Clans você viverá aventuras épicas e provavelmente executadas no puro caos. Faltas precisam de aviso, atrasos são tradição e o dado sempre decide quem sofre",
+    description: "Minezão dos crias porra",
   },
 ]
 export default rpg
