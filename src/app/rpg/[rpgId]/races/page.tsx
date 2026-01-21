@@ -2,30 +2,32 @@ import { Params } from "@/types/Params"
 import rpgs from "@/data/rpgs"
 import Image from "next/image"
 import Link from "next/link"
-
+import styles from "./page.module.css"
 export default async function RacesPage({ params }: Params) {
   const { rpgId } = await params
 
   const rpg = rpgs.find((r) => r.id === Number(rpgId))
   if (!rpg) return <div>rpg não encontrado</div>
   return (
-    <div>
-      <h2>Raças</h2>
-      {rpg.races?.map((races) => {
-        return (
-          <div key={races.id}>
-            <h2>{races.name}</h2>
-            <Link href={`/rpg/${rpg.id}/races/${races.name}`}>
+    <main className={styles.container}>
+      <h1 className={styles.title}>Raças</h1>
+
+      <section className={styles.grid}>
+        {rpg.races?.map((race) => (
+          <article key={race.id} className={styles.card}>
+            <Link href={`/rpg/${rpg.id}/races/${race.name}`}>
               <Image
-                src={races.img}
-                alt={`Imagem do ${races.name} `}
-                width={400}
-                height={200}
+                src={race.img}
+                alt={`Imagem da raça ${race.name}`}
+                width={350}
+                height={350}
+                className={styles.image}
               />
+              <h2>{race.name}</h2>
             </Link>
-          </div>
-        )
-      })}
-    </div>
+          </article>
+        ))}
+      </section>
+    </main>
   )
 }

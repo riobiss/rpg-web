@@ -601,7 +601,8 @@ export default async function Page() {
       </section>
       <section>
         <h2>TRAÇOS RACIAIS DOS HUMANOS</h2>
-        <dl>
+        <article>
+   <dl>
           <dt>Idade</dt>
           <dd>
             Chegam na maior idade com 16 anos os homens e as mulheres com 12 ou
@@ -625,6 +626,8 @@ export default async function Page() {
             pegando o resultado novo.
           </dd>
         </dl>
+        </article>
+     
       </section>
       <section>
         <h2>Classes</h2>

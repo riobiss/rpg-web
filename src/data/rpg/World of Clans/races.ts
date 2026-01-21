@@ -9,32 +9,32 @@ const races = [
     id: 2,
     name: "Pequenos",
     description: "Raça de baixa estatura, ágil e furtiva.",
-    img: "/images/races/pequeno.jpg",
+    img: "/images/races/tiny.png",
   },
   {
     id: 3,
     name: "Gigantes",
     description: "Seres enormes, fortes e resistentes.",
-    img: "/images/races/giant.webp",
+    img: "/images/races/giant.png",
   },
   {
     id: 4,
     name: "Orcs",
     description: "Guerreiros brutais, focados em força e honra tribal.",
-    img: "/images/races/orc.jpg",
+    img: "/images/races/orc.png",
   },
 
   {
     id: 5,
     name: "Goblins",
     description: "Astutos, rápidos e especialistas em emboscadas.",
-    img: "/images/races/goblin.avif",
+    img: "/images/races/goblin.png",
   },
   {
     id: 6,
     name: "Eladrin",
     description: "Seres élficos ligados à magia e aos planos feéricos.",
-    img: "/images/races/eladrin.webp",
+    img: "/images/races/eladrin.png",
   },
   {
     id: 7,
