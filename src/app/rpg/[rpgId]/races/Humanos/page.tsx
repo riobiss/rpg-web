@@ -4,23 +4,23 @@ export const generateMetadata = () => {
     title: "Raças",
   }
 }
-export default async function Page() {
+
+export default function Page() {
   return (
     <main className={styles.container}>
-      <h2>Humanos</h2>
+      <h2>Humano</h2>
+      <p>
+        &quot;Entre todas as raças que moldam os reinos de Sakaar, a raça humana
+        é talvez a mais contraditória e, por isso mesmo, a mais imprevisível.
+        Não possuem a força bruta dos Gigantes, a longevidade mística dos
+        Eladrin ou a engenhosidade sobrenatural dos Pequenos. Tampouco caminham
+        com o poder ancestral dos Draconatos ou manipulam magias infernais como
+        os Tieflings. Ainda assim, os Humanos ergueram cidades, reinos e
+        impérios que rivalizam com os de povos muito mais antigos.&quot;
+      </p>
       <article>
         <section>
           <h2>ORIGEM</h2>
-          <p>
-            Entre todas as raças que moldam os reinos de Sakaar, a raça humana é
-            talvez a mais contraditória e, por isso mesmo, a mais imprevisível.
-            Não possuem a força bruta dos Gigantes, a longevidade mística dos
-            Eladrin ou a engenhosidade sobrenatural dos Pequenos. Tampouco
-            caminham com o poder ancestral dos Draconatos ou manipulam magias
-            infernais como os Tieflings. Ainda assim, os Humanos ergueram
-            cidades, reinos e impérios que rivalizam com os de povos muito mais
-            antigos.
-          </p>
           <p>
             Diz-se que os Humanos surgiram das Cinzas dos Primeiros Fogos,
             quando os deuses menores decidiram criar uma raça que fosse frágil,
@@ -28,38 +28,42 @@ export default async function Page() {
             uma capacidade única de sobreviver em quase qualquer ambiente:
             florestas densas, estepes ventosas, montanhas geladas ou litorais
             tempestuosos. Sua sociedade é tão diversa quanto o solo sobre o qual
-            constroem suas casas. No período antigo de Sakaar, os reinos humanos
-            são estruturados por monarquias, feudos, ordens cavaleirescas e
-            guildas de artesãos. A vida de um camponês pouco se assemelha à de
-            um nobre — mas ambos compartilham a mesma crença: que a Coroa e o
-            Dever são os pilares da civilização humana.
+            constroem suas casas.
+          </p>
+          <p>
+            No período antigo de Sakaar, os reinos humanos são estruturados por
+            monarquias, feudos, ordens cavaleirescas e guildas de artesãos. A
+            vida de um camponês pouco se assemelha à de um nobre — mas ambos
+            compartilham a mesma crença: que a Coroa e o Dever são os pilares da
+            civilização humana.
           </p>
         </section>
-        <section>
-          <h2>O QUE ALGUNS PENSAM </h2>
-          <blockquote>
-            <p>
-              Pequenos: São grandes demais para perceber os detalhes, mas
-              pequenos o bastante para cometer os erros que nós evitamos –
-              ditado popular dos Pequenos sobre os humanos.
-            </p>
-          </blockquote>
-          <blockquote>
-            <p>
-              Pigs: Humanos? Fazem barulho, fazem bagunça, fazem guerras… mas
-              sabem negociar como ninguém – cometário popular entre mercadores
-              pigs.
-            </p>
-          </blockquote>
-          <blockquote>
-            <p>
-              Eladrin: Mortais apressados, inquietos e instáveis… e, ainda
-              assim, perigosamente determinados – pensamentos comum da
-              população.
-            </p>
-          </blockquote>
-        </section>
       </article>
+
+      <section>
+        <h2>O QUE ALGUNS PENSAM</h2>
+        <blockquote>
+          <p>
+            Pequenos: São grandes demais para perceber os detalhes, mas pequenos
+            o bastante para cometer os erros que nós evitamos – ditado popular
+            dos Pequenos sobre os humanos.
+          </p>
+        </blockquote>
+        <blockquote>
+          <p>
+            Pigs: Humanos? Fazem barulho, fazem bagunça, fazem guerras… mas
+            sabem negociar como ninguém – cometário popular entre mercadores
+            pigs.
+          </p>
+        </blockquote>
+        <blockquote>
+          <p>
+            Eladrin: Mortais apressados, inquietos e instáveis… e, ainda assim,
+            perigosamente determinados – pensamentos comum da população.
+          </p>
+        </blockquote>
+      </section>
+
       <section>
         <h2>REINOS</h2>
         <article>
@@ -72,59 +76,43 @@ export default async function Page() {
             culinária, a poesia e a etiqueta são armas tão fortes quanto
             espadas.
           </p>
-        </article>
-        <article>
-          <h3>Cultura</h3>
+
+          <h4>Cultura</h4>
           <ul className={styles.list}>
-            <li>Grande diversidade étnica.</li>
-            <li>Valorização extrema da liberdade e iniciativa individual.</li>
-            <li>Cavaleiros pioneiros desbravam fronteiras selvagens.</li>
-            <li>Guildas mercenárias e inventores são muito influentes.</li>
+            <li>Obsessão por honra e duelos.</li>
+            <li>
+              A nobreza vive em castelos exuberantes com jardins encantados.
+            </li>
+            <li>
+              Bardos e artistas são tratados como figuras de grande prestígio.
+            </li>
+            <li>
+              Intrigas, traições e casamentos arranjados fazem parte da política
+              cotidiana.
+            </li>
           </ul>
-          <p>Obs: Terra de oportunidades e conflitos internos.</p>
-        </article>
 
-        <article>
-          <h3>Características físicas</h3>
+          <p>Obs: O reino mais elegante e mais perigoso dos salões nobres.</p>
+
+          <h4>Características físicas</h4>
           <ul className={styles.list}>
-            <li>Pele clara, bronzeada ou escura.</li>
-            <li>Alturas variadas, muitos acima da média.</li>
-            <li>Corpo forte e resistente devido à vida de fronteira.</li>
-            <li>Roupas práticas de couro e tecido grosso.</li>
+            <li>
+              Cabelos lisos ou ondulados, variando entre castanho, loiro e ruivo
+              claro.
+            </li>
+            <li>Pele clara a levemente rosada.</li>
+            <li>Traços finos, postura elegante e roupas mais refinadas.</li>
+            <li>Altura média.</li>
+          </ul>
+
+          <h4>Nomes comuns</h4>
+          <ul className={styles.list}>
+            <li>Masculinos: Alphon, Lucien, Marceau, Édran, Thierris</li>
+            <li>Femininos: Éloise, Marceline, Fannette, Lisandre, Corinne</li>
+            <li>Sobrenomes: De Valcour, Du Charme, De Roselle, La Montagne</li>
           </ul>
         </article>
 
-        <article>
-          <section>
-            <h2>NOMES COMUNS</h2>
-
-            <h3>Masculinos</h3>
-            <ul className={styles.list}>
-              <li>Jameson</li>
-              <li>Alder</li>
-              <li>Brann</li>
-              <li>Cole</li>
-              <li>Marcus</li>
-            </ul>
-
-            <h3>Femininos</h3>
-            <ul className={styles.list}>
-              <li>Marah</li>
-              <li>Ellyne</li>
-              <li>Sarai</li>
-              <li>Annebeth</li>
-              <li>Rylan</li>
-            </ul>
-
-            <h3>Sobrenomes</h3>
-            <ul className={styles.list}>
-              <li>Stonefield</li>
-              <li>Walker</li>
-              <li>Greenriver</li>
-              <li>Hartwell</li>
-            </ul>
-          </section>
-        </article>
         <article>
           <h3>Haritall</h3>
           <p>
@@ -135,20 +123,18 @@ export default async function Page() {
             constantemente competem por autonomia. É um lugar de oportunidades —
             e caos político.
           </p>
-        </article>
 
-        <article>
-          <h3>Cultura</h3>
+          <h4>Cultura</h4>
           <ul className={styles.list}>
             <li>Grande diversidade étnica.</li>
             <li>Valorização extrema da liberdade e iniciativa individual.</li>
             <li>Cavaleiros pioneiros desbravam fronteiras selvagens.</li>
             <li>Guildas mercenárias e inventores são muito influentes.</li>
           </ul>
-        </article>
 
-        <article>
-          <h3>CARACTERISTICAS FISICAS</h3>
+          <p>Obs: Terra de oportunidades e conflitos internos.</p>
+
+          <h4>Características físicas</h4>
           <ul className={styles.list}>
             <li>Grande diversidade: pele clara, bronzeada ou escura.</li>
             <li>
@@ -158,39 +144,15 @@ export default async function Page() {
             <li>Corpo forte e resistente devido à vida de fronteira.</li>
             <li>Estilo prático, roupas simples de couro e tecido grosso.</li>
           </ul>
+
+          <h4>Nomes comuns</h4>
+          <ul className={styles.list}>
+            <li>Masculinos: Jameson, Alder, Brann, Cole, Marcus</li>
+            <li>Femininos: Marah, Ellyne, Sarai, Annebeth, Rylan</li>
+            <li>Sobrenomes: Stonefield, Walker, Greenriver, Hartwell</li>
+          </ul>
         </article>
 
-        <article>
-          <section>
-            <h2>Nomes Comuns</h2>
-
-            <h3>Masculinos</h3>
-            <ul className={styles.list}>
-              <li>Jameson</li>
-              <li>Alder</li>
-              <li>Brann</li>
-              <li>Cole</li>
-              <li>Marcus</li>
-            </ul>
-
-            <h3>Femininos</h3>
-            <ul className={styles.list}>
-              <li>Marah</li>
-              <li>Ellyne</li>
-              <li>Sarai</li>
-              <li>Annebeth</li>
-              <li>Rylan</li>
-            </ul>
-
-            <h3>Sobrenomes</h3>
-            <ul className={styles.list}>
-              <li>Stonefield</li>
-              <li>Walker</li>
-              <li>Greenriver</li>
-              <li>Hartwell</li>
-            </ul>
-          </section>
-        </article>
         <article>
           <h3>Schlemitt</h3>
           <p>
@@ -201,20 +163,21 @@ export default async function Page() {
             colossais e florestas de bambu onde espíritos antigos ainda
             sussurram.
           </p>
-        </article>
 
-        <article>
-          <h3>Cultura</h3>
+          <h4>Cultura</h4>
           <ul className={styles.list}>
             <li>Profundo respeito aos ancestrais e à ordem imperial.</li>
             <li>Busca por equilíbrio entre o mundo espiritual e material.</li>
             <li>Armas e armaduras decoradas com símbolos dracônicos.</li>
             <li>Artes marciais e magia ritual são amplamente praticadas.</li>
           </ul>
-        </article>
 
-        <article>
-          <h3>Características físicas</h3>
+          <p>
+            Obs: O possível império mais antigo humano e misterioso do
+            continente.
+          </p>
+
+          <h4>Características físicas</h4>
           <ul className={styles.list}>
             <li>Pele clara a bronze clara.</li>
             <li>Cabelos lisos, na maioria pretos.</li>
@@ -223,38 +186,13 @@ export default async function Page() {
               Postura reta e roupas com bordados dracônicos e tecidos longos.
             </li>
           </ul>
-        </article>
 
-        <article>
-          <section>
-            <h2>NOMES COMUNS</h2>
-
-            <h3>Masculinos</h3>
-            <ul className={styles.list}>
-              <li>Jian</li>
-              <li>Wei</li>
-              <li>Long</li>
-              <li>Chen</li>
-              <li>Xian</li>
-            </ul>
-
-            <h3>Femininos</h3>
-            <ul className={styles.list}>
-              <li>Mei</li>
-              <li>Lin</li>
-              <li>Hua</li>
-              <li>Xue</li>
-              <li>Lián</li>
-            </ul>
-
-            <h3>Sobrenomes</h3>
-            <ul className={styles.list}>
-              <li>Zhao</li>
-              <li>Wen</li>
-              <li>Liang</li>
-              <li>Sun</li>
-            </ul>
-          </section>
+          <h4>Nomes comuns</h4>
+          <ul className={styles.list}>
+            <li>Masculinos: Jian, Wei, Long, Chen, Xian</li>
+            <li>Femininos: Mei, Lin, Hua, Xue, Lián</li>
+            <li>Sobrenomes: Zhao, Wen, Liang, Sun</li>
+          </ul>
         </article>
 
         <article>
@@ -266,10 +204,8 @@ export default async function Page() {
             Cavaleiros juramentados, druidas da velha fé e magos cortesãos
             disputam influência sobre o trono.
           </p>
-        </article>
 
-        <article>
-          <h3>Cultura</h3>
+          <h4>Cultura</h4>
           <ul className={styles.list}>
             <li>Tradições antigas coexistem com uma nobreza moderna.</li>
             <li>Ampla presença de ordens cavaleirescas.</li>
@@ -279,49 +215,25 @@ export default async function Page() {
             </li>
             <li>O povo é resistente e muito leal às suas ilhas.</li>
           </ul>
-        </article>
 
-        <article>
-          <h3>Características físicas</h3>
+          <p>Obs: Lar de reis lendários e alianças traiçoeiras.</p>
+
+          <h4>Características físicas</h4>
           <ul className={styles.list}>
             <li>Pele clara ou pálida.</li>
             <li>Cabelos loiros, castanhos ou ruivos.</li>
             <li>Olhos claros (azuis, verdes, acinzentados).</li>
             <li>Estrutura corporal magra ou média, com aparência austera.</li>
           </ul>
+
+          <h4>Nomes comuns</h4>
+          <ul className={styles.list}>
+            <li>Masculinos: Edmund, Arthur, Cedric, Rowan, Harold</li>
+            <li>Femininos: Elinor, Maerwen, Gwendra, Isolde, Miriam</li>
+            <li>Sobrenomes: Thornfield, Crownhill, Brackenridge, Oakhart</li>
+          </ul>
         </article>
 
-        <article>
-          <section>
-            <h2>NOMES COMUNS</h2>
-
-            <h3>Masculinos</h3>
-            <ul className={styles.list}>
-              <li>Edmund</li>
-              <li>Arthur</li>
-              <li>Cedric</li>
-              <li>Rowan</li>
-              <li>Harold</li>
-            </ul>
-
-            <h3>Femininos</h3>
-            <ul className={styles.list}>
-              <li>Elinor</li>
-              <li>Maerwen</li>
-              <li>Gwendra</li>
-              <li>Isolde</li>
-              <li>Miriam</li>
-            </ul>
-
-            <h3>Sobrenomes</h3>
-            <ul className={styles.list}>
-              <li>Thornfield</li>
-              <li>Crownhill</li>
-              <li>Brackenridge</li>
-              <li>Oakhart</li>
-            </ul>
-          </section>
-        </article>
         <article>
           <h3>Gaerland</h3>
           <p>
@@ -332,20 +244,18 @@ export default async function Page() {
             por uma monarquia que governa em harmonia com chefes tribais e
             conselhos urbanos.
           </p>
-        </article>
 
-        <article>
-          <h3>Cultura</h3>
+          <h4>Cultura</h4>
           <ul className={styles.list}>
             <li>Mistura de povos, crenças e tradições.</li>
             <li>Forte presença de magia natural e espiritual.</li>
             <li>Grandes festas e celebrações marcam todas as estações.</li>
             <li>Guerreiros conhecidos pela coragem e adaptabilidade.</li>
           </ul>
-        </article>
 
-        <article>
-          <h3>Características físicas</h3>
+          <p>Obs: Um reino vibrante, imprevisível e cheio de recursos.</p>
+
+          <h4>Características físicas</h4>
           <ul className={styles.list}>
             <li>
               Grande mistura de traços: pele clara, morena, parda ou escura.
@@ -357,39 +267,17 @@ export default async function Page() {
             <li>Olhos escuros e vivos.</li>
             <li>Corpo resistente, adaptado ao calor e ao esforço físico.</li>
           </ul>
+
+          <h4>Nomes comuns</h4>
+          <ul className={styles.list}>
+            <li>Masculinos: Aruá, Tadeo, Raviel, Bento, Jandir</li>
+            <li>Femininos: Iara, Mirian, Talua, Brisa, Celina</li>
+            <li>
+              Sobrenomes: Dos Montes, Arcofundo, Solnascente, do Vale Verde
+            </li>
+          </ul>
         </article>
 
-        <article>
-          <section>
-            <h2>Nomes comuns</h2>
-
-            <h3>Masculinos</h3>
-            <ul className={styles.list}>
-              <li>Aruá</li>
-              <li>Tadeo</li>
-              <li>Raviel</li>
-              <li>Bento</li>
-              <li>Jandir</li>
-            </ul>
-
-            <h3>Femininos</h3>
-            <ul className={styles.list}>
-              <li>Iara</li>
-              <li>Mirian</li>
-              <li>Talua</li>
-              <li>Brisa</li>
-              <li>Celina</li>
-            </ul>
-
-            <h3>Sobrenomes</h3>
-            <ul className={styles.list}>
-              <li>Dos Montes</li>
-              <li>Arcofundo</li>
-              <li>Solnascente</li>
-              <li>do Vale Verde</li>
-            </ul>
-          </section>
-        </article>
         <article>
           <h3>Leerrii</h3>
           <p>
@@ -399,62 +287,37 @@ export default async function Page() {
             um reino profundamente espiritual, onde sacrifícios rituais são
             vistos como parte natural da ordem do mundo.
           </p>
-        </article>
 
-        <article>
-          <h3>Cultura</h3>
+          <h4>Cultura</h4>
           <ul className={styles.list}>
             <li>Arquitetura grandiosa em pedra vulcânica.</li>
             <li>
-              •Guerreiros-jaguar e guerreiros-águia dominam os campos de
-              batalha.
+              Guerreiros-jaguar e guerreiros-águia dominam os campos de batalha.
             </li>
             <li>Cerimônias religiosas elaboradas, com cantos e danças.</li>
             <li>Valorização extrema da bravura</li>
           </ul>
-        </article>
 
-        <article>
-          <h3>Características físicas</h3>
+          <p>Obs: Povo feroz, disciplinado e guiado pelo sagrado.</p>
+
+          <h4>Características físicas</h4>
           <ul className={styles.list}>
             <li>Pele bronzeada ou morena.</li>
             <li>Cabelos pretos, lisos ou ondulados.</li>
             <li>Olhos escuros, marcantes.</li>
             <li>Corpo forte e compacto devido ao treinamento marcial.</li>
           </ul>
+
+          <h4>Nomes comuns</h4>
+          <ul className={styles.list}>
+            <li>Masculinos: Cuautli, Tenoch, Ilaro, Maxtli, Zonco</li>
+            <li>
+              Femininos: Citlali, Nayah, Ixchel, Meztli, Yara (variação local)
+            </li>
+            <li>Sobrenomes: Tecuani, Solpiedra, Quauhtémoc, Xocotzin</li>
+          </ul>
         </article>
 
-        <article>
-          <section>
-            <h2>Nomes comuns</h2>
-
-            <h3>Masculinos</h3>
-            <ul className={styles.list}>
-              <li>Cuautli</li>
-              <li>Tenoch</li>
-              <li>Ilaro</li>
-              <li>Maxtli</li>
-              <li>Zonco</li>
-            </ul>
-
-            <h3>Femininos</h3>
-            <ul className={styles.list}>
-              <li>Citlali</li>
-              <li>Nayah</li>
-              <li>Ixchel</li>
-              <li>Meztli</li>
-              <li>Yara (variação local)</li>
-            </ul>
-
-            <h3>Sobrenomes</h3>
-            <ul className={styles.list}>
-              <li>Tecuani</li>
-              <li>Solpiedra</li>
-              <li>Quauhtémoc</li>
-              <li>Xocotzin</li>
-            </ul>
-          </section>
-        </article>
         <article>
           <h3>Republik Hosland</h3>
           <p>
@@ -464,10 +327,8 @@ export default async function Page() {
             derrete completamente. O governo é rígido, centralizado e muitas
             vezes tirânico, mas o povo é incrivelmente resiliente e solidário.
           </p>
-        </article>
 
-        <article>
-          <h3>Cultura</h3>
+          <h4>Cultura</h4>
           <ul className={styles.list}>
             <li>Forte senso de coletividade e sacrifício.</li>
             <li>Milícias gigantescas formadas por camponeses endurecidos.</li>
@@ -477,10 +338,10 @@ export default async function Page() {
               fronteiras.
             </li>
           </ul>
-        </article>
 
-        <article>
-          <h3>Características físicas</h3>
+          <p>Obs: Uma potência fria, dura e temida.</p>
+
+          <h4>Características físicas</h4>
           <ul className={styles.list}>
             <li>Pele clara, frequentemente avermelhada pelo frio.</li>
             <li>Cabelos loiros claros, castanho-escuros ou ruivos intensos.</li>
@@ -489,39 +350,15 @@ export default async function Page() {
               Corpo robusto, ombros largos e aparência endurecida pelo clima.
             </li>
           </ul>
+
+          <h4>Nomes comuns</h4>
+          <ul className={styles.list}>
+            <li>Masculinos: Mikhail, Olegar, Yuriak, Borin, Draskev</li>
+            <li>Femininos: Svetta, Ilyana, Katerin, Masha, Varyna</li>
+            <li>Sobrenomes: Vostrov, Dragonov, Karskin, Morav</li>
+          </ul>
         </article>
 
-        <article>
-          <section>
-            <h2>Nomes comuns</h2>
-
-            <h3>Masculinos</h3>
-            <ul className={styles.list}>
-              <li>Mikhail</li>
-              <li>Olegar</li>
-              <li>Yuriak</li>
-              <li>Borin</li>
-              <li>Draskev</li>
-            </ul>
-
-            <h3>Femininos</h3>
-            <ul className={styles.list}>
-              <li>Svetta</li>
-              <li>Ilyana</li>
-              <li>Katerin</li>
-              <li>Masha</li>
-              <li>Varyna</li>
-            </ul>
-
-            <h3>Sobrenomes</h3>
-            <ul className={styles.list}>
-              <li>Vostrov</li>
-              <li>Dragonov</li>
-              <li>Karskin</li>
-              <li>Morav</li>
-            </ul>
-          </section>
-        </article>
         <article>
           <h3>Alfigen</h3>
           <p>
@@ -532,10 +369,8 @@ export default async function Page() {
             uma terra onde o inverno não é uma estação… mas um rei silencioso
             que nunca abandona o trono.
           </p>
-        </article>
 
-        <article>
-          <h3>Cultura</h3>
+          <h4>Cultura</h4>
           <ul className={styles.list}>
             <li>Bravura, a honra e a profundidade das runas mágicas.</li>
             <li>Seus navios longos são temidos em todos os mares.</li>
@@ -545,48 +380,26 @@ export default async function Page() {
             </li>
             <li>São um povo que amam a guerra e a batalha.</li>
           </ul>
-        </article>
 
-        <article>
-          <h3>Características físicas</h3>
+          <p>
+            Obs: Terra dos navegadores indomáveis e um reino onde o frio cria
+            homens de ferro.
+          </p>
+
+          <h4>Características físicas</h4>
           <ul className={styles.list}>
             <li>Pele muito clara, às vezes com sardas.</li>
             <li>Cabelos loiros, ruivos ou castanho-claros.</li>
             <li>Olhos claros (azul-gelo, verde-acinzentado).</li>
             <li>Corpo atlético e resistente ao frio.</li>
           </ul>
-        </article>
 
-        <article>
-          <section>
-            <h2>Nomes comuns</h2>
-
-            <h3>Masculinos</h3>
-            <ul className={styles.list}>
-              <li>Ragnar</li>
-              <li>Ulfrid</li>
-              <li>Soren</li>
-              <li>Bjarke</li>
-              <li>Stellan</li>
-            </ul>
-
-            <h3>Femininos</h3>
-            <ul className={styles.list}>
-              <li>Freyja</li>
-              <li>Sigrid</li>
-              <li>Astryn</li>
-              <li>Brynhild</li>
-              <li>Kaela</li>
-            </ul>
-
-            <h3>Sobrenomes</h3>
-            <ul className={styles.list}>
-              <li>Frostborn</li>
-              <li>Stormdal</li>
-              <li>Haldersson</li>
-              <li>Skovgaard</li>
-            </ul>
-          </section>
+          <h4>Nomes comuns</h4>
+          <ul className={styles.list}>
+            <li>Masculinos: Ragnar, Ulfrid, Soren, Bjarke, Stellan</li>
+            <li>Femininos: Freyja, Sigrid, Astryn, Brynhild, Kaela</li>
+            <li>Sobrenomes: Frostborn, Stormdal, Haldersson, Skovgaard</li>
+          </ul>
         </article>
       </section>
 
@@ -598,10 +411,13 @@ export default async function Page() {
           <li>Mestre Jia-Kin Shan do Reino Schlemitt</li>
         </ul>
       </section>
+
       <section>
         <h2>TRAÇOS RACIAIS DOS HUMANOS</h2>
         <article>
           <dl>
+            <dt>Atributos</dt>
+            <dd>+1 em todos os atributos</dd>
             <dt>Idade</dt>
             <dd>
               Chegam na maior idade com 16 anos os homens e as mulheres com 12
@@ -610,8 +426,6 @@ export default async function Page() {
             </dd>
             <dt>Tendência</dt>
             <dd>Não possuem uma tendência definida.</dd>
-            <dt>Atributos</dt>
-            <dd>+1 em todos os atributos</dd>
             <dt>Altura</dt>
             <dd>
               O tamanho dos seres humanos variam muito mas de costume o máximo
@@ -620,50 +434,50 @@ export default async function Page() {
             <dt>Ancestralidade</dt>
             <dd>
               Os humanos possui uma grande perseverança, por isso sua
-              ancestralidade sempre foi: Ancestralidade: Quando você falha em um
-              teste de Atributo, você pode re-rolar uma vez por sessão, assim
-              pegando o resultado novo.
+              ancestralidade sempre foi:
+            </dd>
+            <dd>
+              Ancestralidade: Quando você falha em um teste de Atributo, você
+              pode re-rolar uma vez por sessão, assim pegando o resultado novo.
             </dd>
           </dl>
         </article>
       </section>
+
       <section>
         <h2>Classes</h2>
         <ul className={styles.list}>
           <li>
             Arqueiros
             <ul className={styles.list}>
-              <li>Mosqueteiro</li>
-              <li>Arqueiro mágico</li>
+              <li>mosqueteiro</li>
+              <li>arqueiro mágico</li>
             </ul>
           </li>
-
           <li>
             Guerreiro
             <ul className={styles.list}>
-              <li>Cavaleiro</li>
-              <li>Lanceiro</li>
-              <li>Soldado</li>
+              <li>cavaleiro</li>
+              <li>lanceiro</li>
+              <li>soldado</li>
               <li>Gladiador</li>
               <li>Samurai</li>
             </ul>
           </li>
-
           <li>
             Bárbaro
             <ul className={styles.list}>
               <li>Berserker</li>
-              <li>Bárbaro rúnico</li>
-              <li>Monge</li>
+              <li>bárbaro rúnico</li>
+              <li>monge</li>
             </ul>
           </li>
-
           <li>
             Mago
             <ul className={styles.list}>
-              <li>Mago espiritual</li>
-              <li>Mago de guerra</li>
-              <li>Mago infernal</li>
+              <li>mago espiritual</li>
+              <li>mago de guerra</li>
+              <li>mago infernal</li>
               <li>Bardo</li>
             </ul>
           </li>
@@ -671,20 +485,20 @@ export default async function Page() {
           <li>
             Druida
             <ul className={styles.list}>
-              <li>Xamã</li>
-              <li>Druida sombrio</li>
+              <li>xamã</li>
+              <li>druida sombrio</li>
             </ul>
           </li>
           <li>
             Bruxo
             <ul className={styles.list}>
-              <li>Cavaleiro das trevas</li>
+              <li>cavaleiro das trevas</li>
             </ul>
           </li>
           <li>
             Clérigo
             <ul className={styles.list}>
-              <li>Curandeiro guerreiro</li>
+              <li>curandeiro guerreiro</li>
               <li>Paladino</li>
               <li>Guardião</li>
             </ul>
@@ -694,11 +508,10 @@ export default async function Page() {
             Caçador
             <ul className={styles.list}>
               <li>Domador de monstros</li>
-              <li>Cozinheiro de feras</li>
-              <li>Caçador espiritual</li>
+              <li>cozinheiro de feras</li>
+              <li>caçador espiritual</li>
             </ul>
           </li>
-
           <li>
             Ladino
             <ul className={styles.list}>
@@ -708,8 +521,9 @@ export default async function Page() {
           </li>
         </ul>
       </section>
+
       <section>
-        <h2>Variações de humanos</h2>
+        <h2>VARIAÇÕES DE HUMANOS</h2>
         <p>
           Entre os povos humanos, espalhados pelos reinos e fortalezas da Idade
           Média, existem linhagens raras que carregam em seu sangue traços de
@@ -720,20 +534,38 @@ export default async function Page() {
           tradições rígidas. Conhecê-los é entender a história viva dos pactos
           entre mortais e forças maiores.
         </p>
+
         <article>
-          <h3> Humanos da linhagem das sombras</h3>
+          <h3>Humanos da linhagem das sombras</h3>
           <p>
-            Diz-se que seus ancestrais fizeram um pacto com uma entidade antiga
-            feita de sombras e ar frio. Desde então, aqueles nascidos com o
-            Sangue do Véu possuem a habilidade de dissolver sua presença,
+            &quot;Diz-se que seus ancestrais fizeram um pacto com uma entidade
+            antiga feita de sombras e ar frio. Desde então, aqueles nascidos com
+            o Sangue do Véu possuem a habilidade de dissolver sua presença,
             tornando-se invisíveis por momentos — ou desaparecendo por completo
-            quando dominam a arte.
+            quando dominam a arte.&quot;
           </p>
           <ul className={styles.list}>
             <li>+2 Destreza</li>
             <li>+1 Sabedoria ou Carisma</li>
           </ul>
         </article>
+
+        <article>
+          <h3>Humanos da linhagem das Valkyrias</h3>
+          <p>
+            Apenas mulheres podem nascer dessa linhagem, pois dizem que o sangue
+            original veio de uma Valquíria caída durante uma guerra antiga
+            contra criaturas das tempestades. Essas mulheres são altas, fortes e
+            diz-se que seus gritos de batalha podem estremecer o coração dos
+            fracos.
+          </p>
+          <ul className={styles.list}>
+            <li>+2 Força</li>
+            <li>+1 Constituição</li>
+          </ul>
+          <p>Obs: no nível 5 você pode conjurar asas.</p>
+        </article>
+
         <article>
           <h3>Humanos da linhagem divina</h3>
           <p>
