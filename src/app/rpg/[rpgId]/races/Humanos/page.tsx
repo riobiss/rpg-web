@@ -12,129 +12,50 @@ export default async function Page() {
         <section>
           <h2>ORIGEM</h2>
           <p>
-            A sociedade eladrin coexiste na divisão entre a Agrestia das
-            estações e seu território possui um clima único, com alguns cantos
-            gelados e com neves, outros com florestas abundantes, outras regiões
-            cheias de rios e, por fim, uma região de fogo. Os eladrin
-            construíram suas cidades e castelos elegantes em lugares de
-            esplendor natural. Há muitos anos, quando o sopro da criação deu
-            vida a eles, quando a mãe natureza e os céus se juntaram, dando vida
-            aos seus filhos eladrin. Os eladrin, então, dominam vales
-            montanhosos isolados, ilhas verdejantes dentro do próprio território
-            ao longo dos litorais tempestuosos e nos recônditos mais profundos
-            das florestas ancestrais. Alguns reinos eladrin ainda cruzam a
-            barreira mortal e possuem raízes em outros planos, assim como seus
-            primos elfos, mas a diferença é que eles possuem esse acesso de modo
-            mais fácil.
+            Entre todas as raças que moldam os reinos de Sakaar, a raça humana é
+            talvez a mais contraditória e, por isso mesmo, a mais imprevisível.
+            Não possuem a força bruta dos Gigantes, a longevidade mística dos
+            Eladrin ou a engenhosidade sobrenatural dos Pequenos. Tampouco
+            caminham com o poder ancestral dos Draconatos ou manipulam magias
+            infernais como os Tieflings. Ainda assim, os Humanos ergueram
+            cidades, reinos e impérios que rivalizam com os de povos muito mais
+            antigos.
           </p>
           <p>
-            Sobre o conselho da Agrestia das Fadas, eles conseguiram deixar a
-            fonte de magia do solo mais fértil, fazendo a magia arcana do local
-            ser talvez mais fértil que as terras dos elfos. Mas essas duas raças
-            têm muita consideração uma pela outra, e pelo cuidado da natureza.
-            Porém, eles partilham um ódio fervoroso pelos anões.
-          </p>
-
-          <p>
-            Pois, há muitos anos atrás, em 5017 a.C., após muitas batalhas entre
-            elfos e anões, na região do continente Ultramar, os antigos anões só
-            queriam saber de conquistar os recursos naturais das florestas, e o
-            grande líder dessas invasões era Durin, o cruel. Durin era um anão
-            bárbaro com diversas cicatrizes. Ele tentou matar as três irmãs
-            elfas para conquistar sua terra, mas essa batalha foi tão mortal que
-            resultou na derrota de Durin, fazendo ele fugir com alguns dos seus
-            homens e ir parar no continente Nawrin, onde acaba embarcando em
-            Jeongsang, e isso iria iniciar o conflito em 4910 a.C.
-          </p>
-
-          <p>
-            Nesse tempo, ainda não existia a Agrestia das estações, e os eladrin
-            do verão, pelo seu temperamento mais quente e impulsivo, acreditavam
-            que tudo devia ser deles. Já os eladrin do inverno tinham uma visão
-            diferente sobre isso, então sempre estiveram brigando até que Durin
-            começou a desmatar as árvores e a matar todos os animais e tudo que
-            tivesse em seu caminho. Isso fez os eladrin se juntarem contra o
-            inimigo que havia surgido. Quando Durin chegou ao bosque sagrado,
-            guardado por Leezose, o bosque era um local cheio de foco arcano.
-            Lá, travaram uma grande batalha, Leezose matou Durin, fazendo seu
-            corpo se juntar à grande árvore sagrada, e ali os eladrin restantes
-            se juntaram e fizeram sua Agrestia das estações.
-          </p>
-
-          <p>
-            &quot;Bem, tudo isso é interessante de se saber, mas agora vou
-            contar a história atual de nosso povo. Eu me chamo Drizztam, o sábio
-            das árvores&quot;
-          </p>
-
-          <p>
-            Reconhecida por seu solo fértil de magia e pelos grandes druidas que
-            possuem a ligação com o elemental, fomos uma das primeiras nações
-            independentes que se uniram aos goblins para o conflito que crescia.
-            Tudo isso por um conflito já muito antigo entre os homens, onde, na
-            guerra, eu mesmo pude presenciar grandes feitos, como a morte do
-            imperador de jade, a derrubada do forte dos orcs de Mahrland, a
-            explosão arcana criando a rachadura mística e a invenção dos anjos
-            de guerra. Tive a oportunidade, ou azar, de presenciar todos esses
-            conflitos e batalhas entre nosso povo e os inimigos
-          </p>
-          <p>
-            Os druidas, atualmente, do nosso povo sobreviveram ao Vazio do plano
-            das sombras, tendo que aprender a controlar essa energia devido a
-            várias situações causadas. Além desses conflitos, a tão antiga
-            Conselho da Agrestia das Fadas e Agrestia das Estações juntaram
-            todos os reinos e povos em uma chamada única estação, nomeando
-            Cassedre como governante da coroa. Tendo agora uma líder em cima de
-            todos, onde ela começou a adotar uma medida de maior distanciamento
-            dos reinos vizinhos, servindo-se da vida selvagem de Jeongsang ao
-            redor como se fosse um escudo Apesar de muito ter sido perdido pelos
-            conflitos, eles se comprometeram em preservar o pouco que restou
-          </p>
-
-          <p>
-            Agora, com esse isolamento que já dura 39 anos, isolados em nossa
-            selva de milhares de anos, a nossa sofisticada cidade arcológica de
-            Jeongsang permanece praticamente livre de influências externas.
-            Tirando a situação atual sobre os Draconatos verdes que perderam seu
-            lar para os pretos e foram abrigados e cedidos uma parte de nossa
-            região, ficando também sob nossa proteção e tratados. Existe um
-            certo preconceito, eu posso perceber, mas acredito que essa
-            diferença acabe ficando de lado com o tempo, pois não somos os
-            únicos a dividir esse solo.
-          </p>
-          <p>
-            Além disso, quem está fora das fronteiras de Jeongsang sabe muito
-            pouco sobre a história da região e sobre nós, pois sempre fomos
-            muito discretos, mesmo antes do isolamento. Ao longo dos anos,
-            incontáveis expedições de reinos humanos foram feitas para cá, mas
-            os que tentaram, simplesmente desapareceram sem deixar o menor
-            rastro.
-          </p>
-
-          <p>
-            Bom, existe muita coisa para falar, então vá buscar saber pequeno
-            graveto, e se quiser me encontrar, estarei na capital ou andando por
-            aí.
+            Diz-se que os Humanos surgiram das Cinzas dos Primeiros Fogos,
+            quando os deuses menores decidiram criar uma raça que fosse frágil,
+            mas extremamente adaptável. Desde o início, os Humanos demonstraram
+            uma capacidade única de sobreviver em quase qualquer ambiente:
+            florestas densas, estepes ventosas, montanhas geladas ou litorais
+            tempestuosos. Sua sociedade é tão diversa quanto o solo sobre o qual
+            constroem suas casas. No período antigo de Sakaar, os reinos humanos
+            são estruturados por monarquias, feudos, ordens cavaleirescas e
+            guildas de artesãos. A vida de um camponês pouco se assemelha à de
+            um nobre — mas ambos compartilham a mesma crença: que a Coroa e o
+            Dever são os pilares da civilização humana.
           </p>
         </section>
         <section>
           <h2>O QUE ALGUNS PENSAM </h2>
           <blockquote>
             <p>
-              Pequenos: Belos como histórias bem contadas e tão perigosos quanto
-              as partes que eles escolhem não contar.
+              Pequenos: São grandes demais para perceber os detalhes, mas
+              pequenos o bastante para cometer os erros que nós evitamos –
+              ditado popular dos Pequenos sobre os humanos.
             </p>
           </blockquote>
           <blockquote>
             <p>
-              Goles: Eles mudam muito ou são muito diferentes e falam como se o
-              tempo lhes pertencesse.
+              Pigs: Humanos? Fazem barulho, fazem bagunça, fazem guerras… mas
+              sabem negociar como ninguém – cometário popular entre mercadores
+              pigs.
             </p>
           </blockquote>
           <blockquote>
             <p>
-              Esqueletos: Eles vivem demais, lembram demais e ainda assim fogem
-              da morte como crianças.
+              Eladrin: Mortais apressados, inquietos e instáveis… e, ainda
+              assim, perigosamente determinados – pensamentos comum da
+              população.
             </p>
           </blockquote>
         </section>
@@ -142,176 +63,690 @@ export default async function Page() {
       <section>
         <h2>REINOS</h2>
         <article>
-          <h3>Jeongsang</h3>
+          <h3>Teschilz</h3>
           <p>
-            Jeongsang é um reino com uma região vasta em todos os tipos de
-            florestas, montanhas e tantas outras coisas. É um povo totalmente
-            conectado com a natureza e com uma ligação forte entre si, mas
-            também são guerreiros ferozes, com uma vasta cultura além dos
-            Eladrin, como as tribos dos touren, grung, Draconatos verdes, fadas,
-            lizardfolk, leonin e os yuan-ti.
+            Um reino famoso por sua arte, luxo e intrigas palacianas.
+            Fraternelle é governado por casas nobres orgulhosas, envolvidas em
+            duelos políticos tão mortais quanto batalhas. Suas cidades têm
+            catedrais imensas, vitrais mágicos e mercados elegantes. A
+            culinária, a poesia e a etiqueta são armas tão fortes quanto
+            espadas.
           </p>
         </article>
+
         <article>
           <h3>Cultura</h3>
           <ul>
+            <li>Grande diversidade étnica.</li>
+            <li>Valorização extrema da liberdade e iniciativa individual.</li>
+            <li>Cavaleiros pioneiros desbravam fronteiras selvagens.</li>
+            <li>Guildas mercenárias e inventores são muito influentes.</li>
+          </ul>
+          <p>Obs: Terra de oportunidades e conflitos internos.</p>
+        </article>
+
+        <article>
+          <h3>Características físicas</h3>
+          <ul className={styles.list}>
+            <li>Pele clara, bronzeada ou escura.</li>
+            <li>Alturas variadas, muitos acima da média.</li>
+            <li>Corpo forte e resistente devido à vida de fronteira.</li>
+            <li>Roupas práticas de couro e tecido grosso.</li>
+          </ul>
+        </article>
+
+        <article>
+          <section>
+            <h2>NOMES COMUNS</h2>
+
+            <h3>Masculinos</h3>
+            <ul className={styles.list}>
+              <li>Jameson</li>
+              <li>Alder</li>
+              <li>Brann</li>
+              <li>Cole</li>
+              <li>Marcus</li>
+            </ul>
+
+            <h3>Femininos</h3>
+            <ul className={styles.list}>
+              <li>Marah</li>
+              <li>Ellyne</li>
+              <li>Sarai</li>
+              <li>Annebeth</li>
+              <li>Rylan</li>
+            </ul>
+
+            <h3>Sobrenomes</h3>
+            <ul className={styles.list}>
+              <li>Stonefield</li>
+              <li>Walker</li>
+              <li>Greenriver</li>
+              <li>Hartwell</li>
+            </ul>
+          </section>
+        </article>
+        <article>
+          <h3>Haritall</h3>
+          <p>
+            Um vasto domínio formado por várias províncias semi-independentes,
+            cada uma com sua cultura. É um reino jovem e ambicioso, que cresceu
+            rápido e atrai aventureiros, mercenários e inventores do mundo todo.
+            O Conselho do punho de ferro governa o reino, mas as províncias
+            constantemente competem por autonomia. É um lugar de oportunidades —
+            e caos político.
+          </p>
+        </article>
+
+        <article>
+          <h3>Cultura</h3>
+          <ul className={styles.list}>
+            <li>Grande diversidade étnica.</li>
+            <li>Valorização extrema da liberdade e iniciativa individual.</li>
+            <li>Cavaleiros pioneiros desbravam fronteiras selvagens.</li>
+            <li>Guildas mercenárias e inventores são muito influentes.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>CARACTERISTICAS FISICAS</h3>
+          <ul className={styles.list}>
+            <li>Grande diversidade: pele clara, bronzeada ou escura.</li>
             <li>
-              Cada comunidade mantém Conselhos Elementais, onde druidas e magos
-              interpretam os sinais da natureza antes de qualquer decisão
-              importante
+              Alturas variadas, mas muitos são mais altos que a média dos outros
+              reinos.
             </li>
+            <li>Corpo forte e resistente devido à vida de fronteira.</li>
+            <li>Estilo prático, roupas simples de couro e tecido grosso.</li>
+          </ul>
+        </article>
+
+        <article>
+          <section>
+            <h2>Nomes Comuns</h2>
+
+            <h3>Masculinos</h3>
+            <ul className={styles.list}>
+              <li>Jameson</li>
+              <li>Alder</li>
+              <li>Brann</li>
+              <li>Cole</li>
+              <li>Marcus</li>
+            </ul>
+
+            <h3>Femininos</h3>
+            <ul className={styles.list}>
+              <li>Marah</li>
+              <li>Ellyne</li>
+              <li>Sarai</li>
+              <li>Annebeth</li>
+              <li>Rylan</li>
+            </ul>
+
+            <h3>Sobrenomes</h3>
+            <ul className={styles.list}>
+              <li>Stonefield</li>
+              <li>Walker</li>
+              <li>Greenriver</li>
+              <li>Hartwell</li>
+            </ul>
+          </section>
+        </article>
+        <article>
+          <h3>Schlemitt</h3>
+          <p>
+            Um império antigo, vasto e milenar, governado por uma dinastia que
+            afirma descender de dragões. Sua burocracia é rígida e eficiente, e
+            seus exércitos são imensos, disciplinados e movidos por tradições
+            ancestrais. As terras são marcadas por templos dourados, muralhas
+            colossais e florestas de bambu onde espíritos antigos ainda
+            sussurram.
+          </p>
+        </article>
+
+        <article>
+          <h3>Cultura</h3>
+          <ul className={styles.list}>
+            <li>Profundo respeito aos ancestrais e à ordem imperial.</li>
+            <li>Busca por equilíbrio entre o mundo espiritual e material.</li>
+            <li>Armas e armaduras decoradas com símbolos dracônicos.</li>
+            <li>Artes marciais e magia ritual são amplamente praticadas.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Características físicas</h3>
+          <ul className={styles.list}>
+            <li>Pele clara a bronze clara.</li>
+            <li>Cabelos lisos, na maioria pretos.</li>
+            <li>Olhos escuros, expressivos e serenos.</li>
             <li>
-              os Eladrin veem o mundo exterior como instável e corrompido devido
-              a guerra fazendo suas cidades são ocultas por ilusões, selvas
-              vivas e barreiras arcanas
-            </li>
-            <li>
-              Estrangeiros só são aceitos após provas de respeito à natureza e
-              resistência à magia elemental
-            </li>
-            <li>
-              Entre os Eladrin, conjurar magia é um ato artístico. Feitiços são
-              executados com danças rituais, pinturas corporais naturais e entre
-              outras coisas e erros mágicos são vistos como desrespeito à
-              tradição, não simples falhas técnicas.
+              Postura reta e roupas com bordados dracônicos e tecidos longos.
             </li>
           </ul>
         </article>
+
+        <article>
+          <section>
+            <h2>NOMES COMUNS</h2>
+
+            <h3>Masculinos</h3>
+            <ul className={styles.list}>
+              <li>Jian</li>
+              <li>Wei</li>
+              <li>Long</li>
+              <li>Chen</li>
+              <li>Xian</li>
+            </ul>
+
+            <h3>Femininos</h3>
+            <ul className={styles.list}>
+              <li>Mei</li>
+              <li>Lin</li>
+              <li>Hua</li>
+              <li>Xue</li>
+              <li>Lián</li>
+            </ul>
+
+            <h3>Sobrenomes</h3>
+            <ul className={styles.list}>
+              <li>Zhao</li>
+              <li>Wen</li>
+              <li>Liang</li>
+              <li>Sun</li>
+            </ul>
+          </section>
+        </article>
+
+        <article>
+          <h3>Dolong</h3>
+          <p>
+            Dolong é uma terra de brumas eternas, castelos sombrios e lendas
+            sobrenaturais. Governado por uma monarquia forte, mas cercada de
+            intrigas internas entre casas rivais e conselheiros místicos.
+            Cavaleiros juramentados, druidas da velha fé e magos cortesãos
+            disputam influência sobre o trono.
+          </p>
+        </article>
+
+        <article>
+          <h3>Cultura</h3>
+          <ul className={styles.list}>
+            <li>Tradições antigas coexistem com uma nobreza moderna.</li>
+            <li>Ampla presença de ordens cavaleirescas.</li>
+            <li>
+              Lendas de fadas, espectros e reinos ocultos fazem parte da vida
+              cotidiana.
+            </li>
+            <li>O povo é resistente e muito leal às suas ilhas.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Características físicas</h3>
+          <ul className={styles.list}>
+            <li>Pele clara ou pálida.</li>
+            <li>Cabelos loiros, castanhos ou ruivos.</li>
+            <li>Olhos claros (azuis, verdes, acinzentados).</li>
+            <li>Estrutura corporal magra ou média, com aparência austera.</li>
+          </ul>
+        </article>
+
+        <article>
+          <section>
+            <h2>NOMES COMUNS</h2>
+
+            <h3>Masculinos</h3>
+            <ul className={styles.list}>
+              <li>Edmund</li>
+              <li>Arthur</li>
+              <li>Cedric</li>
+              <li>Rowan</li>
+              <li>Harold</li>
+            </ul>
+
+            <h3>Femininos</h3>
+            <ul className={styles.list}>
+              <li>Elinor</li>
+              <li>Maerwen</li>
+              <li>Gwendra</li>
+              <li>Isolde</li>
+              <li>Miriam</li>
+            </ul>
+
+            <h3>Sobrenomes</h3>
+            <ul className={styles.list}>
+              <li>Thornfield</li>
+              <li>Crownhill</li>
+              <li>Brackenridge</li>
+              <li>Oakhart</li>
+            </ul>
+          </section>
+        </article>
+        <article>
+          <h3>Gaerland</h3>
+          <p>
+            É um reino tropical gigantesco, composto por florestas mágicas, rios
+            imensos, montanhas douradas e cidades costeiras vibrantes. Seu povo
+            é alegre, guerreiro e culturalmente diverso, formado pela fusão de
+            várias tribos e povos que migraram ao longo dos séculos. É comandado
+            por uma monarquia que governa em harmonia com chefes tribais e
+            conselhos urbanos.
+          </p>
+        </article>
+
+        <article>
+          <h3>Cultura</h3>
+          <ul className={styles.list}>
+            <li>Mistura de povos, crenças e tradições.</li>
+            <li>Forte presença de magia natural e espiritual.</li>
+            <li>Grandes festas e celebrações marcam todas as estações.</li>
+            <li>Guerreiros conhecidos pela coragem e adaptabilidade.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Características físicas</h3>
+          <ul className={styles.list}>
+            <li>
+              Grande mistura de traços: pele clara, morena, parda ou escura.
+            </li>
+            <li>
+              Cabelos variando do crespo ao liso, pretos ou castanhos na
+              maioria.
+            </li>
+            <li>Olhos escuros e vivos.</li>
+            <li>Corpo resistente, adaptado ao calor e ao esforço físico.</li>
+          </ul>
+        </article>
+
+        <article>
+          <section>
+            <h2>Nomes comuns</h2>
+
+            <h3>Masculinos</h3>
+            <ul className={styles.list}>
+              <li>Aruá</li>
+              <li>Tadeo</li>
+              <li>Raviel</li>
+              <li>Bento</li>
+              <li>Jandir</li>
+            </ul>
+
+            <h3>Femininos</h3>
+            <ul className={styles.list}>
+              <li>Iara</li>
+              <li>Mirian</li>
+              <li>Talua</li>
+              <li>Brisa</li>
+              <li>Celina</li>
+            </ul>
+
+            <h3>Sobrenomes</h3>
+            <ul className={styles.list}>
+              <li>Dos Montes</li>
+              <li>Arcofundo</li>
+              <li>Solnascente</li>
+              <li>do Vale Verde</li>
+            </ul>
+          </section>
+        </article>
+        <article>
+          <h3>Leerrii</h3>
+          <p>
+            Leerrii é uma confederação de cidades-estados, cada uma governada
+            por famílias sacerdotais que veneram os deuses do Sol, da Lua e do
+            Sangue. Suas pirâmides escalonadas encantam e assustam visitantes. É
+            um reino profundamente espiritual, onde sacrifícios rituais são
+            vistos como parte natural da ordem do mundo.
+          </p>
+        </article>
+
+        <article>
+          <h3>Cultura</h3>
+          <ul className={styles.list}>
+            <li>Arquitetura grandiosa em pedra vulcânica.</li>
+            <li>
+              •Guerreiros-jaguar e guerreiros-águia dominam os campos de
+              batalha.
+            </li>
+            <li>Cerimônias religiosas elaboradas, com cantos e danças.</li>
+            <li>Valorização extrema da bravura</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Características físicas</h3>
+          <ul className={styles.list}>
+            <li>Pele bronzeada ou morena.</li>
+            <li>Cabelos pretos, lisos ou ondulados.</li>
+            <li>Olhos escuros, marcantes.</li>
+            <li>Corpo forte e compacto devido ao treinamento marcial.</li>
+          </ul>
+        </article>
+
+        <article>
+          <section>
+            <h2>Nomes comuns</h2>
+
+            <h3>Masculinos</h3>
+            <ul className={styles.list}>
+              <li>Cuautli</li>
+              <li>Tenoch</li>
+              <li>Ilaro</li>
+              <li>Maxtli</li>
+              <li>Zonco</li>
+            </ul>
+
+            <h3>Femininos</h3>
+            <ul className={styles.list}>
+              <li>Citlali</li>
+              <li>Nayah</li>
+              <li>Ixchel</li>
+              <li>Meztli</li>
+              <li>Yara (variação local)</li>
+            </ul>
+
+            <h3>Sobrenomes</h3>
+            <ul className={styles.list}>
+              <li>Tecuani</li>
+              <li>Solpiedra</li>
+              <li>Quauhtémoc</li>
+              <li>Xocotzin</li>
+            </ul>
+          </section>
+        </article>
+        <article>
+          <h3>Republik Hosland</h3>
+          <p>
+            República de Hosland é uma união de vários clãs e reinos do norte,
+            unidos pela sobrevivência e pela força. Governado pelo Conselho do
+            Martelo Branco, o reino vive sob frio permanente, onde a neve nunca
+            derrete completamente. O governo é rígido, centralizado e muitas
+            vezes tirânico, mas o povo é incrivelmente resiliente e solidário.
+          </p>
+        </article>
+
+        <article>
+          <h3>Cultura</h3>
+          <ul className={styles.list}>
+            <li>Forte senso de coletividade e sacrifício.</li>
+            <li>Milícias gigantescas formadas por camponeses endurecidos.</li>
+            <li>Arquitetura pesada, com torres de pedra e ferro.</li>
+            <li>
+              Magos rúnicos e xamãs do gelo moldam o clima e protegem
+              fronteiras.
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Características físicas</h3>
+          <ul className={styles.list}>
+            <li>Pele clara, frequentemente avermelhada pelo frio.</li>
+            <li>Cabelos loiros claros, castanho-escuros ou ruivos intensos.</li>
+            <li>Barbas grossas nos homens.</li>
+            <li>
+              Corpo robusto, ombros largos e aparência endurecida pelo clima.
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <section>
+            <h2>Nomes comuns</h2>
+
+            <h3>Masculinos</h3>
+            <ul className={styles.list}>
+              <li>Mikhail</li>
+              <li>Olegar</li>
+              <li>Yuriak</li>
+              <li>Borin</li>
+              <li>Draskev</li>
+            </ul>
+
+            <h3>Femininos</h3>
+            <ul className={styles.list}>
+              <li>Svetta</li>
+              <li>Ilyana</li>
+              <li>Katerin</li>
+              <li>Masha</li>
+              <li>Varyna</li>
+            </ul>
+
+            <h3>Sobrenomes</h3>
+            <ul className={styles.list}>
+              <li>Vostrov</li>
+              <li>Dragonov</li>
+              <li>Karskin</li>
+              <li>Morav</li>
+            </ul>
+          </section>
+        </article>
+        <article>
+          <h3>Alfigen</h3>
+          <p>
+            Alfigen é um reino insular e costeiro do extremo norte, onde o frio
+            corta como lâmina e o mar é tanto estrada quanto inimigo. Governado
+            por uma linhagem de reis navegadores, é um domínio marcado por sua
+            força naval, seu orgulho ancestral e sua devoção às Velhas Runas. É
+            uma terra onde o inverno não é uma estação… mas um rei silencioso
+            que nunca abandona o trono.
+          </p>
+        </article>
+
+        <article>
+          <h3>Cultura</h3>
+          <ul className={styles.list}>
+            <li>Bravura, a honra e a profundidade das runas mágicas.</li>
+            <li>Seus navios longos são temidos em todos os mares.</li>
+            <li>
+              As canções são sagradas, Bardos são chamados Skalds, e seus poemas
+              são considerados quase mágicos.
+            </li>
+            <li>São um povo que amam a guerra e a batalha.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Características físicas</h3>
+          <ul className={styles.list}>
+            <li>Pele muito clara, às vezes com sardas.</li>
+            <li>Cabelos loiros, ruivos ou castanho-claros.</li>
+            <li>Olhos claros (azul-gelo, verde-acinzentado).</li>
+            <li>Corpo atlético e resistente ao frio.</li>
+          </ul>
+        </article>
+
+        <article>
+          <section>
+            <h2>Nomes comuns</h2>
+
+            <h3>Masculinos</h3>
+            <ul className={styles.list}>
+              <li>Ragnar</li>
+              <li>Ulfrid</li>
+              <li>Soren</li>
+              <li>Bjarke</li>
+              <li>Stellan</li>
+            </ul>
+
+            <h3>Femininos</h3>
+            <ul className={styles.list}>
+              <li>Freyja</li>
+              <li>Sigrid</li>
+              <li>Astryn</li>
+              <li>Brynhild</li>
+              <li>Kaela</li>
+            </ul>
+
+            <h3>Sobrenomes</h3>
+            <ul className={styles.list}>
+              <li>Frostborn</li>
+              <li>Stormdal</li>
+              <li>Haldersson</li>
+              <li>Skovgaard</li>
+            </ul>
+          </section>
+        </article>
       </section>
-      <section>
-        <h2>Nomes comuns</h2>
-        <h3>Masculinos</h3>
-        <ul className={styles.list}>
-          <li>Aelthir</li>
-          <li>Caelion</li>
-          <li>Ithrael</li>
-          <li>Vaelor</li>
-          <li>Thirien</li>
-          <li>Lioren</li>
-          <li>Maerith</li>
-          <li>Sylvaron</li>
-          <li>Eryndor</li>
-          <li>Kaelith</li>
-          <li>Nymarion</li>
-          <li>Faelros</li>
-        </ul>
-        <h3>Femininos</h3>
-        <ul className={styles.list}>
-          <li>Aelyra</li>
-          <li>Saelune</li>
-          <li>Ithilwen</li>
-          <li>Vaelora</li>
-          <li>Liora</li>
-          <li>Nyssara</li>
-          <li>Elaria</li>
-          <li>Sylphae</li>
-          <li>Myrieth</li>
-          <li>Caelyth</li>
-          <li>Faelira</li>
-          <li>Thyssiel</li>
-        </ul>
-      </section>
+
       <section>
         <h2>FIGURAS MARCANTES</h2>
-        <ul>
-          <li>Drizztam, o sábio das árvores</li>
-          <li>Cassedre, imperatriz das estações</li>
-          <li>Nox, a montanha</li>
+        <ul className={styles.list}>
+          <li>Navorian Bonhart do reino Teschilz</li>
+          <li>General Gawen Warnton do reino Haritall</li>
+          <li>Mestre Jia-Kin Shan do Reino Schlemitt</li>
         </ul>
       </section>
       <section>
-        <h2>TRAÇOS RACIAIS DOS ELADRIN</h2>
+        <h2>TRAÇOS RACIAIS DOS HUMANOS</h2>
         <dl>
           <dt>Idade</dt>
           <dd>
-            Os eladrin atingem a maturidade física aos 20 anos, mas seu processo
-            de envelhecimento se estabiliza após 100. Quando se consideram
-            adulto e vivem até 600 anos.
+            Chegam na maior idade com 16 anos os homens e as mulheres com 12 ou
+            14 anos assim que tiver a primeira menstruação, e podem viver até 80
+            anos.
           </dd>
-          <dt>Visão</dt>
-          <dd> Visão no escuro de até 18 metros em tons de cinza</dd>
+          <dt>Tendência</dt>
+          <dd>Não possuem uma tendência definida.</dd>
           <dt>Atributos</dt>
-          <dd> +2 Arcanismo +4 natureza</dd>
-          <dt>Habilidade Racial</dt>
+          <dd>+1 em todos os atributos</dd>
+          <dt>Altura</dt>
           <dd>
-            Suas alturas varia entre 1,60 ate 1,90 Tem a capacidade de se mover
-            entre uma camada fraca do plano etéreo se Teletransportando ate 5
-            metros pelo campo, não podendo ser atacado oportunidade e fica
-            invisível quando acaba seu turno durando só seu turno e só sendo
-            usado apenas uma vez por descanso longo.
+            O tamanho dos seres humanos variam muito mas de costume o máximo
+            costumam ter entre 1,50 até 1,80.
           </dd>
-          <dt>Descanso</dt>
+          <dt>Ancestralidade</dt>
           <dd>
-            Em vez de dormir, os eladrin entram num estado de meditação
-            conhecido como transe, bastando apensas 4 horas para um descanso
-            curto e 6 horas para um longo.
+            Os humanos possui uma grande perseverança, por isso sua
+            ancestralidade sempre foi: Ancestralidade: Quando você falha em um
+            teste de Atributo, você pode re-rolar uma vez por sessão, assim
+            pegando o resultado novo.
           </dd>
         </dl>
       </section>
       <section>
         <h2>Classes</h2>
         <ul className={styles.list}>
-          <li>Arqueiros</li>
-          <li>Arqueiro mágico</li>
-          <li>Guerreiro</li>
-          <li>Cavaleiro</li>
-          <li>Lanceiro</li>
-          <li>Mago</li>
-          <li>Mago espiritual</li>
-          <li>Mago infernal</li>
-          <li>Bardo</li>
+          <li>
+            Arqueiros
+            <ul className={styles.list}>
+              <li>Mosqueteiro</li>
+              <li>Arqueiro mágico</li>
+            </ul>
+          </li>
+
+          <li>
+            Guerreiro
+            <ul className={styles.list}>
+              <li>Cavaleiro</li>
+              <li>Lanceiro</li>
+              <li>Soldado</li>
+              <li>Gladiador</li>
+              <li>Samurai</li>
+            </ul>
+          </li>
+
+          <li>
+            Bárbaro
+            <ul className={styles.list}>
+              <li>Berserker</li>
+              <li>Bárbaro rúnico</li>
+              <li>Monge</li>
+            </ul>
+          </li>
+
+          <li>
+            Mago
+            <ul className={styles.list}>
+              <li>Mago espiritual</li>
+              <li>Mago de guerra</li>
+              <li>Mago infernal</li>
+              <li>Bardo</li>
+            </ul>
+          </li>
           <li>Feiticeiro</li>
-          <li>Druida</li>
-          <li>Xamã</li>
-          <li>Druida sombrio</li>
-          <li>Bruxo</li>
-          <li>Caçador</li>
-          <li>Domador de monstros</li>
-          <li>Cozinheiro de feras</li>
-          <li>Caçador espiritual</li>
-          <li>Ladino</li>
-          <li>Pirata</li>
+          <li>
+            Druida
+            <ul className={styles.list}>
+              <li>Xamã</li>
+              <li>Druida sombrio</li>
+            </ul>
+          </li>
+          <li>
+            Bruxo
+            <ul className={styles.list}>
+              <li>Cavaleiro das trevas</li>
+            </ul>
+          </li>
+          <li>
+            Clérigo
+            <ul className={styles.list}>
+              <li>Curandeiro guerreiro</li>
+              <li>Paladino</li>
+              <li>Guardião</li>
+            </ul>
+          </li>
+          <li>Artífice</li>
+          <li>
+            Caçador
+            <ul className={styles.list}>
+              <li>Domador de monstros</li>
+              <li>Cozinheiro de feras</li>
+              <li>Caçador espiritual</li>
+            </ul>
+          </li>
+
+          <li>
+            Ladino
+            <ul className={styles.list}>
+              <li>Pirata</li>
+              <li>Ninja</li>
+            </ul>
+          </li>
         </ul>
       </section>
       <section>
-        <h2>ESTAÇÔES</h2>
+        <h2>Variações de humanos</h2>
+        <p>
+          Entre os povos humanos, espalhados pelos reinos e fortalezas da Idade
+          Média, existem linhagens raras que carregam em seu sangue traços de
+          antigos pactos, bençãos esquecidas ou heranças de guerras celestes.
+          Esses humanos não são comuns: são chamados de Variegados, ou “aqueles
+          cuja alma carrega mais do que carne”. Cada linhagem concede
+          habilidades únicas, mas também responsabilidades, maldições veladas e
+          tradições rígidas. Conhecê-los é entender a história viva dos pactos
+          entre mortais e forças maiores.
+        </p>
         <article>
-          <h3>Primavera</h3>
+          <h3> Humanos da linhagem das sombras</h3>
           <p>
-            Os Eladrin da Primavera são seres mais leves guiados pela emoção,
-            pelo impulso e pelo amor à liberdade mas também grande guerreiros e
-            um povo muito forte. +2 Carisma +1 Destreza ou Instinto •Vantagem
-            contra efeitos de controle mental •Comunicação básica com plantas e
-            pequenos animais.
+            Diz-se que seus ancestrais fizeram um pacto com uma entidade antiga
+            feita de sombras e ar frio. Desde então, aqueles nascidos com o
+            Sangue do Véu possuem a habilidade de dissolver sua presença,
+            tornando-se invisíveis por momentos — ou desaparecendo por completo
+            quando dominam a arte.
           </p>
+          <ul className={styles.list}>
+            <li>+2 Destreza</li>
+            <li>+1 Sabedoria ou Carisma</li>
+          </ul>
         </article>
         <article>
-          <h3>Verão</h3>
+          <h3>Humanos da linhagem divina</h3>
           <p>
-            Os Eladrin do Verão carregam o peso da glória e da guerra, lutando
-            desde o início com todos e nunca recuando, o emblema dourado vai
-            além do calor. +2 força ou Carisma +1 Constituição •Quando ferido
-            gravemente, recebe bônus temporário de ataque ou dano quando chega a
-            10 de vida. •possui resistência ao calor, reduz dano de fogo.
+            A mais rara de todas. Os que carregam o Sangue Divino são
+            reconhecidos pela estranha luminosidade sob sua pele. São abençoados
+            por uma energia dourada que se manifesta como calor, força e uma
+            aura quase celestial. Alguns acreditam que descendem diretamente de
+            antigos semideuses; outros, que foram tocados por entidades da luz
+            em eras esquecidas.
           </p>
-        </article>
-        <article>
-          <h3>Outono</h3>
-          <p>
-            Os Eladrin do Outono falam baixo, mas suas palavras moldam a
-            diplomacia, os maiores magos e conhecedores da magia entre todos os
-            eladrin. +2 Instinto +1 carisma ou conhecimento • +2 percepção •
-            Vantagem contra efeitos de ilusão e confusão.
-          </p>
-        </article>
-        <article>
-          <h3>Inverno</h3>
-          <p>
-            Os Eladrin do Inverno conhecem o silêncio, tão resistentes quanto as
-            árvores, e tão honrados quanto um Paladino. +2 Constituição ou
-            Instinto +1 conhecimento • Imunidade ou bônus contra efeitos de
-            charme. • Resistência a dano de frio e vantagem contra medo
-          </p>
+          <ul className={styles.list}>
+            <li>+2 Carisma</li>
+            <li>+1 força ou constituição.</li>
+          </ul>
         </article>
       </section>
     </main>

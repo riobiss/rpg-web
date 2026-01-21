@@ -177,40 +177,43 @@ export default async function Page() {
             </li>
           </ul>
         </article>
+        <article>
+          <section>
+            <h2>NOMES COMUNS</h2>
+            <h3>Masculinos</h3>
+            <ul className={styles.list}>
+              <li>Aelthir</li>
+              <li>Caelion</li>
+              <li>Ithrael</li>
+              <li>Vaelor</li>
+              <li>Thirien</li>
+              <li>Lioren</li>
+              <li>Maerith</li>
+              <li>Sylvaron</li>
+              <li>Eryndor</li>
+              <li>Kaelith</li>
+              <li>Nymarion</li>
+              <li>Faelros</li>
+            </ul>
+            <h3>Femininos</h3>
+            <ul className={styles.list}>
+              <li>Aelyra</li>
+              <li>Saelune</li>
+              <li>Ithilwen</li>
+              <li>Vaelora</li>
+              <li>Liora</li>
+              <li>Nyssara</li>
+              <li>Elaria</li>
+              <li>Sylphae</li>
+              <li>Myrieth</li>
+              <li>Caelyth</li>
+              <li>Faelira</li>
+              <li>Thyssiel</li>
+            </ul>
+          </section>
+        </article>
       </section>
-      <section>
-        <h2>Nomes comuns</h2>
-        <h3>Masculinos</h3>
-        <ul className={styles.list}>
-          <li>Aelthir</li>
-          <li>Caelion</li>
-          <li>Ithrael</li>
-          <li>Vaelor</li>
-          <li>Thirien</li>
-          <li>Lioren</li>
-          <li>Maerith</li>
-          <li>Sylvaron</li>
-          <li>Eryndor</li>
-          <li>Kaelith</li>
-          <li>Nymarion</li>
-          <li>Faelros</li>
-        </ul>
-        <h3>Femininos</h3>
-        <ul className={styles.list}>
-          <li>Aelyra</li>
-          <li>Saelune</li>
-          <li>Ithilwen</li>
-          <li>Vaelora</li>
-          <li>Liora</li>
-          <li>Nyssara</li>
-          <li>Elaria</li>
-          <li>Sylphae</li>
-          <li>Myrieth</li>
-          <li>Caelyth</li>
-          <li>Faelira</li>
-          <li>Thyssiel</li>
-        </ul>
-      </section>
+
       <section>
         <h2>FIGURAS MARCANTES</h2>
         <ul>
