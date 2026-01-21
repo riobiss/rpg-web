@@ -3,32 +3,32 @@ const races = [
     id: 1,
     name: "Humanos",
     description: "Versáteis, adaptáveis e numerosos.",
-    img: "",
+    img: "/images/races/human.png",
   },
   {
     id: 2,
     name: "Pequenos",
     description: "Raça de baixa estatura, ágil e furtiva.",
-    img: "",
+    img: "/images/races/pequeno.jpg",
   },
   {
     id: 3,
     name: "Gigantes",
     description: "Seres enormes, fortes e resistentes.",
-    img: "",
+    img: "/images/races/giant.webp",
   },
   {
     id: 4,
     name: "Orcs",
     description: "Guerreiros brutais, focados em força e honra tribal.",
-    img: "",
+    img: "/images/races/orc.jpg",
   },
 
   {
     id: 5,
     name: "Goblins",
     description: "Astutos, rápidos e especialistas em emboscadas.",
-    img: "",
+    img: "/images/races/goblin.avif",
   },
   {
     id: 6,

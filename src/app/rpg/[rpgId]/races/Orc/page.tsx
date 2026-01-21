@@ -1,22 +1,13 @@
-import races from "@/data/rpg/World of Clans/races"
 import styles from "./page.module.css"
 export const generateMetadata = () => {
   return {
     title: "Raças",
   }
 }
-export default async function Page({
-  params,
-}: {
-  params: { raceSlug: string }
-}) {
-  const { raceSlug } = await params
-
-  const race = races.find((r) => r.name === raceSlug)
-  if (!race) return <div>Não Encontrado</div>
+export default async function Page() {
   return (
     <main className={styles.container}>
-      <h2>{race.name}</h2>
+      <h2>Orc</h2>
       <article>
         <section>
           <h2>ORIGEM</h2>
