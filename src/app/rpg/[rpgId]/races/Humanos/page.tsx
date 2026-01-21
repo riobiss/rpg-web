@@ -73,10 +73,9 @@ export default async function Page() {
             espadas.
           </p>
         </article>
-
         <article>
           <h3>Cultura</h3>
-          <ul>
+          <ul className={styles.list}>
             <li>Grande diversidade étnica.</li>
             <li>Valorização extrema da liberdade e iniciativa individual.</li>
             <li>Cavaleiros pioneiros desbravam fronteiras selvagens.</li>
@@ -602,32 +601,31 @@ export default async function Page() {
       <section>
         <h2>TRAÇOS RACIAIS DOS HUMANOS</h2>
         <article>
-   <dl>
-          <dt>Idade</dt>
-          <dd>
-            Chegam na maior idade com 16 anos os homens e as mulheres com 12 ou
-            14 anos assim que tiver a primeira menstruação, e podem viver até 80
-            anos.
-          </dd>
-          <dt>Tendência</dt>
-          <dd>Não possuem uma tendência definida.</dd>
-          <dt>Atributos</dt>
-          <dd>+1 em todos os atributos</dd>
-          <dt>Altura</dt>
-          <dd>
-            O tamanho dos seres humanos variam muito mas de costume o máximo
-            costumam ter entre 1,50 até 1,80.
-          </dd>
-          <dt>Ancestralidade</dt>
-          <dd>
-            Os humanos possui uma grande perseverança, por isso sua
-            ancestralidade sempre foi: Ancestralidade: Quando você falha em um
-            teste de Atributo, você pode re-rolar uma vez por sessão, assim
-            pegando o resultado novo.
-          </dd>
-        </dl>
+          <dl>
+            <dt>Idade</dt>
+            <dd>
+              Chegam na maior idade com 16 anos os homens e as mulheres com 12
+              ou 14 anos assim que tiver a primeira menstruação, e podem viver
+              até 80 anos.
+            </dd>
+            <dt>Tendência</dt>
+            <dd>Não possuem uma tendência definida.</dd>
+            <dt>Atributos</dt>
+            <dd>+1 em todos os atributos</dd>
+            <dt>Altura</dt>
+            <dd>
+              O tamanho dos seres humanos variam muito mas de costume o máximo
+              costumam ter entre 1,50 até 1,80.
+            </dd>
+            <dt>Ancestralidade</dt>
+            <dd>
+              Os humanos possui uma grande perseverança, por isso sua
+              ancestralidade sempre foi: Ancestralidade: Quando você falha em um
+              teste de Atributo, você pode re-rolar uma vez por sessão, assim
+              pegando o resultado novo.
+            </dd>
+          </dl>
         </article>
-     
       </section>
       <section>
         <h2>Classes</h2>

@@ -1,316 +1,709 @@
 import styles from "./page.module.css"
+
 export const generateMetadata = () => {
   return {
     title: "Raças",
   }
 }
+
 export default async function Page() {
   return (
     <main className={styles.container}>
       <h2>Pequenos</h2>
+
       <article>
         <section>
           <h2>ORIGEM</h2>
           <p>
-            A sociedade eladrin coexiste na divisão entre a Agrestia das
-            estações e seu território possui um clima único, com alguns cantos
-            gelados e com neves, outros com florestas abundantes, outras regiões
-            cheias de rios e, por fim, uma região de fogo. Os eladrin
-            construíram suas cidades e castelos elegantes em lugares de
-            esplendor natural. Há muitos anos, quando o sopro da criação deu
-            vida a eles, quando a mãe natureza e os céus se juntaram, dando vida
-            aos seus filhos eladrin. Os eladrin, então, dominam vales
-            montanhosos isolados, ilhas verdejantes dentro do próprio território
-            ao longo dos litorais tempestuosos e nos recônditos mais profundos
-            das florestas ancestrais. Alguns reinos eladrin ainda cruzam a
-            barreira mortal e possuem raízes em outros planos, assim como seus
-            primos elfos, mas a diferença é que eles possuem esse acesso de modo
-            mais fácil.
+            Muito antes de qualquer reino sonhar com coroas ou alianças,
+            existiam nas colinas férteis do oeste famílias discretas conhecidas
+            como os Ervantes, os Parvelhos e os Dorsemir. Pequenos como crianças
+            humanas, mas com olhos reluzentes como brasas vivas, esses povos
+            eram chamados de Minutos — não por sua altura, mas por sua
+            capacidade de notar cada detalhe que o mundo grande ignorava.
           </p>
           <p>
-            Sobre o conselho da Agrestia das Fadas, eles conseguiram deixar a
-            fonte de magia do solo mais fértil, fazendo a magia arcana do local
-            ser talvez mais fértil que as terras dos elfos. Mas essas duas raças
-            têm muita consideração uma pela outra, e pelo cuidado da natureza.
-            Porém, eles partilham um ódio fervoroso pelos anões.
-          </p>
-
-          <p>
-            Pois, há muitos anos atrás, em 5017 a.C., após muitas batalhas entre
-            elfos e anões, na região do continente Ultramar, os antigos anões só
-            queriam saber de conquistar os recursos naturais das florestas, e o
-            grande líder dessas invasões era Durin, o cruel. Durin era um anão
-            bárbaro com diversas cicatrizes. Ele tentou matar as três irmãs
-            elfas para conquistar sua terra, mas essa batalha foi tão mortal que
-            resultou na derrota de Durin, fazendo ele fugir com alguns dos seus
-            homens e ir parar no continente Nawrin, onde acaba embarcando em
-            Jeongsang, e isso iria iniciar o conflito em 4910 a.C.
-          </p>
-
-          <p>
-            Nesse tempo, ainda não existia a Agrestia das estações, e os eladrin
-            do verão, pelo seu temperamento mais quente e impulsivo, acreditavam
-            que tudo devia ser deles. Já os eladrin do inverno tinham uma visão
-            diferente sobre isso, então sempre estiveram brigando até que Durin
-            começou a desmatar as árvores e a matar todos os animais e tudo que
-            tivesse em seu caminho. Isso fez os eladrin se juntarem contra o
-            inimigo que havia surgido. Quando Durin chegou ao bosque sagrado,
-            guardado por Leezose, o bosque era um local cheio de foco arcano.
-            Lá, travaram uma grande batalha, Leezose matou Durin, fazendo seu
-            corpo se juntar à grande árvore sagrada, e ali os eladrin restantes
-            se juntaram e fizeram sua Agrestia das estações.
-          </p>
-
-          <p>
-            &quot;Bem, tudo isso é interessante de se saber, mas agora vou
-            contar a história atual de nosso povo. Eu me chamo Drizztam, o sábio
-            das árvores&quot;
-          </p>
-
-          <p>
-            Reconhecida por seu solo fértil de magia e pelos grandes druidas que
-            possuem a ligação com o elemental, fomos uma das primeiras nações
-            independentes que se uniram aos goblins para o conflito que crescia.
-            Tudo isso por um conflito já muito antigo entre os homens, onde, na
-            guerra, eu mesmo pude presenciar grandes feitos, como a morte do
-            imperador de jade, a derrubada do forte dos orcs de Mahrland, a
-            explosão arcana criando a rachadura mística e a invenção dos anjos
-            de guerra. Tive a oportunidade, ou azar, de presenciar todos esses
-            conflitos e batalhas entre nosso povo e os inimigos
-          </p>
-          <p>
-            Os druidas, atualmente, do nosso povo sobreviveram ao Vazio do plano
-            das sombras, tendo que aprender a controlar essa energia devido a
-            várias situações causadas. Além desses conflitos, a tão antiga
-            Conselho da Agrestia das Fadas e Agrestia das Estações juntaram
-            todos os reinos e povos em uma chamada única estação, nomeando
-            Cassedre como governante da coroa. Tendo agora uma líder em cima de
-            todos, onde ela começou a adotar uma medida de maior distanciamento
-            dos reinos vizinhos, servindo-se da vida selvagem de Jeongsang ao
-            redor como se fosse um escudo Apesar de muito ter sido perdido pelos
-            conflitos, eles se comprometeram em preservar o pouco que restou
-          </p>
-
-          <p>
-            Agora, com esse isolamento que já dura 39 anos, isolados em nossa
-            selva de milhares de anos, a nossa sofisticada cidade arcológica de
-            Jeongsang permanece praticamente livre de influências externas.
-            Tirando a situação atual sobre os Draconatos verdes que perderam seu
-            lar para os pretos e foram abrigados e cedidos uma parte de nossa
-            região, ficando também sob nossa proteção e tratados. Existe um
-            certo preconceito, eu posso perceber, mas acredito que essa
-            diferença acabe ficando de lado com o tempo, pois não somos os
-            únicos a dividir esse solo.
-          </p>
-          <p>
-            Além disso, quem está fora das fronteiras de Jeongsang sabe muito
-            pouco sobre a história da região e sobre nós, pois sempre fomos
-            muito discretos, mesmo antes do isolamento. Ao longo dos anos,
-            incontáveis expedições de reinos humanos foram feitas para cá, mas
-            os que tentaram, simplesmente desapareceram sem deixar o menor
-            rastro.
-          </p>
-
-          <p>
-            Bom, existe muita coisa para falar, então vá buscar saber pequeno
-            graveto, e se quiser me encontrar, estarei na capital ou andando por
-            aí.
+            Enquanto gigantes marchavam ao norte, orcs guerreavam entre si e
+            humanos aprendiam a erguer muralhas, os Minutos já dominavam o
+            cultivo da terra como arte, magia e poder. Com o tempo, passaram a
+            se chamar Pequeninos, um nome que carregava orgulho, identidade e
+            resistência.
           </p>
         </section>
+
         <section>
-          <h2>O QUE ALGUNS PENSAM </h2>
+          <h2>O JARDIM OCULTO</h2>
+          <p>
+            Segundo antigas histórias, os clãs viviam em um vale escondido onde
+            crescia a lendária Vinha Rubra, uma planta que só frutificava sob
+            lua cheia. Seu vinho restaurava vigor, clareava a mente e fortalecia
+            laços entre aqueles que o bebiam. Essa dádiva se tornou sua maior
+            riqueza — e também sua desgraça.
+          </p>
+        </section>
+
+        <section>
+          <h2>A COLHEITA SANGRENTA</h2>
+          <p>
+            Quando humanos descobriram o valor do vinho rubro, disputas
+            começaram. Um lorde do leste tentou tomar o vale à força. Vinhas
+            foram queimadas, Pequeninos mortos e a tragédia ficou conhecida como
+            a Colheita Sangrenta. A resposta veio em silêncio: estratégia,
+            venenos, diplomacia e informação. Em menos de um ano, o lorde perdeu
+            tudo — inclusive a vida.
+          </p>
+        </section>
+
+        <section>
+          <h2>O JURAMENTO DAS COLINAS</h2>
+          <p>
+            Após a guerra, os clãs firmaram o Juramento das Colinas, unindo-se
+            como um reino não declarado. Desde então, os Pequenos tornaram-se
+            agricultores mágicos, negociantes, informantes e diplomatas
+            discretos, influenciando reis sem jamais sentar em seus tronos.
+          </p>
+        </section>
+
+        <section>
+          <h2>O QUE ALGUNS PENSAM</h2>
           <blockquote>
             <p>
-              Pequenos: Belos como histórias bem contadas e tão perigosos quanto
-              as partes que eles escolhem não contar.
+              Humanos: Eles sorriem como amigos e são engraçados demais para
+              serem perigosos — pensamento popular.
             </p>
           </blockquote>
           <blockquote>
             <p>
-              Goles: Eles mudam muito ou são muito diferentes e falam como se o
-              tempo lhes pertencesse.
+              Orcs: Pequenos demais para a guerra, mas muitos são brilhantes —
+              opinião comum entre certos chefes orcs.
             </p>
           </blockquote>
           <blockquote>
             <p>
-              Esqueletos: Eles vivem demais, lembram demais e ainda assim fogem
-              da morte como crianças.
+              Goblins: Baixinhos fofos que roubam comida, ouro e segredos.
+              Talvez sejamos mais parecidos do que pensamos — soldados goblins.
             </p>
           </blockquote>
         </section>
       </article>
+
       <section>
         <h2>REINOS</h2>
+
         <article>
-          <h3>Jeongsang</h3>
+          <h3>Kienling</h3>
           <p>
-            Jeongsang é um reino com uma região vasta em todos os tipos de
-            florestas, montanhas e tantas outras coisas. É um povo totalmente
-            conectado com a natureza e com uma ligação forte entre si, mas
-            também são guerreiros ferozes, com uma vasta cultura além dos
-            Eladrin, como as tribos dos touren, grung, Draconatos verdes, fadas,
-            lizardfolk, leonin e os yuan-ti.
+            Ao oeste do continente, onde as florestas se estendem como muralhas
+            vivas, ergue-se o Reino de Kienling, o lar ancestral dos Pequeninos.
+            Embora diminutos em estatura, Kienling é um dos reinos mais
+            respeitados (e temidos em silêncio) de toda a região. Esse é o lar
+            principal dos Pequenos, que carrega o brasão do povo e o reino que
+            carrega o nome de todos.
           </p>
         </article>
+
         <article>
           <h3>Cultura</h3>
-          <ul>
+          <ul className={styles.list}>
             <li>
-              Cada comunidade mantém Conselhos Elementais, onde druidas e magos
-              interpretam os sinais da natureza antes de qualquer decisão
-              importante
+              Vilas aconchegantes construídas em troncos de pinheiros gigantes
             </li>
             <li>
-              os Eladrin veem o mundo exterior como instável e corrompido devido
-              a guerra fazendo suas cidades são ocultas por ilusões, selvas
-              vivas e barreiras arcanas
+              Colinas com pequenas estufas mágicas aquecidas por cristais de
+              calor
+            </li>
+            <li>Festivais silenciosos celebrados sob a aurora boreal,</li>
+            <li>
+              Mercados perfumados por especiarias doces e licores quentes.
+            </li>
+          </ul>
+          <p>
+            Obs: Kienling é governado por um líder eleito entre as famílias mais
+            antigas — o Vinhoreal. Atualmente, o trono pertence à sábia e
+            sorridente Vinhoreal Marenna Permafrio, uma diplomata.
+          </p>
+        </article>
+
+        <article>
+          <h3>Características físicas</h3>
+          <ul className={styles.list}>
+            <li>Altura: Entre 90 cm e 1,10 m.</li>
+            <li>
+              Pele: Pele clara a rosada, facilmente avermelhada pelo frio.
             </li>
             <li>
-              Estrangeiros só são aceitos após provas de respeito à natureza e
-              resistência à magia elemental
+              Cabelos: castanho claro, ruivo, loiro acinzentado. Nos clãs mais
+              antigos, cabelos brancos desde jovens são considerados sinal de
+              sangue forte.
             </li>
             <li>
-              Entre os Eladrin, conjurar magia é um ato artístico. Feitiços são
-              executados com danças rituais, pinturas corporais naturais e entre
-              outras coisas e erros mágicos são vistos como desrespeito à
-              tradição, não simples falhas técnicas.
+              Olhos: Azuis, verdes ou âmbar — sempre brilhantes, quase luminosos
+              no escuro.
             </li>
           </ul>
         </article>
+
+        <article>
+          <h3>Vestuário</h3>
+          <p>
+            O estilo é funcional, elegante e cheio de detalhes culturais, uma
+            das raças que presa bastante pela boa aparência. Sendo seus
+            materiais mais usados: Lã grossa colorida, Pele de arminho e raposa,
+            Algodão espesso, Linho reforçado, Couro artesanal tratado com ervas
+            aromáticas. Sendo as cores mais tradicionais: Vinho escuro, rosa
+            pálido, azul gélido, verde-pinho e marrom mel. Os nobres costumam
+            usar tons de roxo-neve, cor associada ao Vinho das Auroras.
+          </p>
+          <ul className={styles.list}>
+            <li>
+              Homens: Jaquetas acolchoadas curtas, Cintos largos com fivelas
+              gravadas, Calças justas e botas de couro macio, Mantos curtos com
+              capuz para suportar nevascas ou chuva, Pequenas facas ornamentadas
+              usadas não como armas, mas como ferramenta agrícola.
+            </li>
+            <li>
+              Mulheres: Vestidos de lã com saias volumosas e mangas folgadas,
+              Aventais finamente, bordados com parreiras ou flocos de neve,
+              Faixas de cabelo trançadas com fitas coloridas, Botas isoladas e
+              mantos longos.
+            </li>
+            <li>
+              Nobreza (de ambos os sexos): Jóias feitas com cristal, Capas com
+              bordados que indicam o clã familiar, Laços de vinho e folhas
+              estilizadas como brasões, Anéis que simbolizam seus vinhedos e
+              linhagens.
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <section>
+            <h2>NOMES COMUNS</h2>
+
+            <h3>Masculinos</h3>
+            <ul className={styles.list}>
+              <li>Merrin</li>
+              <li>Tobren</li>
+              <li>Faldric</li>
+              <li>Joryn</li>
+              <li>Alben</li>
+              <li>Roddin</li>
+              <li>Pelren</li>
+              <li>Kelvo</li>
+              <li>Thamri</li>
+              <li>Yorwick</li>
+            </ul>
+
+            <h3>Femininos</h3>
+            <ul className={styles.list}>
+              <li>Marella</li>
+              <li>Dorynne</li>
+              <li>Sella</li>
+              <li>Veska</li>
+              <li>Ilwen</li>
+              <li>Fiorra</li>
+              <li>Talia Snowbarrel</li>
+              <li>Lydda</li>
+              <li>Elireen</li>
+              <li>Perribel</li>
+            </ul>
+
+            <h3>Sobrenomes</h3>
+            <ul className={styles.list}>
+              <li>Permafrio</li>
+              <li>Folha-Doce</li>
+              <li>Dorseneve</li>
+              <li>Vinhoclaro</li>
+              <li>Barrilgelado</li>
+              <li>Ramosuave</li>
+              <li>Auroracopo</li>
+              <li>Gelirrin</li>
+              <li>Raizborralha</li>
+              <li>Cascalustre</li>
+            </ul>
+          </section>
+        </article>
+
+        <article>
+          <h3>Haukkihh</h3>
+          <p>
+            No extremo nordeste do domínio dos Pequenos existe Haukkihh, uma
+            linha ancestral que, embora parte do grande Reino dos Pequenos,
+            desenvolveu uma cultura muito própria. Seus castelos e fortalezas
+            erguem-se em terras quentes, úmidas e varridas por ventos marítimos,
+            onde o sol bate forte sobre muralhas de pedra escura. Haukkihh é um
+            território de pântanos salinos, onde os Pequenos se tornaram mestres
+            da navegação costeira, da pesca profunda e da produção de bebidas
+            fermentadas fortes, famosas em toda a Coalizão. Sua nobreza é
+            austera, governada pela Casa Salmor, que carrega uma reputação de
+            justiça rígida e punições rápidas. Embora sejam da mesma raça dos
+            outros Pequenos, os pequenos de Haukkihh, conhecidos como duendes
+            por uns, desenvolveram costumes mais severos, guerreiros e
+            pragmáticos, pois sua história é marcada por ataques piratas,
+            tempestades, disputas de território e períodos de fome severo.
+          </p>
+        </article>
+
+        <article>
+          <h3>Cultura</h3>
+          <ul className={styles.list}>
+            <li>serem diretos e francos demais, às vezes bruscos;</li>
+            <li>honrarem a palavra dada acima de qualquer coisa;</li>
+            <li>
+              serem rápidos para defender seus amigos e ainda mais rápidos para
+              punir seus inimigos;
+            </li>
+            <li>terem uma relação quase religiosa com o mar.</li>
+            <li>
+              a fé concentra nos Afogados Antigos, espíritos que representam:
+              força diante da adversidade, aceitação da mortalidade, respeito
+              pelo ciclo do mar.
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Características físicas</h3>
+          <ul className={styles.list}>
+            <li>Altura entre 95 cm e 1,15 m, corpo compacto e musculoso.</li>
+            <li>Pele em tons de castanho claro a bronzeado escuro.</li>
+            <li>
+              Cabelos feralmente escuro: castanho profundo ou preto. Podendo ser
+              liso, ondulado ou crespo curto.
+            </li>
+            <li>Olhos: Castanhos, âmbar ou verde-escuro.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Vestuário</h3>
+          <ul className={styles.list}>
+            <li>
+              Homens: Camisas sem mangas ou de mangas curtas, Coletes de couro
+              leve, Calças curtas ou presas abaixo do joelho, Faixas de tecido
+              na cabeça ou no braço, Sandálias reforçadas ou botas abertas,
+              Facas curtas sempre visíveis (símbolo de prontidão)
+            </li>
+            <li>
+              Mulheres: Vestidos leves até o joelho, Saias com cortes para
+              facilitar movimento, Blusas amarradas ou cruzadas, Lenços na
+              cabeça para o sol, Braceletes simples de osso ou coral, Facas
+              pequenas escondidas (tradição antiga)
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <section>
+            <h2>NOMES COMUNS</h2>
+
+            <h3>Masculinos</h3>
+            <ul className={styles.list}>
+              <li>Ravel</li>
+              <li>Dornik</li>
+              <li>Malco</li>
+              <li>Jarek</li>
+              <li>Thomar</li>
+              <li>Cavel</li>
+              <li>Brannik</li>
+              <li>Orven</li>
+              <li>Kael</li>
+              <li>Sorrin etc</li>
+            </ul>
+
+            <h3>Femininos</h3>
+            <ul className={styles.list}>
+              <li>Yalena</li>
+              <li>Maris</li>
+              <li>Korra</li>
+              <li>Selka</li>
+              <li>Neris</li>
+              <li>Ivela</li>
+              <li>Taryn</li>
+              <li>Vessa</li>
+              <li>Calya</li>
+              <li>Rinna etc</li>
+            </ul>
+
+            <h3>Sobrenomes</h3>
+            <ul className={styles.list}>
+              <li>Salmor</li>
+              <li>Salferro</li>
+              <li>Ondaparda</li>
+              <li>Marquedo</li>
+              <li>Fundoazul</li>
+              <li>Conchadura</li>
+              <li>Tempesmar</li>
+              <li>Anzolnegro</li>
+              <li>Reciforte</li>
+              <li>Salvigo etc</li>
+            </ul>
+          </section>
+        </article>
+
+        <article>
+          <h3>Mannikaar</h3>
+          <p>
+            Na ilha escaldante do nordeste do domínio dos Pequenos ergue-se
+            Mannikaar, um reino grande em território, quase do tamanho de
+            Kienling, mas com um diferencial, sendo mais intenso em cultura e
+            espírito. Cercado por mares claros e florestas tropicais densas,
+            Mannikaar é conhecido por seu calor constante, solo fértil e ventos
+            carregados de cinzas vulcânicas, herança de antigos fogos
+            subterrâneos que moldaram tanto a terra quanto seu povo.
+          </p>
+        </article>
+
+        <article>
+          <h3>Cultura</h3>
+          <ul className={styles.list}>
+            <li>
+              Mannikaarianos são respeitados como curandeiros, alquimistas,
+              forjadores rituais e conselheiros espirituais, tendo uma
+              inclinação para essas áreas em sua cultura.
+            </li>
+            <li>
+              eles tem explosões súbitas de fúria quando sua fé ou família é
+              atacada.
+            </li>
+            <li>
+              fé gira em torno da Chama Ancestral, uma força viva que: purifica
+              os fracos, fortalece os resistentes, revela a verdade através da
+              dor. Sacerdotes, são chamados Vigias da Brasa.
+            </li>
+            <li>Eles costumam ter uma postura calma, quase contemplativa.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Características físicas</h3>
+          <ul className={styles.list}>
+            <li>Altura média entre 90 cm e 1,10 m.</li>
+            <li>Pele: variam do castanho médio ao peles mais escuras.</li>
+            <li>
+              cabelos: Preto ou castanho escuro, quase sempre encaracolado ou
+              crespo.
+            </li>
+            <li>Olhos: Castanho-escuros, âmbar ou dourados.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Vestuário</h3>
+          <ul className={styles.list}>
+            <li>
+              Homens: Túnicas leves sem mangas ou de mangas curtas, Faixas
+              largas na cintura, Calças soltas ou saias curtas rituais,
+              Sandálias ou pés descalços, Colares de ossos, sementes e pedras
+              quentes
+            </li>
+            <li>
+              Mulheres: Vestidos curtos ou médios, Saias em camadas leves, Tops
+              cruzados, Braceletes e tornozeleiras, Pintura corporal ritual em
+              ocasiões sagradas
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <section>
+            <h2>NOMES COMUNS</h2>
+
+            <h3>Masculinos</h3>
+            <ul className={styles.list}>
+              <li>Kairo</li>
+              <li>Zemek</li>
+              <li>Ravelin</li>
+              <li>Tamaru</li>
+              <li>Obrek</li>
+              <li>Sahen</li>
+              <li>Jorai</li>
+              <li>Malek</li>
+              <li>Aro</li>
+              <li>Keshan</li>
+            </ul>
+
+            <h3>Femininos</h3>
+            <ul className={styles.list}>
+              <li>Nyara</li>
+              <li>Selah</li>
+              <li>Korae</li>
+              <li>Ishra</li>
+              <li>Amaya</li>
+              <li>Virel</li>
+              <li>Tashé</li>
+              <li>Liora</li>
+              <li>Zani</li>
+              <li>Marai</li>
+            </ul>
+
+            <h3>Sobrenomes</h3>
+            <ul className={styles.list}>
+              <li>Brasa-Clara</li>
+              <li>Cinzasol</li>
+              <li>Fogoantigo</li>
+              <li>Pedraquente</li>
+              <li>Chamarra</li>
+              <li>Lumibrasa</li>
+              <li>Coração-Ígneo</li>
+              <li>Cinzelda</li>
+              <li>Marquechama.</li>
+            </ul>
+          </section>
+        </article>
+
+        <article>
+          <h3>Elisaar</h3>
+          <p>
+            Elisaar, um reino estreito e vital, ergue-se entre mares opostos e
+            selvas fechadas, rios largos e colinas de pedra clara compõem
+            Elisaar, cortado por estradas antigas e canais artificiais. Torres
+            de vigia emergem da mata como sentinelas, atentas ao passo dos
+            viajantes. O ar é quente e úmido, com o som de água corrente e
+            folhas em movimento.
+          </p>
+        </article>
+
+        <article>
+          <h3>Cultura</h3>
+          <ul className={styles.list}>
+            <li>
+              Os pequenos de Elisaar, são normalmente observadores e
+              silenciosos, alem de educados, mas emocionalmente reservados e
+              extremamente pacientes.
+            </li>
+            <li>
+              Organizada em Casas de Vigia, famílias responsáveis por trechos de
+              estrada, rios ou portos.
+            </li>
+            <li>
+              Eles veneram Os Olhos Antigos, entidades que: veem tudo que passa,
+              punem mentirosos, protegem aqueles que fazem juramentos
+              verdadeiros.
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Características físicas</h3>
+          <ul className={styles.list}>
+            <li>Altura: 95cm e 1,10cm</li>
+            <li>Pele: castanho claro a oliva escura.</li>
+            <li>Cabelo: Castanho escuro ou preto.</li>
+            <li>Olhos: Castanhos, verdes profundos ou âmbar.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Vestuário</h3>
+          <ul className={styles.list}>
+            <li>
+              Homens: Túnicas curtas ou camisas leves, Calças ajustadas abaixo
+              do joelho, Capas finas com capuz, Botas leves ou sandálias
+              reforçadas, Facas pequenas ocultas
+            </li>
+            <li>
+              Mulheres: Vestidos leves e ajustados, Saias práticas com bolsos
+              ocultos, Faixas de tecido na cintura, Braceletes simples de
+              madeira ou pedra
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <section>
+            <h2>NOMES COMUNS</h2>
+
+            <h3>Masculinos</h3>
+            <ul className={styles.list}>
+              <li>Edrin</li>
+              <li>Calwen</li>
+              <li>Torik</li>
+              <li>Balen</li>
+              <li>Jorwen</li>
+              <li>Maelis</li>
+              <li>Orvan</li>
+              <li>Selric</li>
+              <li>Tovin</li>
+              <li>Kalen</li>
+            </ul>
+
+            <h3>Femininos</h3>
+            <ul className={styles.list}>
+              <li>Lysa</li>
+              <li>Marwen</li>
+              <li>Elin</li>
+              <li>Serah</li>
+              <li>Nyel</li>
+              <li>Tressa</li>
+              <li>Varyn</li>
+              <li>Ilyra</li>
+              <li>Kessa</li>
+              <li>Rinel.</li>
+            </ul>
+
+            <h3>Sobrenomes</h3>
+            <ul className={styles.list}>
+              <li>Doismares</li>
+              <li>Pedraviva</li>
+              <li>Vigiarco</li>
+              <li>Caminholongo</li>
+              <li>Folhasombra</li>
+              <li>Rioselo</li>
+              <li>Portacerta</li>
+              <li>Passolento</li>
+              <li>Olhoquieto</li>
+            </ul>
+          </section>
+        </article>
       </section>
-      <section>
-        <h2>Nomes comuns</h2>
-        <h3>Masculinos</h3>
-        <ul className={styles.list}>
-          <li>Aelthir</li>
-          <li>Caelion</li>
-          <li>Ithrael</li>
-          <li>Vaelor</li>
-          <li>Thirien</li>
-          <li>Lioren</li>
-          <li>Maerith</li>
-          <li>Sylvaron</li>
-          <li>Eryndor</li>
-          <li>Kaelith</li>
-          <li>Nymarion</li>
-          <li>Faelros</li>
-        </ul>
-        <h3>Femininos</h3>
-        <ul className={styles.list}>
-          <li>Aelyra</li>
-          <li>Saelune</li>
-          <li>Ithilwen</li>
-          <li>Vaelora</li>
-          <li>Liora</li>
-          <li>Nyssara</li>
-          <li>Elaria</li>
-          <li>Sylphae</li>
-          <li>Myrieth</li>
-          <li>Caelyth</li>
-          <li>Faelira</li>
-          <li>Thyssiel</li>
-        </ul>
-      </section>
+
       <section>
         <h2>FIGURAS MARCANTES</h2>
-        <ul>
-          <li>Drizztam, o sábio das árvores</li>
-          <li>Cassedre, imperatriz das estações</li>
-          <li>Nox, a montanha</li>
+        <ul className={styles.list}>
+          <li>Ser Aric Brokwin, a Raposa das Vinhas de Kienling</li>
+          <li>Fídel Marrak, justiceiro costeiro de Haukkihh</li>
+          <li>Urrak Waynwyn, Senhor dos Dois Mares de Elisaar</li>
         </ul>
       </section>
+
       <section>
-        <h2>TRAÇOS RACIAIS DOS ELADRIN</h2>
-        <dl>
-          <dt>Idade</dt>
-          <dd>
-            Os eladrin atingem a maturidade física aos 20 anos, mas seu processo
-            de envelhecimento se estabiliza após 100. Quando se consideram
-            adulto e vivem até 600 anos.
-          </dd>
-          <dt>Visão</dt>
-          <dd> Visão no escuro de até 18 metros em tons de cinza</dd>
-          <dt>Atributos</dt>
-          <dd> +2 Arcanismo +4 natureza</dd>
-          <dt>Habilidade Racial</dt>
-          <dd>
-            Suas alturas varia entre 1,60 ate 1,90 Tem a capacidade de se mover
-            entre uma camada fraca do plano etéreo se Teletransportando ate 5
-            metros pelo campo, não podendo ser atacado oportunidade e fica
-            invisível quando acaba seu turno durando só seu turno e só sendo
-            usado apenas uma vez por descanso longo.
-          </dd>
-          <dt>Descanso</dt>
-          <dd>
-            Em vez de dormir, os eladrin entram num estado de meditação
-            conhecido como transe, bastando apensas 4 horas para um descanso
-            curto e 6 horas para um longo.
-          </dd>
-        </dl>
+        <h2>TRAÇOS RACIAIS DOS PEQUENOS</h2>
+        <article>
+          <dl>
+            <dt>Atributos</dt>
+            <dd>+2 Conhecimento, +1 Destreza, +1 Constituição</dd>
+
+            <dt>Idade</dt>
+            <dd>
+              Os pequenos atingem a idade adulta um pouco mais tarde que os
+              anões, com 40 anos um pequeno se torna adulto e vive até 350 anos.
+            </dd>
+
+            <dt>Visão</dt>
+            <dd>Possui visão no escuro de até 18 metros em tons de cinza.</dd>
+
+            <dt>Comunhão animal</dt>
+            <dd>
+              Conseguem se comunicar com animais pequenos por sons e gestos.
+            </dd>
+          </dl>
+        </article>
       </section>
       <section>
         <h2>Classes</h2>
         <ul className={styles.list}>
-          <li>Arqueiros</li>
-          <li>Arqueiro mágico</li>
-          <li>Guerreiro</li>
-          <li>Cavaleiro</li>
-          <li>Lanceiro</li>
-          <li>Mago</li>
-          <li>Mago espiritual</li>
-          <li>Mago infernal</li>
-          <li>Bardo</li>
+          <li>Arqueiro</li>
+          <li>
+            Guerreiro
+            <ul>
+              <li>Cavaleiro</li>
+            </ul>
+          </li>
+          <li>
+            Bárbaro
+            <ul>
+              <li>Berserker</li>
+              <li>Monge</li>
+            </ul>
+          </li>
+          <li>
+            Mago
+            <ul>
+              <li>Mago espiritual</li>
+              <li>Mago de guerra</li>
+              <li>Bardo</li>
+            </ul>
+          </li>
           <li>Feiticeiro</li>
-          <li>Druida</li>
-          <li>Xamã</li>
-          <li>Druida sombrio</li>
+          <li>
+            Druida
+            <ul>
+              <li>Xamã</li>
+            </ul>
+          </li>
+
           <li>Bruxo</li>
+          <li>
+            Clérigo
+            <ul>
+              <li>Curandeiro guerreiro</li>
+              <li>Paladino</li>
+            </ul>
+          </li>
+          <li>Artífice</li>
           <li>Caçador</li>
-          <li>Domador de monstros</li>
-          <li>Cozinheiro de feras</li>
-          <li>Caçador espiritual</li>
-          <li>Ladino</li>
-          <li>Pirata</li>
+          <li>
+            Ladino
+            <ul>
+              <li>Pirata</li>
+            </ul>
+          </li>
         </ul>
       </section>
+
       <section>
-        <h2>ESTAÇÔES</h2>
+        <h2>Variações de Pequenos</h2>
         <article>
-          <h3>Primavera</h3>
+          <h3>Linhagem da Mata</h3>
           <p>
-            Os Eladrin da Primavera são seres mais leves guiados pela emoção,
-            pelo impulso e pelo amor à liberdade mas também grande guerreiros e
-            um povo muito forte. +2 Carisma +1 Destreza ou Instinto •Vantagem
-            contra efeitos de controle mental •Comunicação básica com plantas e
-            pequenos animais.
+            Pequenos ou pequeninhos da mata têm pele verde-oliva, cabelos
+            castanhos ou ruivos, e olhos que mudam de cor conforme as estações
+            do ano. Eles são pequenos e ágeis, com orelhas pontiagudas e uma
+            conexão profunda com a natureza
+          </p>
+          <ul className={styles.list}>
+            <li>+2 Destreza</li>
+            <li>+1 Instinto</li>
+            <li>-1 Força</li>
+          </ul>
+          <p>Resistência à Magia de ilusão e encantamento.</p>
+          <p>
+            No nível 5 cria uma conexão com a Natureza mais forte podendo usar a
+            habilidade Sobrevivência para criar alimentos e água potável em
+            ambientes selvagens.
           </p>
         </article>
         <article>
-          <h3>Verão</h3>
+          <h3>Linhagem Anã</h3>
           <p>
-            Os Eladrin do Verão carregam o peso da glória e da guerra, lutando
-            desde o início com todos e nunca recuando, o emblema dourado vai
-            além do calor. +2 força ou Carisma +1 Constituição •Quando ferido
-            gravemente, recebe bônus temporário de ataque ou dano quando chega a
-            10 de vida. •possui resistência ao calor, reduz dano de fogo.
+            Pequenos da linhagem anã têm pele bronzeada, cabelos curtos e
+            castanhos, e olhos que brilham com um fogo interior. Eles são
+            pequenos, mas robustos e musculosos.
+          </p>
+          <ul className={styles.list}>
+            <li>+2 Força</li>
+            <li>+1 Constituição</li>
+            <li>-1 Conhecimento</li>
+          </ul>
+          <p>
+            Resistência física a danos físicos Pequenos da linhagem anã podem
+            liderar grupos de criaturas com um bônus de +1 em moral.
+          </p>
+          <p>
+            No nível 3 os pequenos da linhagem anã podem entrar em um estado de
+            fúria em batalha, ganhando vantagem em ataques de força.
           </p>
         </article>
         <article>
-          <h3>Outono</h3>
+          <h3>Linhagem da Oficina</h3>
           <p>
-            Os Eladrin do Outono falam baixo, mas suas palavras moldam a
-            diplomacia, os maiores magos e conhecedores da magia entre todos os
-            eladrin. +2 Instinto +1 carisma ou conhecimento • +2 percepção •
-            Vantagem contra efeitos de ilusão e confusão.
+            Pequenos da linhagem da oficina têm pele pálida, cabelos longos e
+            cinzentos. Eles são pequenos e magros, com dedos finos e uma paixão
+            por criar coisas.
           </p>
-        </article>
-        <article>
-          <h3>Inverno</h3>
+          <ul className={styles.list}>
+            <li>+2 Destreza</li>
+            <li>+1 Conhecimento</li>
+            <li>-1 Carisma</li>
+          </ul>
           <p>
-            Os Eladrin do Inverno conhecem o silêncio, tão resistentes quanto as
-            árvores, e tão honrados quanto um Paladino. +2 Constituição ou
-            Instinto +1 conhecimento • Imunidade ou bônus contra efeitos de
-            charme. • Resistência a dano de frio e vantagem contra medo
+            Pequenos da oficina podem analisar objetos e máquinas para entender
+            como funcionam. Pequenoa da oficina têm um bônus de +1 em observar.
+          </p>
+          <p>
+            No nível 3 pode criar objetos simples e funcionais com materiais
+            disponíveis.
           </p>
         </article>
       </section>
