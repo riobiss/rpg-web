@@ -484,14 +484,14 @@ export default function Page() {
         <ul className={styles.list}>
           <li>
             Arqueiros
-            <ul className={styles.list}>
+            <ul >
               <li>mosqueteiro</li>
               <li>arqueiro mágico</li>
             </ul>
           </li>
           <li>
             Guerreiro
-            <ul className={styles.list}>
+            <ul >
               <li>cavaleiro</li>
               <li>lanceiro</li>
               <li>soldado</li>
@@ -501,7 +501,7 @@ export default function Page() {
           </li>
           <li>
             Bárbaro
-            <ul className={styles.list}>
+            <ul>
               <li>Berserker</li>
               <li>bárbaro rúnico</li>
               <li>monge</li>
@@ -509,7 +509,7 @@ export default function Page() {
           </li>
           <li>
             Mago
-            <ul className={styles.list}>
+            <ul>
               <li>mago espiritual</li>
               <li>mago de guerra</li>
               <li>mago infernal</li>
@@ -519,20 +519,20 @@ export default function Page() {
           <li>Feiticeiro</li>
           <li>
             Druida
-            <ul className={styles.list}>
+            <ul>
               <li>xamã</li>
               <li>druida sombrio</li>
             </ul>
           </li>
           <li>
             Bruxo
-            <ul className={styles.list}>
+            <ul>
               <li>cavaleiro das trevas</li>
             </ul>
           </li>
           <li>
             Clérigo
-            <ul className={styles.list}>
+            <ul>
               <li>curandeiro guerreiro</li>
               <li>Paladino</li>
               <li>Guardião</li>
@@ -541,7 +541,7 @@ export default function Page() {
           <li>Artífice</li>
           <li>
             Caçador
-            <ul className={styles.list}>
+            <ul>
               <li>Domador de monstros</li>
               <li>cozinheiro de feras</li>
               <li>caçador espiritual</li>
@@ -549,7 +549,7 @@ export default function Page() {
           </li>
           <li>
             Ladino
-            <ul className={styles.list}>
+            <ul>
               <li>Pirata</li>
               <li>Ninja</li>
             </ul>

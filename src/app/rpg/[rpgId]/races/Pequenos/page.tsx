@@ -10,7 +10,6 @@ export default async function Page() {
   return (
     <main className={styles.container}>
       <h2>Pequenos</h2>
-
       <article>
         <section>
           <h2>ORIGEM</h2>
@@ -176,7 +175,7 @@ export default async function Page() {
           </ul>
         </article>
         <article>
-          <h2>NOMES COMUNS</h2>
+          <h4>NOMES COMUNS</h4>
           <ul className={styles.list}>
             <li>
               Masculinos: Merrin, Tobren, Faldric, Joryn, Alben, Roddin, Pelren,
@@ -263,7 +262,7 @@ export default async function Page() {
           </ul>
         </article>
         <article>
-          <h2>NOMES COMUNS</h2>
+          <h4>NOMES COMUNS</h4>
 
           <ul className={styles.list}>
             <li>
@@ -345,7 +344,7 @@ export default async function Page() {
           </ul>
         </article>
         <article>
-          <h2>NOMES COMUNS</h2>
+          <h4>NOMES COMUNS</h4>
           <ul className={styles.list}>
             <li>
               Masculinos: Kairo, Zemek, Ravelin, Tamaru, Obrek, Sahen, Jorai,
