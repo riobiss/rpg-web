@@ -1,4 +1,5 @@
 import styles from "./page.module.css"
+
 export const generateMetadata = () => {
   return {
     title: "Raças",
@@ -10,131 +11,64 @@ export default async function Page() {
       <h2>Gigantes</h2>
       <article>
         <section>
-          <h2>ORIGEM</h2>
+          <h2>Origem</h2>
           <p>
-            A sociedade eladrin coexiste na divisão entre a Agrestia das
-            estações e seu território possui um clima único, com alguns cantos
-            gelados e com neves, outros com florestas abundantes, outras regiões
-            cheias de rios e, por fim, uma região de fogo. Os eladrin
-            construíram suas cidades e castelos elegantes em lugares de
-            esplendor natural. Há muitos anos, quando o sopro da criação deu
-            vida a eles, quando a mãe natureza e os céus se juntaram, dando vida
-            aos seus filhos eladrin. Os eladrin, então, dominam vales
-            montanhosos isolados, ilhas verdejantes dentro do próprio território
-            ao longo dos litorais tempestuosos e nos recônditos mais profundos
-            das florestas ancestrais. Alguns reinos eladrin ainda cruzam a
-            barreira mortal e possuem raízes em outros planos, assim como seus
-            primos elfos, mas a diferença é que eles possuem esse acesso de modo
-            mais fácil.
-          </p>
-          <p>
-            Sobre o conselho da Agrestia das Fadas, eles conseguiram deixar a
-            fonte de magia do solo mais fértil, fazendo a magia arcana do local
-            ser talvez mais fértil que as terras dos elfos. Mas essas duas raças
-            têm muita consideração uma pela outra, e pelo cuidado da natureza.
-            Porém, eles partilham um ódio fervoroso pelos anões.
+            Muito antes das alianças, das guerras e até da ascensão dos
+            primeiros reinos humanos, o mundo era moldado por duas forças
+            primordiais: Aelmar, o Céu Eterno, e Kharuna, a Terra Viva. Aelmar
+            representava o vento, o clima e o frio, enquanto Kharuna era o fogo,
+            a pedra e o sangue do mundo
           </p>
 
           <p>
-            Pois, há muitos anos atrás, em 5017 a.C., após muitas batalhas entre
-            elfos e anões, na região do continente Ultramar, os antigos anões só
-            queriam saber de conquistar os recursos naturais das florestas, e o
-            grande líder dessas invasões era Durin, o cruel. Durin era um anão
-            bárbaro com diversas cicatrizes. Ele tentou matar as três irmãs
-            elfas para conquistar sua terra, mas essa batalha foi tão mortal que
-            resultou na derrota de Durin, fazendo ele fugir com alguns dos seus
-            homens e ir parar no continente Nawrin, onde acaba embarcando em
-            Jeongsang, e isso iria iniciar o conflito em 4910 a.C.
+            Quando o mundo ainda era jovem, Aelmar desceu dos céus para acalmar
+            a fúria dos vulcões de Kharuna. Mas ao tocar a terra, seu poder
+            celeste encontrou o calor e a força vital da deusa. Do choque entre
+            essas duas entidades, surgiu algo novo, sendo formas colossais,
+            vivas, feitas de carne, gelo e pedra. Assim nasceram os primeiros
+            gigantes.
           </p>
 
           <p>
-            Nesse tempo, ainda não existia a Agrestia das estações, e os eladrin
-            do verão, pelo seu temperamento mais quente e impulsivo, acreditavam
-            que tudo devia ser deles. Já os eladrin do inverno tinham uma visão
-            diferente sobre isso, então sempre estiveram brigando até que Durin
-            começou a desmatar as árvores e a matar todos os animais e tudo que
-            tivesse em seu caminho. Isso fez os eladrin se juntarem contra o
-            inimigo que havia surgido. Quando Durin chegou ao bosque sagrado,
-            guardado por Leezose, o bosque era um local cheio de foco arcano.
-            Lá, travaram uma grande batalha, Leezose matou Durin, fazendo seu
-            corpo se juntar à grande árvore sagrada, e ali os eladrin restantes
-            se juntaram e fizeram sua Agrestia das estações.
+            Eles eram chamados de: Skjoldar; os gigantes glaciais, criados do
+            sopro gelado de Aelmar sobre as montanhas do norte, Andekarr; os
+            gigantes da rocha e do fogo, moldados pelas entranhas incandescentes
+            de Kharuna no sul.
           </p>
 
           <p>
-            &quot;Bem, tudo isso é interessante de se saber, mas agora vou
-            contar a história atual de nosso povo. Eu me chamo Drizztam, o sábio
-            das árvores&quot;
-          </p>
-
-          <p>
-            Reconhecida por seu solo fértil de magia e pelos grandes druidas que
-            possuem a ligação com o elemental, fomos uma das primeiras nações
-            independentes que se uniram aos goblins para o conflito que crescia.
-            Tudo isso por um conflito já muito antigo entre os homens, onde, na
-            guerra, eu mesmo pude presenciar grandes feitos, como a morte do
-            imperador de jade, a derrubada do forte dos orcs de Mahrland, a
-            explosão arcana criando a rachadura mística e a invenção dos anjos
-            de guerra. Tive a oportunidade, ou azar, de presenciar todos esses
-            conflitos e batalhas entre nosso povo e os inimigos
-          </p>
-          <p>
-            Os druidas, atualmente, do nosso povo sobreviveram ao Vazio do plano
-            das sombras, tendo que aprender a controlar essa energia devido a
-            várias situações causadas. Além desses conflitos, a tão antiga
-            Conselho da Agrestia das Fadas e Agrestia das Estações juntaram
-            todos os reinos e povos em uma chamada única estação, nomeando
-            Cassedre como governante da coroa. Tendo agora uma líder em cima de
-            todos, onde ela começou a adotar uma medida de maior distanciamento
-            dos reinos vizinhos, servindo-se da vida selvagem de Jeongsang ao
-            redor como se fosse um escudo Apesar de muito ter sido perdido pelos
-            conflitos, eles se comprometeram em preservar o pouco que restou
-          </p>
-
-          <p>
-            Agora, com esse isolamento que já dura 39 anos, isolados em nossa
-            selva de milhares de anos, a nossa sofisticada cidade arcológica de
-            Jeongsang permanece praticamente livre de influências externas.
-            Tirando a situação atual sobre os Draconatos verdes que perderam seu
-            lar para os pretos e foram abrigados e cedidos uma parte de nossa
-            região, ficando também sob nossa proteção e tratados. Existe um
-            certo preconceito, eu posso perceber, mas acredito que essa
-            diferença acabe ficando de lado com o tempo, pois não somos os
-            únicos a dividir esse solo.
-          </p>
-          <p>
-            Além disso, quem está fora das fronteiras de Jeongsang sabe muito
-            pouco sobre a história da região e sobre nós, pois sempre fomos
-            muito discretos, mesmo antes do isolamento. Ao longo dos anos,
-            incontáveis expedições de reinos humanos foram feitas para cá, mas
-            os que tentaram, simplesmente desapareceram sem deixar o menor
-            rastro.
-          </p>
-
-          <p>
-            Bom, existe muita coisa para falar, então vá buscar saber pequeno
-            graveto, e se quiser me encontrar, estarei na capital ou andando por
-            aí.
+            Aelmar e Kharuna nunca concordaram sobre o papel de seus filhos.
+            Aelmar queria que os gigantes fossem pastores do mundo, guiando as
+            raças menores e Kharuna desejava que fossem governantes e guardiões,
+            acima dos mortais. A disputa dos deuses se espalhou para seus
+            descendentes, Assim nasceu a {'"'}Grande Fratura{'"'}, o primeiro
+            conflito entre gigantes glaciais e gigantes de montanha. Quando os
+            deuses perceberam o estrago, selaram seus domínios e desapareceram.
+            Sem seus criadores, os gigantes se dividiram em dois reinos e outros
+            pequenos clãs dispersos pelo mundo. Desde então, os gigantes
+            carregam um destino duplo: serem a força mais antiga do mundo e, ao
+            mesmo tempo, uma raça que carrega as cicatrizes dos próprios deuses.
           </p>
         </section>
         <section>
-          <h2>O QUE ALGUNS PENSAM </h2>
+          <h2>O QUE ALGUNS PENSAM</h2>
           <blockquote>
             <p>
-              Pequenos: Belos como histórias bem contadas e tão perigosos quanto
-              as partes que eles escolhem não contar.
+              Máquinas: Os gigantes são estruturas orgânicas ineficientes… porém
+              impressionantemente duráveis.
             </p>
           </blockquote>
           <blockquote>
             <p>
-              Goles: Eles mudam muito ou são muito diferentes e falam como se o
-              tempo lhes pertencesse.
+              Aarakocra: Imensos demais para voar, lentos demais para perceber o
+              céu. Mas quando se irritam todos temes – Provérbio das
+              tempestades-livres dos Aarakocra.
             </p>
           </blockquote>
           <blockquote>
             <p>
-              Esqueletos: Eles vivem demais, lembram demais e ainda assim fogem
-              da morte como crianças.
+              Goblins: Grandões burros! Mas quando um cai, dá pra morar dentro
+              do elmo dele por semanas – Piada goblin.
             </p>
           </blockquote>
         </section>
@@ -142,177 +76,208 @@ export default async function Page() {
       <section>
         <h2>REINOS</h2>
         <article>
-          <h3>Jeongsang</h3>
+          <h3>Bromei</h3>
           <p>
-            Jeongsang é um reino com uma região vasta em todos os tipos de
-            florestas, montanhas e tantas outras coisas. É um povo totalmente
-            conectado com a natureza e com uma ligação forte entre si, mas
-            também são guerreiros ferozes, com uma vasta cultura além dos
-            Eladrin, como as tribos dos touren, grung, Draconatos verdes, fadas,
-            lizardfolk, leonin e os yuan-ti.
+            Bromei é um reino estendido ao longo de um paredão colossal de
+            montanhas contínuas ao seu norte. Seus gigantes são conhecidos tanto
+            por sua artesania de pedra quanto por sua ferocidade militar. O
+            reino é dividido em verticais regiões chamadas “Terraços”, cada uma
+            governada por uma linhagem influente. Cidades inteiras são
+            esculpidas diretamente no rochedo, conectadas por pontes suspensas e
+            passagens cavadas por gerações.
           </p>
         </article>
         <article>
-          <h3>Cultura</h3>
+          <h4>Cultura</h4>
+          <ul className={styles.list}>
+            <li>
+              Suas cidades são fortificações naturais, quase inacessíveis.
+            </li>
+            <li>
+              O nome familiar é mais importante do que o indivíduo; perder a
+              honra da linhagem é destino pior que escravidão.
+            </li>
+            <li>
+              Templos altíssimos onde sacerdotes gigantes cantam para manter o
+              equilíbrio entre terremotos e erupções.
+            </li>
+            <li>
+              Os gigantes usam lanças tão grandes quanto mastros de navio. Em
+              fileiras, parecem muralhas vivas.
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h4>Características Físicas</h4>
+          <ul className={styles.list}>
+            <li>Altura média: 4 a 5,5 metros</li>
+            <li>Pele: entre tons terrosos e pele clara</li>
+            <li>Cabelos: pretos, castanhos escuros ou avermelhados</li>
+            <li>Olhos: dourados, âmbar, castanho intenso</li>
+            <li>
+              Estrutura corporal: pernas e braços um pouco mais longos, feitos
+              para escalar montanhas
+            </li>
+            <li>
+              Tatuagens minerais (pigmentos de pedra) usadas para indicar
+              linhagem
+            </li>
+            <li>
+              Muitos usam marcas queimadas ou entalhadas representando
+              terremotos e vulcões
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h4>Vestuário</h4>
+          <ul className={styles.list}>
+            <li>Tecidos grossos de lã de criaturas das montanhas</li>
+            <li>
+              Mantos coloridos com padrões geométricos — símbolos de Terraços e
+              famílias
+            </li>
+            <li>Armaduras de placas de obsidiana, cobre e pedra lapidada</li>
+            <li>Capacetes angulares inspirados em picos montanhosos</li>
+            <li>Joias enormes de jade, obsidiana, ouro e cobre</li>
+          </ul>
+        </article>
+
+        <article>
+          <h4>Nomes Comuns</h4>
           <ul>
             <li>
-              Cada comunidade mantém Conselhos Elementais, onde druidas e magos
-              interpretam os sinais da natureza antes de qualquer decisão
-              importante
+              Masculinos: Maq’ran, Teylor, Kanmor, Urel’kar, Yantor, Illamak
+            </li>
+            <li>Femininos:, Nayka, Oraya, Kalliri, Taylla, Mirka, Yawira</li>
+            <li>
+              Sobrenomes (linhagens/terraços): da Rocha, dos Abismos do Sol, da
+              Lança Vermelha, da Coluna da Montanha, das Três Cordilheiras
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Njorka</h3>
+          <p>
+            Njorka é um vasto reino de picos congelados, fiordes colossais e
+            florestas escuras onde o vento constante parece sussurrar os nomes
+            dos mortos. Habitado por gigantes de pele azulada, olhos claros e
+            força absurda, o povo de Njorka é moldado pela dureza do inverno
+            eterno.
+          </p>
+        </article>
+        <article>
+          <h4>Cultura</h4>
+          <ul className={styles.list}>
+            <li>
+              Quebras de juramento são punidas com exílio, pior que a morte.
             </li>
             <li>
-              os Eladrin veem o mundo exterior como instável e corrompido devido
-              a guerra fazendo suas cidades são ocultas por ilusões, selvas
-              vivas e barreiras arcanas
+              Muitos acreditam que o inverno é uma entidade viva, que escolhe
+              quem deve sobreviver.
             </li>
             <li>
-              Estrangeiros só são aceitos após provas de respeito à natureza e
-              resistência à magia elemental
+              A magia rúnica é parte do cotidiano; ferreiros são quase
+              sacerdotes.
             </li>
             <li>
-              Entre os Eladrin, conjurar magia é um ato artístico. Feitiços são
-              executados com danças rituais, pinturas corporais naturais e entre
-              outras coisas e erros mágicos são vistos como desrespeito à
-              tradição, não simples falhas técnicas.
+              Disputas entre clãs são resolvidas em duelos ritualísticos
+              supervisionados por um “Heraldo da Neve”
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h4>Características Físicas</h4>
+          <ul className={styles.list}>
+            <li>Altura média: 4,5 a 6 metros</li>
+            <li>Pele: acinzentada, azulada ou branca, como pedra fria</li>
+            <li>Cabelos: claros (loiro, prateado, branco gelo)</li>
+            <li>Barbas longas entre os homens, e tranças entre as mulheres</li>
+            <li>Olhos: azuis muito claros, quase luminosos</li>
+            <li>
+              Corpo: robusto, ombros largos, aparência endurecida pelo frio
+            </li>
+            <li>
+              Muitos possuem cicatrizes profundas, consideradas símbolos de
+              honra
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h4>Vestuário</h4>
+          <ul className={styles.list}>
+            <li>
+              Pelagens grossas de ursos, lobos gigantes e mamutes glaciais
+            </li>
+            <li>
+              Armaduras de ferro rúnico, pesadas, com gravuras de gelo e neve
+            </li>
+            <li>Elmos com chifres curtos ou coroas de gelo cristalizado</li>
+            <li>Capas enormes presas por broches rúnicos</li>
+            <li>
+              Mulheres guerreiras usam trançados cerimoniais para indicar status
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h4>Nomes Comuns</h4>
+          <ul className={styles.list}>
+            <li>
+              Masculinos: Hrólf, Skjorn, Vaelgund, Haldrek, Jornvik, Fjalmar
+            </li>
+            <li>
+              Femininos: Brynja, Astrild, Freylda, Sigrund, Yrsa, Tharilma
+            </li>
+            <li>
+              Sobrenomes (clãs): dos Sete Invernos, Manto de Neve, Martelo
+              Rúnico, Lobo, Filhos do Fiorde etc
             </li>
           </ul>
         </article>
       </section>
       <section>
-        <h2>Nomes comuns</h2>
-        <h3>Masculinos</h3>
-        <ul className={styles.list}>
-          <li>Aelthir</li>
-          <li>Caelion</li>
-          <li>Ithrael</li>
-          <li>Vaelor</li>
-          <li>Thirien</li>
-          <li>Lioren</li>
-          <li>Maerith</li>
-          <li>Sylvaron</li>
-          <li>Eryndor</li>
-          <li>Kaelith</li>
-          <li>Nymarion</li>
-          <li>Faelros</li>
-        </ul>
-        <h3>Femininos</h3>
-        <ul className={styles.list}>
-          <li>Aelyra</li>
-          <li>Saelune</li>
-          <li>Ithilwen</li>
-          <li>Vaelora</li>
-          <li>Liora</li>
-          <li>Nyssara</li>
-          <li>Elaria</li>
-          <li>Sylphae</li>
-          <li>Myrieth</li>
-          <li>Caelyth</li>
-          <li>Faelira</li>
-          <li>Thyssiel</li>
-        </ul>
-      </section>
-      <section>
-        <h2>FIGURAS MARCANTES</h2>
-        <ul>
-          <li>Drizztam, o sábio das árvores</li>
-          <li>Cassedre, imperatriz das estações</li>
-          <li>Nox, a montanha</li>
-        </ul>
-      </section>
-      <section>
-        <h2>TRAÇOS RACIAIS DOS ELADRIN</h2>
-        <dl>
-          <dt>Idade</dt>
-          <dd>
-            Os eladrin atingem a maturidade física aos 20 anos, mas seu processo
-            de envelhecimento se estabiliza após 100. Quando se consideram
-            adulto e vivem até 600 anos.
-          </dd>
-          <dt>Visão</dt>
-          <dd> Visão no escuro de até 18 metros em tons de cinza</dd>
-          <dt>Atributos</dt>
-          <dd> +2 Arcanismo +4 natureza</dd>
-          <dt>Habilidade Racial</dt>
-          <dd>
-            Suas alturas varia entre 1,60 ate 1,90 Tem a capacidade de se mover
-            entre uma camada fraca do plano etéreo se Teletransportando ate 5
-            metros pelo campo, não podendo ser atacado oportunidade e fica
-            invisível quando acaba seu turno durando só seu turno e só sendo
-            usado apenas uma vez por descanso longo.
-          </dd>
-          <dt>Descanso</dt>
-          <dd>
-            Em vez de dormir, os eladrin entram num estado de meditação
-            conhecido como transe, bastando apensas 4 horas para um descanso
-            curto e 6 horas para um longo.
-          </dd>
-        </dl>
+        <h2>TRAÇOS RACIAIS DOS GIGANTES</h2>
+        <article>
+          <dl>
+            <dt>Atributos</dt>
+            <dd>
+              +5 força +4 Constituição –1 Destreza +2 intimidar +2 Tolerância +2
+              observar
+            </dd>
+            <dt>Ancestralidade</dt>
+            <dd>
+              Os gigantes sempre tiveram uma grande resistência e alcance, por
+              isso sua ancestralidade sempre foi:
+            </dd>
+            <dd>
+              Ancestralidade: você começa com 120 de vida adicional na criação
+              do personagem e as armas corpo a corpo tem um alcance aumentado em
+              +5.
+            </dd>
+          </dl>
+        </article>
       </section>
       <section>
         <h2>Classes</h2>
+
         <ul className={styles.list}>
           <li>Arqueiros</li>
-          <li>Arqueiro mágico</li>
-          <li>Guerreiro</li>
-          <li>Cavaleiro</li>
-          <li>Lanceiro</li>
-          <li>Mago</li>
-          <li>Mago espiritual</li>
-          <li>Mago infernal</li>
-          <li>Bardo</li>
-          <li>Feiticeiro</li>
-          <li>Druida</li>
-          <li>Xamã</li>
-          <li>Druida sombrio</li>
-          <li>Bruxo</li>
-          <li>Caçador</li>
-          <li>Domador de monstros</li>
-          <li>Cozinheiro de feras</li>
-          <li>Caçador espiritual</li>
-          <li>Ladino</li>
-          <li>Pirata</li>
+          <li>
+            Guerreiro
+            <ul>
+              <li>Gladiador</li>
+            </ul>
+          </li>
+          <li>Bárbaro</li>
+          <li>
+            Clérigo
+            <ul>
+              <li>Paladino</li>
+              <li>Guardião</li>
+            </ul>
+          </li>
         </ul>
-      </section>
-      <section>
-        <h2>ESTAÇÔES</h2>
-        <article>
-          <h3>Primavera</h3>
-          <p>
-            Os Eladrin da Primavera são seres mais leves guiados pela emoção,
-            pelo impulso e pelo amor à liberdade mas também grande guerreiros e
-            um povo muito forte. +2 Carisma +1 Destreza ou Instinto •Vantagem
-            contra efeitos de controle mental •Comunicação básica com plantas e
-            pequenos animais.
-          </p>
-        </article>
-        <article>
-          <h3>Verão</h3>
-          <p>
-            Os Eladrin do Verão carregam o peso da glória e da guerra, lutando
-            desde o início com todos e nunca recuando, o emblema dourado vai
-            além do calor. +2 força ou Carisma +1 Constituição •Quando ferido
-            gravemente, recebe bônus temporário de ataque ou dano quando chega a
-            10 de vida. •possui resistência ao calor, reduz dano de fogo.
-          </p>
-        </article>
-        <article>
-          <h3>Outono</h3>
-          <p>
-            Os Eladrin do Outono falam baixo, mas suas palavras moldam a
-            diplomacia, os maiores magos e conhecedores da magia entre todos os
-            eladrin. +2 Instinto +1 carisma ou conhecimento • +2 percepção •
-            Vantagem contra efeitos de ilusão e confusão.
-          </p>
-        </article>
-        <article>
-          <h3>Inverno</h3>
-          <p>
-            Os Eladrin do Inverno conhecem o silêncio, tão resistentes quanto as
-            árvores, e tão honrados quanto um Paladino. +2 Constituição ou
-            Instinto +1 conhecimento • Imunidade ou bônus contra efeitos de
-            charme. • Resistência a dano de frio e vantagem contra medo
-          </p>
-        </article>
       </section>
     </main>
   )

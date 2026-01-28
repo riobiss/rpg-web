@@ -306,7 +306,7 @@ export default async function Page() {
       </section>
 
       <section>
-        <h3>Classes</h3>
+        <h2>Classes</h2>
 
         <ul className={styles.list}>
           <li>
