@@ -6,7 +6,11 @@ import { useState } from "react"
 import styles from "./SelectCharacter.module.css"
 import { Character } from "@/types/Character"
 
-export default function SelectCharacter() {
+type Props = {
+  onConfirm: (characters: Character[]) => void
+}
+
+export default function SelectCharacter({ onConfirm }: Props) {
   const [view, setView] = useState<"players" | "enemies">("players")
   const [selected, setSelected] = useState<Character[]>([])
 
@@ -48,7 +52,6 @@ export default function SelectCharacter() {
           </button>
         </div>
 
-        {/* DISPONÍVEIS */}
         <ul className={styles.listCharacter}>
           {list.map((c) => {
             const isSelected = selected.some((s) => s.id === c.id)
@@ -72,11 +75,9 @@ export default function SelectCharacter() {
         </ul>
       </div>
       <div className={styles.containerSelected}>
-        {/* SELECIONADOS */}
         {selected.length > 0 && (
           <>
             <h3>Selecionados ({selected.length})</h3>
-
             <ul className={styles.listCharacter}>
               {selected.map((c) => (
                 <li key={c.id}>
@@ -91,6 +92,15 @@ export default function SelectCharacter() {
           </>
         )}
       </div>
+      <>
+        <button
+          className={styles.confirmButton}
+          disabled={selected.length === 0}
+          onClick={() => onConfirm(selected)}
+        >
+          Confirmar jogadores
+        </button>
+      </>
     </div>
   )
 }
