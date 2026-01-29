@@ -1,4 +1,6 @@
-const weapons = [
+import { Weapons } from "@/types/Weapons"
+
+const weapons: Weapons[] = [
   {
     id: 1,
     name: "Espada do Cavaleiro de Ferro",

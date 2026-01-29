@@ -91,14 +91,12 @@ export default function SelectCharacter({ onConfirm }: Props) {
           </ul>
         </div>
       )}
-      <>
-        <Button
-          disabled={selected.length === 0}
-          onClick={() => onConfirm(selected)}
-        >
-          Confirmar jogadores
-        </Button>
-      </>
+      <Button
+        disabled={selected.length === 0}
+        onClick={() => onConfirm(selected)}
+      >
+        Confirmar jogadores
+      </Button>
     </div>
   )
 }

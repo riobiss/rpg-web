@@ -1,5 +1,6 @@
-export type Swords = {
+export type Weapons = {
   name: string
+  id: number
   weaponType: string
   damage: {
     base: { rolls: number; sides: number; type?: string }[]

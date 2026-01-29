@@ -1,5 +1,3 @@
-import enemy from "@/data/rpg/World of Clans/entites/enemy"
-import player from "@/data/rpg/World of Clans/entites/player"
 import type { Turn } from "../../types/Turn"
 import { Character } from "@/types/Character"
 

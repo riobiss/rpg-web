@@ -1,5 +1,5 @@
 import type { Shields } from "./Shields"
-import type { Swords } from "./Swords"
+import type { Weapons } from "./Weapons"
 
 export type Character = {
   id: number
@@ -15,7 +15,7 @@ export type Character = {
   }
   defense: number
   backpack?: {
-    weapons?: Swords[]
+    weapons?: Weapons[]
     shields?: Shields[]
   }
 }
