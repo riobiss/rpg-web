@@ -5,6 +5,7 @@ import enemies from "@/data/rpg/World of Clans/entites/enemy"
 import { useState } from "react"
 import styles from "./SelectCharacter.module.css"
 import { Character } from "@/types/Character"
+import { Button } from "@/components/Button"
 
 type Props = {
   onConfirm: (characters: Character[]) => void
@@ -74,32 +75,29 @@ export default function SelectCharacter({ onConfirm }: Props) {
           })}
         </ul>
       </div>
-      <div className={styles.containerSelected}>
-        {selected.length > 0 && (
-          <>
-            <h3>Selecionados ({selected.length})</h3>
-            <ul className={styles.listCharacter}>
-              {selected.map((c) => (
-                <li key={c.id}>
-                  <span>{c.name}</span>
+      {selected.length > 0 && (
+        <div className={styles.containerSelected}>
+          <h3>Selecionados ({selected.length})</h3>
+          <ul className={styles.listCharacter}>
+            {selected.map((c) => (
+              <li key={c.id}>
+                <span>{c.name}</span>
 
-                  <div className={styles.characterActions}>
-                    <button onClick={() => handleRemove(c.id)}>Remover</button>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </>
-        )}
-      </div>
+                <div className={styles.characterActions}>
+                  <button onClick={() => handleRemove(c.id)}>Remover</button>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
       <>
-        <button
-          className={styles.confirmButton}
+        <Button
           disabled={selected.length === 0}
           onClick={() => onConfirm(selected)}
         >
           Confirmar jogadores
-        </button>
+        </Button>
       </>
     </div>
   )

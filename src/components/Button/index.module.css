@@ -1,0 +1,46 @@
+.confirmButton {
+  border-top: 1px solid var(--border-soft);
+  margin-top: 24px;
+}
+.confirmButton {
+  width: 100%;
+  margin-top: 24px;
+  padding: 14px 28px;
+
+  background: linear-gradient(135deg, var(--accent-main), var(--accent-strong));
+
+  color: var(--text-alternativ);
+  font-weight: 600;
+  font-size: 1rem;
+
+  border: 1px solid var(--border-hot);
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  box-shadow: var(--shadow-main), var(--shadow-accent);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease;
+}
+
+.confirmButton:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.9),
+    0 0 12px rgba(255, 90, 0, 0.5);
+}
+
+.confirmButton:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-main);
+}
+
+.confirmButton:disabled {
+  background: var(--bg-hover);
+  color: var(--text-muted);
+  border-color: var(--border-soft);
+  cursor: not-allowed;
+  box-shadow: none;
+}
