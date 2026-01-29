@@ -4,6 +4,8 @@ import weapons from "../weapons"
 const enemy: Character[] = [
   {
     id: 5001,
+    level: 1,
+    xp: 0,
     alive: false,
     initiative: 5,
     name: "Goblin",
@@ -17,6 +19,8 @@ const enemy: Character[] = [
   },
   {
     id: 5002,
+    level: 1,
+    xp: 0,
     alive: false,
     initiative: 1,
     name: "Ogro",
@@ -30,6 +34,8 @@ const enemy: Character[] = [
   },
   {
     id: 5003,
+    level: 1,
+    xp: 0,
     alive: false,
     initiative: 3,
     name: "Golem",

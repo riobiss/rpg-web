@@ -3,6 +3,8 @@ import type { Swords } from "./Swords"
 
 export type Character = {
   id: number
+  level: number
+  xp: number
   alive: boolean
   initiative: number
   name: string

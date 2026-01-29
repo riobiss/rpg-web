@@ -3,6 +3,8 @@ import weapons from "../weapons"
 const players: Character[] = [
   {
     id: 1,
+    level: 1,
+    xp: 0,
     alive: false,
     initiative: 0,
     name: "Cristo",
@@ -18,6 +20,8 @@ const players: Character[] = [
   },
   {
     id: 2,
+    level: 1,
+    xp: 0,
     alive: false,
     initiative: 0,
     name: "Jonas",
@@ -33,6 +37,8 @@ const players: Character[] = [
   },
   {
     id: 3,
+    level: 1,
+    xp: 0,
     alive: false,
     initiative: 0,
     name: "Jales",
