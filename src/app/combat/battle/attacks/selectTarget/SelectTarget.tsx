@@ -1,13 +1,29 @@
 import { Character } from "@/types/Character"
+import styles from "./SelectTarget.module.css"
 
 type Props = {
   characters: Character[]
 }
-export default function selectTarget({ characters }: Props) {
+
+export default function SelectTarget({ characters }: Props) {
   return (
-    <div>
-      <p>selecione o Alvo</p>
-      <p>{characters.map((c) => c.name)}</p>
+    <div className={styles.container}>
+      <h3 className={styles.title}>Selecione o alvo</h3>
+
+      <ul className={styles.targetList}>
+        {characters.map((c) => (
+          <li key={c.id} className={styles.targetCard}>
+            <div className={styles.info}>
+              <span className={styles.name}>{c.name}</span>
+              <span className={styles.stats}>
+                {c.health} HP • {c.defense} DEF
+              </span>
+            </div>
+
+            <button className={styles.selectButton}>Atacar</button>
+          </li>
+        ))}
+      </ul>
     </div>
   )
 }

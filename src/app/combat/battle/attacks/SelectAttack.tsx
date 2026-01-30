@@ -4,7 +4,6 @@ import { Weapons } from "@/types/Weapons"
 import { useState } from "react"
 import SelectTarget from "./selectTarget/SelectTarget"
 import styles from "./SelectAttack.module.css"
-import { Button } from "@/components/Button"
 type Props = {
   attacker: Character
   characters: Character[]

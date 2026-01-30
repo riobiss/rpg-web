@@ -1,6 +1,7 @@
 import { useState } from "react"
 import styles from "./SwordView.module.css"
 import type { Weapons } from "@/types/Weapons"
+import { Button } from "@/components/Button"
 
 type Props = {
   weapons: Weapons[]
@@ -11,20 +12,14 @@ export default function SwordView({ weapons, onConfirm }: Props) {
   const [selectedWeapon, setSelectedWeapon] = useState<Weapons | null>(null)
 
   return (
-    <div>
-      <h2 className={styles.title}>Espadas</h2>
+    <div className={styles.weaponGrid}>
+      {weapons.map((w) => {
+        const isSelected = selectedWeapon?.id === w.id
 
-      {weapons.length === 0 && (
-        <span className={styles.empty}>Nenhuma espada equipada</span>
-      )}
-
-      <div className={styles.weaponGrid}>
-        {weapons.map((w) => (
+        return (
           <div
             key={w.id}
-            className={`${styles.weaponCard} ${
-              selectedWeapon?.id === w.id ? styles.selected : ""
-            }`}
+            className={`${styles.weaponCard} ${isSelected ? styles.selected : ""}`}
             onClick={() => setSelectedWeapon(w)}
           >
             <div className={styles.header}>
@@ -57,18 +52,20 @@ export default function SwordView({ weapons, onConfirm }: Props) {
                 <span>{w.special}</span>
               </div>
             )}
-          </div>
-        ))}
-      </div>
 
-      {selectedWeapon && (
-        <button
-          className={styles.confirmButton}
-          onClick={() => onConfirm(selectedWeapon)}
-        >
-          Confirmar ataque com {selectedWeapon.name}
-        </button>
-      )}
+            {isSelected && (
+              <Button
+                onClick={(e) => {
+                  e.stopPropagation()
+                  onConfirm(w)
+                }}
+              >
+                Confirmar ataque
+              </Button>
+            )}
+          </div>
+        )
+      })}
     </div>
   )
 }
