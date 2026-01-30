@@ -1,5 +1,5 @@
 import { Character } from "@/types/Character"
-import SwordView from "../weapon/SwordView"
+import SwordView from "./weapon/SwordView"
 import { Weapons } from "@/types/Weapons"
 import { useState } from "react"
 import SelectTarget from "./selectTarget/SelectTarget"
@@ -20,11 +20,11 @@ export default function SelectAttack({ attacker, characters }: Props) {
   }
 
   return (
-    <div>
+    <div className={styles.container}>
       <div className={styles.actionButtons}>
-        <Button onClick={() => setAttack("sword")}>Espada</Button>
-        <Button onClick={() => setAttack("magic")}>Magia</Button>
-        <Button onClick={() => setAttack("abilities")}>Habilidades</Button>
+        <button onClick={() => setAttack("sword")}>Espada</button>
+        <button onClick={() => setAttack("magic")}>Magia</button>
+        <button onClick={() => setAttack("abilities")}>Habilidades</button>
       </div>
 
       {attack === "sword" && (

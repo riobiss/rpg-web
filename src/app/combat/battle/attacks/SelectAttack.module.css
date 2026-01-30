@@ -1,17 +1,16 @@
 .container {
   padding: 16px;
-  background: var(--bg-main);
 }
 .actionButtons {
   display: flex;
-  gap: 5px;
-  margin-top: 16px;
+  justify-content: space-between;
 }
 
 .actionButtons button {
   border: 1px solid var(--border-soft);
+  background-color: var(--accent-main);
   border-radius: 6px;
-
+  padding: 10px 20px;
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
@@ -27,6 +26,7 @@
   background-color: var(--bg-hover);
   border-color: var(--accent-main);
   box-shadow: var(--shadow-accent);
+  color: var(--text-main);
 }
 
 .actionButtons button:active {

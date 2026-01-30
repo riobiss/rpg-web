@@ -3,7 +3,7 @@
 import { Character } from "@/types/Character"
 import { BattleHeader } from "./battleHeader/BattleHeader"
 import styles from "./Battle.module.css"
-import SelectAttack from "./attacks/selectAttack/SelectAttack"
+import SelectAttack from "./attacks/SelectAttack"
 type Props = {
   characters: Character[]
 }
