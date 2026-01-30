@@ -1,34 +1,3 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 16px;
-  padding: 16px 24px;
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-soft);
-  border-left: 4px solid var(--accent-main);
-  border-radius: 8px;
-
-  box-shadow: var(--shadow-main);
-}
-
-.headerInfo {
-  display: flex;
-  gap: 16px;
-
-  color: var(--text-muted);
-  font-size: 0.9rem;
-}
-
-.turn {
-  color: var(--text-title);
-  font-weight: 600;
-}
-
-.phase {
-  color: var(--accent-main);
-  font-weight: 500;
-}
 
 .activeCharacter {
   display: flex;
@@ -43,18 +12,7 @@
   color: var(--text-title);
 }
 
-.activeBadge {
-  padding: 4px 10px;
 
-  background-color: var(--accent-main);
-  color: var(--text-alternativ);
-
-  font-size: 0.75rem;
-  font-weight: 600;
-
-  border-radius: 999px;
-  box-shadow: var(--shadow-accent);
-}
 .container {
   padding: 10px;
 }
@@ -66,10 +24,8 @@
 }
 
 .actionButtons button {
-  padding: 10px 16px;
 
-  background-color: var(--bg-surface);
-  color: var(--text-title);
+ 
 
   border: 1px solid var(--border-soft);
   border-radius: 6px;

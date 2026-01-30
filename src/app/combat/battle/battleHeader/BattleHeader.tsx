@@ -1,4 +1,4 @@
-import styles from "./Battle.module.css"
+import styles from "./BattleHeader.module.css"
 import { Character } from "@/types/Character"
 
 type BattleHeaderProps = {

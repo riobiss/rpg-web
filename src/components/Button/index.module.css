@@ -1,10 +1,10 @@
 .confirmButton {
   width: 100%;
-  padding: 14px 28px;
-  margin-top: 20px;
+  padding: 10px 16px;
+  margin-top: 10px;
   background: linear-gradient(135deg, var(--accent-main), var(--accent-strong));
 
-  color: var(--text-alternativ);
+  color: var(--text-main);
   font-weight: bold;
   font-size: 1rem;
 

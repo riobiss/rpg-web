@@ -92,7 +92,7 @@ export default function SelectCharacter({ onConfirm }: Props) {
         </div>
       )}
       <Button
-        disabled={selected.length === 0}
+        disabled={selected.length < 2}
         onClick={() => onConfirm(selected)}
       >
         Confirmar jogadores

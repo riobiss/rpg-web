@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Character } from "@/types/Character"
-import { BattleHeader } from "./BattleHeader"
+import { BattleHeader } from "./battleHeader/BattleHeader"
 import styles from "./Battle.module.css"
 import { Button } from "@/components/Button"
 import SelectAttack from "./attacks/SelectAttack"
@@ -18,10 +18,9 @@ export default function BattleScreen({ characters }: Props) {
       <BattleHeader turn={turn} phase={phase} current={characters[0]} />
       {phase === "acao" ? (
         <div className={styles.actionButtons}>
-          <button onClick={() => setAttack("punch")}>Soco</button>
-          <button onClick={() => setAttack("sword")}>Espada</button>
-          <button onClick={() => setAttack("magic")}>Magia</button>
-          <button onClick={() => setAttack("abilities")}>Habilidades</button>
+          <Button onClick={() => setAttack("sword")}>Espada</Button>
+          <Button onClick={() => setAttack("magic")}>Magia</Button>
+          <Button onClick={() => setAttack("abilities")}>Habilidades</Button>
         </div>
       ) : null}
       <SelectAttack attack={attack} character={characters[0]} />
