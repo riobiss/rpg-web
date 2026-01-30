@@ -1,11 +1,15 @@
+import { useState } from "react"
 import styles from "./SwordView.module.css"
 import type { Weapons } from "@/types/Weapons"
 
 type Props = {
   weapons: Weapons[]
+  onConfirm: (weapon: Weapons) => void
 }
 
-export default function SwordView({ weapons }: Props) {
+export default function SwordView({ weapons, onConfirm }: Props) {
+  const [selectedWeapon, setSelectedWeapon] = useState<Weapons | null>(null)
+
   return (
     <div>
       <h2 className={styles.title}>Espadas</h2>
@@ -16,7 +20,13 @@ export default function SwordView({ weapons }: Props) {
 
       <div className={styles.weaponGrid}>
         {weapons.map((w) => (
-          <div key={w.id} className={styles.weaponCard}>
+          <div
+            key={w.id}
+            className={`${styles.weaponCard} ${
+              selectedWeapon?.id === w.id ? styles.selected : ""
+            }`}
+            onClick={() => setSelectedWeapon(w)}
+          >
             <div className={styles.header}>
               <span className={styles.name}>{w.name}</span>
               <span className={styles.type}>{w.weaponType}</span>
@@ -50,6 +60,15 @@ export default function SwordView({ weapons }: Props) {
           </div>
         ))}
       </div>
+
+      {selectedWeapon && (
+        <button
+          className={styles.confirmButton}
+          onClick={() => onConfirm(selectedWeapon)}
+        >
+          Confirmar ataque com {selectedWeapon.name}
+        </button>
+      )}
     </div>
   )
 }
