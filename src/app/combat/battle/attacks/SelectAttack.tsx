@@ -2,21 +2,17 @@ import { Character } from "@/types/Character"
 import SwordView from "./weapon/SwordView"
 import { Weapons } from "@/types/Weapons"
 import { useState } from "react"
-import SelectTarget from "./selectTarget/SelectTarget"
 import styles from "./SelectAttack.module.css"
+
 type Props = {
   attacker: Character
-  characters: Character[]
+  onWeaponSelect: (weapon: Weapons) => void
 }
-export default function SelectAttack({ attacker, characters }: Props) {
+
+export default function SelectAttack({ attacker, onWeaponSelect }: Props) {
   const [attack, setAttack] = useState<"sword" | "magic" | "abilities">("sword")
-  const [attackSelected, setAttackSelected] = useState<Weapons | null>(null)
 
   const weapons = attacker.backpack?.weapons ?? []
-
-  if (attackSelected) {
-    return <SelectTarget characters={characters} />
-  }
 
   return (
     <div className={styles.container}>
@@ -27,16 +23,11 @@ export default function SelectAttack({ attacker, characters }: Props) {
       </div>
 
       {attack === "sword" && (
-        <SwordView weapons={weapons} onConfirm={setAttackSelected} />
+        <SwordView weapons={weapons} onConfirm={onWeaponSelect} />
       )}
 
-      {attack === "magic" &&
-        /* <MagicView /> */
-        null}
-
-      {attack === "abilities" &&
-        /* <AbilityView /> */
-        null}
+      {attack === "magic" && null}
+      {attack === "abilities" && null}
     </div>
   )
 }

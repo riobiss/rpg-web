@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import SelectCharacter from "./setup/SelectCharacter"
-import BattleScreen from "./battle/BattleScreen"
+import BattleScreen from "./battle/BattleController"
 import { Character } from "@/types/Character"
 
 export default function CombatPage() {

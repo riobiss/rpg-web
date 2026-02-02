@@ -3,9 +3,10 @@ import styles from "./SelectTarget.module.css"
 
 type Props = {
   characters: Character[]
+  onSelect: (target: Character) => void
 }
 
-export default function SelectTarget({ characters }: Props) {
+export default function SelectTarget({ characters, onSelect }: Props) {
   return (
     <div className={styles.container}>
       <h3 className={styles.title}>Selecione o alvo</h3>
@@ -20,7 +21,9 @@ export default function SelectTarget({ characters }: Props) {
               </span>
             </div>
 
-            <button className={styles.selectButton}>Atacar</button>
+            <button className={styles.selectButton} onClick={() => onSelect(c)}>
+              Atacar
+            </button>
           </li>
         ))}
       </ul>
