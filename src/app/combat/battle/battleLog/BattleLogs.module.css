@@ -21,7 +21,7 @@
   flex-direction: column;
   gap: 10px;
   overflow-y: auto;
-  max-height: 150px;
+  max-height: 200px;
 }
 
 .logItem {
