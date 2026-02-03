@@ -1,5 +1,4 @@
-export type DiceRoll = {
-  rolls: number
-  sides: number
-  modifier?: number
+export type DiceResult = {
+  rolls: number[]
+  total: number
 }

@@ -17,8 +17,8 @@ export default function applyDamageWeapon(
     baseDamage += result.total
   }
 
-  const d20Result = dice({ rolls: 1, sides: 20 })
-  const rollD20 = d20Result.total
+  const d20 = dice({ rolls: 1, sides: 20 })
+  const rollD20 = d20.total
 
   const hit = rollD20 >= 14
   const critical = rollD20 === 20
@@ -37,8 +37,8 @@ export default function applyDamageWeapon(
       targetId: target.id,
       rollD20,
       damageRolls,
-      baseDamage,
-      finalDamage,
+      baseDamage, 
+      finalDamage, 
       defense: target.defense,
       hit,
       critical,
