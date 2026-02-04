@@ -1,51 +1,115 @@
-import { Character } from "@/types/Character"
-import shields from "../shields"
+import { MonsterCharacter } from "@/types/MonsterCharacter"
 import weapons from "../weapons"
-const enemy: Character[] = [
+
+const monsterCharacter: MonsterCharacter[] = [
   {
-    id: 5001,
+    id: "monst_5001",
+    identity: {
+      name: "Goblin",
+    },
+
+    meta: {
+      isNPC: true,
+    },
+
     level: 1,
     xp: 0,
     alive: false,
     initiative: 5,
-    name: "Goblin",
-    damage: { rolls: 1, sides: 12 },
-    health: 10,
-    defense: 4,
-    backpack: {
-      weapons: [weapons[0]],
-      shields: [shields[0]],
+
+    damage: {
+      rolls: 1,
+      sides: 12,
+    },
+    health: {
+      life: 60,
+    },
+    defense: {
+      base: 5,
+      evasion: 0,
+      armor: 0,
+      shield: 0,
+    },
+    state: {
+      currentLife: 60,
+    },
+    equipment: {
+      weaponIds: [weapons[0].id],
     },
   },
   {
-    id: 5002,
+    id: "monst_5002",
+
+    identity: {
+      name: "Ogro",
+    },
+
+    meta: {
+      isNPC: true,
+    },
+
     level: 1,
     xp: 0,
     alive: false,
     initiative: 1,
-    name: "Ogro",
-    damage: { rolls: 1, sides: 18 },
-    health: 100,
-    defense: 10,
-    backpack: {
-      weapons: [weapons[1]],
-      shields: [shields[1]],
+
+    damage: {
+      rolls: 1,
+      sides: 18,
+    },
+    health: {
+      life: 100,
+    },
+    defense: {
+      base: 10,
+      evasion: 0,
+      armor: 0,
+      shield: 0,
+    },
+    state: {
+      currentLife: 100,
+    },
+    equipment: {
+      weaponIds: [weapons[1].id],
     },
   },
+
   {
-    id: 5003,
+    id: "monst_5003",
+
+    identity: {
+      name: "Golem",
+    },
+
+    meta: {
+      isNPC: true,
+    },
+
     level: 1,
     xp: 0,
     alive: false,
     initiative: 3,
-    name: "Golem",
-    damage: { rolls: 1, sides: 14 },
-    health: 80,
-    defense: 15,
-    backpack: {
-      weapons: [weapons[2]],
-      shields: [shields[2]],
+
+    damage: {
+      rolls: 1,
+      sides: 14,
+    },
+    health: {
+      life: 80,
+    },
+    defense: {
+      base: 15,
+      evasion: 0,
+      armor: 0,
+      shield: 0,
+    },
+    state: {
+      currentLife: 60,
+    },
+    equipment: {
+      weaponIds: [weapons[2].id],
     },
   },
 ]
-export default enemy
+
+export default monsterCharacter
