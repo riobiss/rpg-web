@@ -1,9 +1,9 @@
-import { Character } from "@/types/Character"
+import { BaseCharacter } from "@/types/BaseCharacter"
 import styles from "./SelectTarget.module.css"
 
 type Props = {
-  characters: Character[]
-  onSelect: (target: Character) => void
+  characters: BaseCharacter[]
+  onSelect: (target: BaseCharacter) => void
 }
 
 export default function SelectTarget({ characters, onSelect }: Props) {
@@ -15,9 +15,9 @@ export default function SelectTarget({ characters, onSelect }: Props) {
         {characters.map((c) => (
           <li key={c.id} className={styles.targetCard}>
             <div className={styles.info}>
-              <span className={styles.name}>{c.name}</span>
+              <span className={styles.name}>{c.identity.name}</span>
               <span className={styles.stats}>
-                {c.health} HP • {c.defense} DEF
+                {c.state.currentLife}/{c.health.life} HP • {c.defense.base} DEF
               </span>
             </div>
 

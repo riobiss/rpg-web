@@ -1,18 +1,20 @@
-import { Character } from "@/types/Character"
 import SwordView from "./weapon/SwordView"
-import { Weapons } from "@/types/Weapons"
+import { Weapon } from "@/types/Weapon"
 import { useState } from "react"
 import styles from "./SelectAttack.module.css"
+import { BaseCharacter } from "@/types/BaseCharacter"
 
 type Props = {
-  attacker: Character
-  onWeaponSelect: (weapon: Weapons) => void
+  attacker: BaseCharacter
+  weapons: Weapon[]
+  onWeaponSelect: (weapon: Weapon) => void
 }
 
-export default function SelectAttack({ attacker, onWeaponSelect }: Props) {
+export default function SelectAttack({
+  weapons,
+  onWeaponSelect,
+}: Props) {
   const [attack, setAttack] = useState<"sword" | "magic" | "abilities">("sword")
-
-  const weapons = attacker.backpack?.weapons ?? []
 
   return (
     <div className={styles.container}>

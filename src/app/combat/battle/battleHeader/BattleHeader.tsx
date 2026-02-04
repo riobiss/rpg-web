@@ -1,5 +1,5 @@
 import styles from "./BattleHeader.module.css"
-import { Character } from "@/types/Character"
+import { Character } from "@/types/PlayerCharacter"
 
 type BattleHeaderProps = {
   turn: number

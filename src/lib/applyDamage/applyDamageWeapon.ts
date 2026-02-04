@@ -1,45 +1,57 @@
 import dice from "@/lib/dice/dice"
-import { Character } from "@/types/Character"
 import { DamageResult } from "@/types/DamageResult"
-import { Weapons } from "@/types/Weapons"
+import { Weapon } from "@/types/Weapon"
+import { BaseCharacter } from "@/types/BaseCharacter"
+
+function getDefenseValues(defense: BaseCharacter["defense"]) {
+  return {
+    evasion: defense.evasion,
+    totalArmor: defense.base + defense.armor + defense.shield,
+  }
+}
 
 export default function applyDamageWeapon(
-  attacker: Character,
-  target: Character,
-  weapon: Weapons,
+  attacker: BaseCharacter,
+  target: BaseCharacter,
+  weapon: Weapon,
 ): DamageResult {
-  const damageRolls: number[] = []
-  let baseDamage = 0
+  const damageResult = dice({
+    rolls: weapon.damage.rolls,
+    sides: weapon.damage.sides,
+  })
 
-  for (const d of weapon.damage.base) {
-    const result = dice({ rolls: d.rolls, sides: d.sides })
-    damageRolls.push(...result.rolls)
-    baseDamage += result.total
-  }
+  const baseDamage = damageResult.total
+  const damageRolls = damageResult.rolls
 
-  const d20 = dice({ rolls: 1, sides: 20 })
-  const rollD20 = d20.total
+  const { total: rollD20 } = dice({ rolls: 1, sides: 20 })
 
-  const hit = rollD20 >= 14
+  const { evasion, totalArmor } = getDefenseValues(target.defense)
+
+  const hit = rollD20 >= evasion
   const critical = rollD20 === 20
 
-  const rawDamage = hit ? (critical ? baseDamage * 2 : baseDamage) : 0
+  const effectiveDefense = weapon.damage.type === "true" ? 0 : totalArmor
 
-  const finalDamage = hit ? Math.max(rawDamage - target.defense, 0) : 0
+  const rawDamage = hit ? (critical ? baseDamage * 2 : baseDamage) : 0
+  const finalDamage = hit ? Math.max(rawDamage - effectiveDefense, 0) : 0
+  const updatedTarget: BaseCharacter = {
+    ...target,
+    state: {
+      ...target.state,
+      currentLife: Math.max(target.state.currentLife - finalDamage, 0),
+    },
+  }
 
   return {
-    updatedTarget: {
-      ...target,
-      health: Math.max(target.health - finalDamage, 0),
-    },
+    updatedTarget,
     log: {
       attackerId: attacker.id,
       targetId: target.id,
       rollD20,
       damageRolls,
-      baseDamage, 
-      finalDamage, 
-      defense: target.defense,
+      baseDamage,
+      finalDamage,
+      defense: effectiveDefense,
       hit,
       critical,
     },

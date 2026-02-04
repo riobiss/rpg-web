@@ -4,26 +4,27 @@ import players from "@/data/rpg/World of Clans/entites/player"
 import enemies from "@/data/rpg/World of Clans/entites/enemy"
 import { useState } from "react"
 import styles from "./SelectCharacter.module.css"
-import { Character } from "@/types/Character"
 import { Button } from "@/components/Button"
+import { BaseCharacter } from "@/types/BaseCharacter"
 
 type Props = {
-  onConfirm: (characters: Character[]) => void
+  onConfirm: (characters: BaseCharacter[]) => void
 }
 
 export default function SelectCharacter({ onConfirm }: Props) {
   const [view, setView] = useState<"players" | "enemies">("players")
-  const [selected, setSelected] = useState<Character[]>([])
+  const [selected, setSelected] = useState<BaseCharacter[]>([])
 
-  const list = view === "players" ? players : enemies
+  const list: BaseCharacter[] = view === "players" ? players : enemies
 
-  function handleSelect(character: Character) {
+  function handleSelect(character: BaseCharacter) {
     const alreadySelected = selected.some((c) => c.id === character.id)
     if (alreadySelected) return
 
     setSelected((prev) => [...prev, character])
   }
-  function handleRemove(id: Character["id"]) {
+
+  function handleRemove(id: BaseCharacter["id"]) {
     setSelected((prev) => prev.filter((c) => c.id !== id))
   }
 
@@ -59,7 +60,7 @@ export default function SelectCharacter({ onConfirm }: Props) {
 
             return (
               <li key={c.id}>
-                <span>{c.name}</span>
+                <span>{c.identity.name}</span>
 
                 <button className={styles.showCharacterButton}>Exibir</button>
 
@@ -81,7 +82,7 @@ export default function SelectCharacter({ onConfirm }: Props) {
           <ul className={styles.listCharacter}>
             {selected.map((c) => (
               <li key={c.id}>
-                <span>{c.name}</span>
+                <span>{c.identity.name}</span>
 
                 <div className={styles.characterActions}>
                   <button onClick={() => handleRemove(c.id)}>Remover</button>

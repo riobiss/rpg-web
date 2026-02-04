@@ -1,28 +1,34 @@
 "use client"
 
-import { Character } from "@/types/Character"
+import { PlayerCharacter } from "@/types/PlayerCharacter"
 import styles from "./Battle.module.css"
 import SelectAttack from "./attacks/SelectAttack"
 import SelectTarget from "./attacks/selectTarget/SelectTarget"
-import { Weapons } from "@/types/Weapons"
+import { Weapon } from "@/types/Weapon"
 import { useState } from "react"
-import applyDamageWeapon from "./attacks/applyDamage/applyDamageWeapon"
 import { BattleLog } from "@/types/BattleLog"
 import BattleLogs from "./battleLog/BattleLogs"
+import applyDamageWeapon from "@/lib/applyDamage/applyDamageWeapon"
+import weapons from "@/data/rpg/World of Clans/weapons"
+import { BaseCharacter } from "@/types/BaseCharacter"
 
 type Props = {
-  characters: Character[]
+  characters: BaseCharacter[]
 }
 
 export default function BattleScreen({ characters }: Props) {
   const [battleCharacters, setBattleCharacters] =
-    useState<Character[]>(characters)
-  const [weapon, setWeapon] = useState<Weapons | null>(null)
+    useState<BaseCharacter[]>(characters)
+  const [weapon, setWeapon] = useState<Weapon | null>(null)
   const [logs, setLogs] = useState<BattleLog[]>([])
 
   const attacker = battleCharacters[0]
 
-  function handleAttack(target: Character) {
+  const attackerWeapons = weapons.filter((w) =>
+    attacker.equipment.weaponIds.includes(w.id),
+  )
+
+  function handleAttack(target: BaseCharacter) {
     if (!weapon) return
 
     const result = applyDamageWeapon(attacker, target, weapon)
@@ -41,7 +47,11 @@ export default function BattleScreen({ characters }: Props) {
   return (
     <div className={styles.container}>
       {!weapon && (
-        <SelectAttack attacker={attacker} onWeaponSelect={setWeapon} />
+        <SelectAttack
+          attacker={attacker}
+          weapons={attackerWeapons}
+          onWeaponSelect={setWeapon}
+        />
       )}
 
       {weapon && (
