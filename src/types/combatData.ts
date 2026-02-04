@@ -1,7 +1,7 @@
-import type { Character } from "./Character"
+import { Characters } from "./Characters"
 
 export type DamageResult = {
-  target: Character
+  target: Characters
   roll: number
   effectiveDamage: number
   diceRolls: number | number[]

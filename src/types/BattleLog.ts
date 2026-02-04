@@ -1,11 +1,13 @@
 export type BattleLog = {
-  attackerId: number
-  targetId: number
+  attackerId: string
+  targetId: string
+
   rollD20: number
   damageRolls: number[]
   baseDamage: number
   finalDamage: number
   defense: number
+
   hit: boolean
   critical: boolean
 }

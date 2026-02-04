@@ -1,5 +1,6 @@
-import type { Character } from "./Character"
+import { Characters } from "./Characters"
+
 export type Combatants = {
-  attacker: Character
-  target: Character
+  attacker: Characters
+  target: Characters
 }
