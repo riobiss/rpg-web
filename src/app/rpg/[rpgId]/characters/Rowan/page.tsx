@@ -13,8 +13,13 @@ export default function CharactersPage() {
       {characters.map((c) => (
         <section key={c.id} className={styles.card}>
           <h3>{c.identity.name}</h3>
-          <header className={styles.header}>
-            <Image src={c.image} alt={c.identity.name} width={96} height={96} />
+          <div className={styles.header}>
+            <Image
+              src={c.image}
+              alt={c.identity.name}
+              width={150}
+              height={192}
+            />
             <div>
               {c.identity.nickname && <p>“{c.identity.nickname}”</p>}
               <p>
@@ -24,7 +29,7 @@ export default function CharactersPage() {
               </p>
               <p>Reino: {c.identity.kingdom}</p>
             </div>
-          </header>
+          </div>
 
           {/* Estado */}
           <div className={styles.grid}>
