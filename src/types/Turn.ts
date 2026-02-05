@@ -1,5 +1,5 @@
-import type { Character } from "./PlayerCharacter"
+import { BaseCharacter } from "./BaseCharacter"
 
 export type Turn = {
-  entity: Character
+  entity: BaseCharacter
 }
