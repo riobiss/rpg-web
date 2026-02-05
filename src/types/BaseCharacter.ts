@@ -2,6 +2,7 @@ import { Defense } from "./Defense"
 
 export type BaseCharacter = {
   id: string
+  image?: string
   identity: {
     name: string
   }

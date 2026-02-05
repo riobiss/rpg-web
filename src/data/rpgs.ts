@@ -1,3 +1,4 @@
+import players from "./rpg/World of Clans/entites/player"
 import races from "./rpg/World of Clans/races"
 import rpgWoc from "./rpg/World of Clans/rpg"
 const rpg = [
@@ -8,6 +9,7 @@ const rpg = [
     master: rpgWoc.master,
     description: rpgWoc.description,
     races: races,
+    charactersData: players,
   },
   {
     id: 2,

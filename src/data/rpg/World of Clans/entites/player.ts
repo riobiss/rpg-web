@@ -6,6 +6,7 @@ const players: PlayerCharacter[] = [
     id: "char_001",
     createdAt: new Date(),
     updatedAt: new Date(),
+    image: "/images/characters/image-char-001.jpg",
     identity: {
       name: "Rowan",
       nickname: "",

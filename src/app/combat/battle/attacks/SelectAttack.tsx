@@ -10,10 +10,7 @@ type Props = {
   onWeaponSelect: (weapon: Weapon) => void
 }
 
-export default function SelectAttack({
-  weapons,
-  onWeaponSelect,
-}: Props) {
+export default function SelectAttack({ weapons, onWeaponSelect }: Props) {
   const [attack, setAttack] = useState<"sword" | "magic" | "abilities">("sword")
 
   return (

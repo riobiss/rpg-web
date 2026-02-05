@@ -7,6 +7,7 @@ export type PlayerCharacter = BaseCharacter & {
   id: string
   createdAt: Date
   updatedAt: Date
+  image: string
 
   identity: {
     name: string

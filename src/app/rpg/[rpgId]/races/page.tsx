@@ -1,8 +1,14 @@
-import { Params } from "@/types/Params"
 import rpgs from "@/data/rpgs"
 import Image from "next/image"
 import Link from "next/link"
 import styles from "./page.module.css"
+
+type Params = {
+  params: Promise<{
+    rpgId: string
+  }>
+}
+
 export default async function RacesPage({ params }: Params) {
   const { rpgId } = await params
 

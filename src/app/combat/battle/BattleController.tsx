@@ -1,6 +1,5 @@
 "use client"
 
-import { PlayerCharacter } from "@/types/PlayerCharacter"
 import styles from "./Battle.module.css"
 import SelectAttack from "./attacks/SelectAttack"
 import SelectTarget from "./attacks/selectTarget/SelectTarget"

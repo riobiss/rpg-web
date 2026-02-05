@@ -3,7 +3,12 @@ import { notFound } from "next/navigation"
 import styles from "./page.module.css"
 import Image from "next/image"
 import Link from "next/link"
-import { Params } from "@/types/Params"
+
+type Params = {
+  params: Promise<{
+    rpgId: string
+  }>
+}
 
 export const generateMetadata = () => {
   return {
@@ -53,6 +58,15 @@ export default async function ViewInRpg({ params }: Params) {
             className={styles.cardImage}
           />
           <span>Raças</span>
+        </Link>
+        <Link href={`/rpg/${rpg.id}/characters`} className={styles.card}>
+          <Image
+            src="/images/bg-characters.jpg"
+            alt="Personagens"
+            fill
+            className={styles.cardImage}
+          />
+          <span>Personagens</span>
         </Link>
       </div>
     </div>

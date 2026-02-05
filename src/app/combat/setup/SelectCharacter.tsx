@@ -6,6 +6,7 @@ import { useState } from "react"
 import styles from "./SelectCharacter.module.css"
 import { Button } from "@/components/Button"
 import { BaseCharacter } from "@/types/BaseCharacter"
+import Link from "next/link"
 
 type Props = {
   onConfirm: (characters: BaseCharacter[]) => void
@@ -62,7 +63,9 @@ export default function SelectCharacter({ onConfirm }: Props) {
               <li key={c.id}>
                 <span>{c.identity.name}</span>
 
-                <button className={styles.showCharacterButton}>Exibir</button>
+                <button className={styles.showCharacterButton}>
+                  <Link href={`/characters/`}>Exibir</Link>
+                </button>
 
                 <button
                   className={styles.selectCharacterButton}

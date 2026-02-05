@@ -2,17 +2,14 @@
   --bg-main: #0b0b0b;
   --bg-surface: #151515;
   --bg-hover: #1f1f1f;
-
   --text-title: #f5e6c8;
   --text-main: #cfc7b8;
   --text-muted: #9b948a;
   --text-alternativ: #000000;
   --accent-main: #ff7a18;
   --accent-strong: #d65a00;
-
   --border-hot: rgba(255, 90, 0, 0.25);
   --border-soft: rgba(255, 255, 255, 0.08);
-
   --shadow-main: 0 4px 16px rgba(0, 0, 0, 0.8);
   --shadow-accent: 0 0 8px rgba(255, 90, 0, 0.35);
 }
