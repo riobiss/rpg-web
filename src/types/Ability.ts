@@ -10,9 +10,12 @@ export type Ability = {
     stamina?: number
     sanity?: number
   }
-
+  level: number
+  type: "Ação" | "Reação" | "Bônus"
   cooldown?: number
-
+  damage: string
+  duration: string
+  range: string
   scaling?: AttributeKey[]
   description: string
 }

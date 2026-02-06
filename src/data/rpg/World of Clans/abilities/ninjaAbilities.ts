@@ -8,7 +8,7 @@ export const ninjaAbilities: Ability[] = [
     description:
       "Você se move sem produzir som. Recebe vantagem em testes de Furtividade e não provoca ataques de oportunidade durante o movimento.",
     level: 1,
-    type: "Acão",
+    type: "Ação",
     damage: "N/A",
     duration: "1 turno",
     range: "Pessoal",
