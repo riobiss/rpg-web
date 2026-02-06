@@ -30,7 +30,10 @@ export default async function CharactersPage({ params }: Params) {
                 fill
                 className={styles.image}
               />
-              <h2>{c.identity.name}</h2>
+              <div className={styles.overlay}>
+                <h2 className={styles.name}>{c.identity.name}</h2>
+
+              </div>
             </Link>
           </article>
         ))}
