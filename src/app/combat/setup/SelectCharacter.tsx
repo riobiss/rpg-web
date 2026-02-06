@@ -1,10 +1,10 @@
 "use client"
 
-import players from "@/data/rpg/World of Clans/entites/player"
-import enemies from "@/data/rpg/World of Clans/entites/enemy"
+import players from "@/data/rpg/world-of-clans/entities/player"
+import enemies from "@/data/rpg/world-of-clans/entities/enemy"
 import { useState } from "react"
 import styles from "./SelectCharacter.module.css"
-import { Button } from "@/components/Button"
+import { Button } from "@/components/button"
 import { BaseCharacter } from "@/types/BaseCharacter"
 import Link from "next/link"
 
@@ -104,3 +104,5 @@ export default function SelectCharacter({ onConfirm }: Props) {
     </div>
   )
 }
+
+

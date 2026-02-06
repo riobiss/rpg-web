@@ -3,6 +3,7 @@ import { PlayerCharacter } from "@/types/PlayerCharacter"
 import Image from "next/image"
 import styles from "./page.module.css"
 import Link from "next/link"
+import slugify from "@/utils/slugify"
 
 type Params = {
   params: Promise<{
@@ -23,7 +24,7 @@ export default async function CharactersPage({ params }: Params) {
       <section className={styles.grid}>
         {characters.map((c) => (
           <article key={c.id} className={styles.card}>
-            <Link href={`/rpg/${rpg.id}/characters/${c.identity.name}`}>
+            <Link href={`/rpg/${rpg.id}/characters/${slugify(c.identity.name)}`}>
               <Image
                 src={c.image}
                 alt={`Imagem do personagem ${c.identity.name}`}
@@ -41,3 +42,4 @@ export default async function CharactersPage({ params }: Params) {
     </main>
   )
 }
+

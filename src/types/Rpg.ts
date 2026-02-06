@@ -8,3 +8,4 @@ export type Rpg = {
   description: string
   races: Races
 }
+

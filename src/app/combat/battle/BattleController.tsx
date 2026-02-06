@@ -2,13 +2,13 @@
 
 import styles from "./Battle.module.css"
 import SelectAttack from "./attacks/SelectAttack"
-import SelectTarget from "./attacks/selectTarget/SelectTarget"
+import SelectTarget from "./attacks/select-target/SelectTarget"
 import { Weapon } from "@/types/Weapon"
 import { useState } from "react"
 import { BattleLog } from "@/types/BattleLog"
-import BattleLogs from "./battleLog/BattleLogs"
+import BattleLogs from "./battle-log/BattleLogs"
 import applyDamageWeapon from "@/lib/applyDamage/applyDamageWeapon"
-import weapons from "@/data/rpg/World of Clans/weapons"
+import weapons from "@/data/rpg/world-of-clans/weapons"
 import { BaseCharacter } from "@/types/BaseCharacter"
 
 type Props = {
@@ -63,3 +63,5 @@ export default function BattleScreen({ characters }: Props) {
     </div>
   )
 }
+
+
