@@ -1,7 +1,7 @@
 import { useState } from "react"
 import styles from "./SwordView.module.css"
 import type { Weapon } from "@/types/Weapon"
-import { Button } from "@/components/Button"
+import { Button } from "@/components/button"
 
 type Props = {
   weapons: Weapon[]
@@ -57,3 +57,4 @@ export default function SwordView({ weapons, onConfirm }: Props) {
     </div>
   )
 }
+

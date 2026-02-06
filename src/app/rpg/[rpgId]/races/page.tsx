@@ -1,6 +1,7 @@
 import rpgs from "@/data/rpgs"
 import Image from "next/image"
 import Link from "next/link"
+import slugify from "@/utils/slugify"
 import styles from "./page.module.css"
 
 type Params = {
@@ -21,7 +22,7 @@ export default async function RacesPage({ params }: Params) {
       <section className={styles.grid}>
         {rpg.races?.map((race) => (
           <article key={race.id} className={styles.card}>
-            <Link href={`/rpg/${rpg.id}/races/${race.name}`}>
+            <Link href={`/rpg/${rpg.id}/races/${slugify(race.name)}`}>
               <Image
                 src={race.img}
                 alt={`Imagem da raça ${race.name}`}
@@ -36,3 +37,4 @@ export default async function RacesPage({ params }: Params) {
     </main>
   )
 }
+

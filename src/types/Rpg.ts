@@ -1,4 +1,4 @@
-import { Races } from "./races"
+import { Races } from "./Races"
 
 export type Rpg = {
   id: number
@@ -8,3 +8,4 @@ export type Rpg = {
   description: string
   races: Races
 }
+

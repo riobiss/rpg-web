@@ -1,6 +1,6 @@
 import { Attribute, AttributeKey } from "./Attribute"
 import { BaseCharacter } from "./BaseCharacter"
-import { Inventory } from "./Invetory"
+import { Inventory } from "./Inventory"
 import { Skill } from "./Skill"
 
 export type PlayerCharacter = BaseCharacter & {
@@ -90,3 +90,4 @@ export type PlayerCharacter = BaseCharacter & {
     version: number
   }
 }
+

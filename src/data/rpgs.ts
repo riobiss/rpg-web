@@ -1,6 +1,6 @@
-import players from "./rpg/World of Clans/entites/player"
-import races from "./rpg/World of Clans/races"
-import rpgWoc from "./rpg/World of Clans/rpg"
+import players from "./rpg/world-of-clans/entities/player"
+import races from "./rpg/world-of-clans/races"
+import rpgWoc from "./rpg/world-of-clans/rpg"
 const rpg = [
   {
     id: 1,
@@ -20,3 +20,4 @@ const rpg = [
   },
 ]
 export default rpg
+
