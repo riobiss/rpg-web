@@ -68,27 +68,28 @@ export default async function CharactersPage({ params }: Params) {
           />
           <div className={styles.identityInfo}>
             {character.identity.nickname && (
-              <p>“{character.identity.nickname}”</p>
+              <p className={styles.nickname}>“{character.identity.nickname}”</p>
             )}
-            <p>
+
+            <div className={styles.identityMeta}>
               <Link
                 className={styles.identityLink}
                 href={`/rpg/${character.meta.version}/races/${character.identity.race}`}
               >
                 {character.identity.race.toUpperCase()}
               </Link>
-            </p>
 
-            <p>
               <Link
                 className={styles.identityLink}
                 href={`/rpg/${character.meta.version}/classes/${character.identity.class}`}
               >
                 {character.identity.class.toUpperCase()}
               </Link>
-            </p>
+            </div>
 
-            <p>Reino: {character.identity.kingdom}</p>
+            <p className={styles.kingdom}>
+              Reino: {character.identity.kingdom}
+            </p>
           </div>
         </div>
 

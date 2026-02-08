@@ -388,6 +388,131 @@ const players: PlayerCharacter[] = [
       version: 1,
     },
   },
+  {
+    id: "char_004",
+    createdAt: new Date(),
+    updatedAt: new Date(),
+    image: "/images/characters/image-char-004.jpeg",
+
+    identity: {
+      name: "Anthony Strelatus",
+      nickname: "Gênio Imoral, Juiz de Ferro",
+      kingdom: "Dolong",
+      race: "humanos",
+      class: "Artífice",
+      classReinforcement: "",
+    },
+
+    physical: {
+      age: 20,
+      heightCm: 180,
+      weightKg: 73,
+      eyes: "castanhos escuros",
+      skin: "clara",
+      hair: "castanhos",
+      other: "Atraente e cativante",
+    },
+
+    personal: {
+      religion: "",
+      language: "Humano",
+      defects: "Egocêntrico e Narcisista",
+    },
+
+    attributes: {
+      agility: { base: 4, modifiers: [], total: 4 },
+      strength: { base: 11, modifiers: [], total: 11 },
+      dexterity: { base: 15, modifiers: [], total: 15 },
+      instinct: { base: 10, modifiers: [], total: 10 },
+      charisma: { base: 17, modifiers: [], total: 17 },
+      knowledge: { base: 25, modifiers: [], total: 25 },
+      constitution: { base: 17, modifiers: [], total: 17 },
+    },
+
+    defense: {
+      base: 0,
+      armor: 0,
+      shield: 0,
+      evasion: 0,
+    },
+
+    health: {
+      life: 32,
+      mana: 29,
+      sanity: 10,
+      exhaustion: 9,
+    },
+
+    state: {
+      currentLife: 32,
+      currentMana: 29,
+      currentSanity: 10,
+      currentExhaustion: 9,
+    },
+
+    skills: {
+      archery: 0,
+      crossbow: 0,
+      tolerance: 0,
+      smallBlades: 0,
+      largeBlades: 0,
+      fencing: 0,
+      staffs: 0,
+      warArt: 0,
+      athletics: 0,
+      acting: 0,
+      stealth: 0,
+      theft: 0,
+      brawl: 0,
+      riding: 0,
+      navigation: 0,
+      intimidate: 0,
+      aim: 2,
+      persuade: 0,
+      observe: 2,
+      seduce: 0,
+      history: 1,
+      acrobatics: 2,
+      arcanism: 0,
+      alchemy: 4,
+      spellcasting: 0,
+      magicResistance: 0,
+      religion: 0,
+      nature: 0,
+      medicine: 0,
+      gambling: 0,
+    },
+
+    ancestry: {
+      description: "",
+    },
+
+    abilities: {
+      classMainIds: [],
+      classReinforcementIds: [],
+      originId: null,
+    },
+
+    inventory: [],
+
+    equipment: {
+      weaponIds: [],
+      shieldId: null,
+      armorId: "armor_primeira_armadura",
+    },
+
+    progression: {
+      level: 1,
+      xp: 0,
+      xpToNextLevel: 100,
+    },
+
+    meta: {
+      isNPC: false,
+      isEditable: true,
+      version: 1,
+    },
+  },
 ]
 
 export default players
