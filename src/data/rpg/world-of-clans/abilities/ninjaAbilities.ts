@@ -37,7 +37,7 @@ export const ninjaAbilities: Ability[] = [
     name: "Troca Rápida",
     description:
       "Quando seria atingido, você pode se mover rapidamente para uma posição próxima, reduzindo o dano*ou evitando o ataque, se houver espaço livre.",
-    level: 1, 
+    level: 1,
     type: "Reação",
     damage: "N/A",
     duration: "Instantânea",

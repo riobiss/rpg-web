@@ -2,6 +2,7 @@ import Image from "next/image"
 import styles from "./page.module.css"
 import players from "@/data/rpg/world-of-clans/entities/player"
 import { notFound } from "next/navigation"
+import { classAbilities } from "@/data/rpg/world-of-clans/abilities/classAbilities"
 
 type Params = {
   params: Promise<{
@@ -41,14 +42,17 @@ const skillLabels: Record<string, string> = {
   gambling: "Jogos de Aposta",
 }
 
-
 export default async function CharactersPage({ params }: Params) {
   const { characterId } = await params
-
   const character = players.find((p) => p.id === characterId)
   if (!character) {
     notFound()
   }
+  const classKey = character.identity.class as keyof typeof classAbilities
+  const abilitiesFromClass = classAbilities[classKey] ?? []
+  const mainAbilities = abilitiesFromClass.filter((ability) =>
+    character.abilities.classMainIds.includes(ability.id),
+  )
 
   return (
     <div className={styles.page}>
@@ -114,13 +118,13 @@ export default async function CharactersPage({ params }: Params) {
         <div>
           <h4>Atributos</h4>
           <ul className={styles.list}>
-            <li>Agilidade: {character.attributes.agility.base}</li>
-            <li>Força: {character.attributes.strength.base}</li>
-            <li>Dextreza: {character.attributes.dexterity.base}</li>
-            <li>Instinto: {character.attributes.instinct.base}</li>
-            <li>Carisma: {character.attributes.charisma.base}</li>
-            <li>Conhecimento: {character.attributes.knowledge.base}</li>
-            <li>Constituição: {character.attributes.constitution.base}</li>
+            <li>Agilidade: {character.attributes.agility.total}</li>
+            <li>Força: {character.attributes.strength.total}</li>
+            <li>Dextreza: {character.attributes.dexterity.total}</li>
+            <li>Instinto: {character.attributes.instinct.total}</li>
+            <li>Carisma: {character.attributes.charisma.total}</li>
+            <li>Conhecimento: {character.attributes.knowledge.total}</li>
+            <li>Constituição: {character.attributes.constitution.total}</li>
           </ul>
         </div>
         {/* Skills */}

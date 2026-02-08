@@ -12,7 +12,7 @@ const players: PlayerCharacter[] = [
       nickname: "",
       kingdom: "Schlemitt",
       race: "Humano",
-      class: "Ninja",
+      class: "ninja",
       classReinforcement: "",
     },
     physical: {
@@ -93,7 +93,7 @@ const players: PlayerCharacter[] = [
         "Quando falha em um teste de atributo, pode rerrolar uma vez por sessão.",
     },
     abilities: {
-      classMainIds: [],
+      classMainIds: ["abil_01", "abil_02"],
       classReinforcementIds: [],
       originId: null,
     },
@@ -126,7 +126,7 @@ const players: PlayerCharacter[] = [
       nickname: "",
       kingdom: "Schlemitt",
       race: "Humano",
-      class: "Samurai",
+      class: "samurai",
       classReinforcement: "",
     },
 
@@ -251,7 +251,7 @@ const players: PlayerCharacter[] = [
       nickname: "",
       kingdom: "Dolong",
       race: "Humano",
-      class: "Berserk",
+      class: "berserk",
       classReinforcement: "",
     },
 
