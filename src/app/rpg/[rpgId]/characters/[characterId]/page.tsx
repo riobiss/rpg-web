@@ -2,7 +2,6 @@ import Image from "next/image"
 import styles from "./page.module.css"
 import players from "@/data/rpg/world-of-clans/entities/player"
 import { notFound } from "next/navigation"
-import { classAbilities } from "@/data/rpg/world-of-clans/abilities/classAbilities"
 import Link from "next/link"
 
 type Params = {
@@ -49,11 +48,12 @@ export default async function CharactersPage({ params }: Params) {
   if (!character) {
     notFound()
   }
-  const classKey = character.identity.class as keyof typeof classAbilities
-  const abilitiesFromClass = classAbilities[classKey] ?? []
+
+  /*   const classKey = character.identity.class as keyof typeof classes
+  const abilitiesFromClass = classes[classKey]?.abilities ?? []
   const mainAbilities = abilitiesFromClass.filter((ability) =>
     character.abilities.classMainIds.includes(ability.id),
-  )
+  ) */
 
   return (
     <div className={styles.page}>

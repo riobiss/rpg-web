@@ -1,5 +1,5 @@
 const rpgItem = {
-  id: 1,
+  id: 1,  
   image: "/images/bg-woc.jpeg",
   master: "Thalyson",
   name: "World of Clans",

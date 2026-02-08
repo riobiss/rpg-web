@@ -1,0 +1,87 @@
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.classTitle {
+  font-size: 3rem;
+  color: var(--text-title);
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--accent-main);
+  margin-bottom: 2rem;
+  text-shadow: var(--shadow-accent);
+}
+
+.abilityGrid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.abilityCard {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.abilityCard:hover {
+  border-color: var(--accent-main);
+  background: var(--bg-hover);
+  box-shadow: var(--shadow-main);
+}
+
+.abilityHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.abilityName {
+  color: var(--text-title);
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.abilityLevel {
+  background: var(--accent-main);
+  color: var(--text-alternativ);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.abilityDescription {
+  color: var(--text-main);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.abilityStats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.8rem;
+  border-top: 1px solid var(--border-soft);
+  padding-top: 1rem;
+}
+
+.statItem {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.statItem strong {
+  color: var(--accent-main);
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+.costBadge {
+  color: var(--accent-strong);
+  font-weight: bold;
+}
