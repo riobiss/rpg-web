@@ -8,6 +8,39 @@ type Params = {
     characterId: string
   }>
 }
+const skillLabels: Record<string, string> = {
+  archery: "Arcos e Flecha",
+  crossbow: "Besta",
+  tolerance: "Tolerância",
+  smallBlades: "Lâminas Pequenas",
+  largeBlades: "Lâminas Grandes",
+  fencing: "Esgrima",
+  staffs: "Cajados",
+  warArt: "Arte da Guerra",
+  athletics: "Atletismo",
+  acting: "Atuar",
+  stealth: "Esconder-se",
+  theft: "Furto",
+  brawl: "Briga",
+  riding: "Cavalgar",
+  navigation: "Navegar",
+  intimidate: "Intimidar",
+  aim: "Mirar",
+  persuade: "Convencer",
+  observe: "Observar",
+  seduce: "Seduzir",
+  history: "História",
+  acrobatics: "Acrobacia",
+  arcanism: "Arcanismo",
+  alchemy: "Alquimia",
+  spellcasting: "Lançar Feitiço",
+  magicResistance: "Resistir à Magia",
+  religion: "Religião",
+  nature: "Natureza",
+  medicine: "Medicina",
+  gambling: "Jogos de Aposta",
+}
+
 
 export default async function CharactersPage({ params }: Params) {
   const { characterId } = await params
@@ -22,9 +55,16 @@ export default async function CharactersPage({ params }: Params) {
       <section key={character.id} className={styles.card}>
         <h3>{character.identity.name}</h3>
         <div className={styles.header}>
-          <Image src={character.image} alt={character.identity.name} width={150} height={192} />
+          <Image
+            src={character.image}
+            alt={character.identity.name}
+            width={150}
+            height={192}
+          />
           <div>
-            {character.identity.nickname && <p>“{character.identity.nickname}”</p>}
+            {character.identity.nickname && (
+              <p>“{character.identity.nickname}”</p>
+            )}
             <p>
               {character.identity.race} · {character.identity.class}
               {character.identity.classReinforcement &&
@@ -45,10 +85,12 @@ export default async function CharactersPage({ params }: Params) {
               Mana: {character.state.currentMana}/{character.health.mana}
             </p>
             <p>
-              Sanidade: {character.state.currentSanity}/{character.health.sanity}
+              Sanidade: {character.state.currentSanity}/
+              {character.health.sanity}
             </p>
             <p>
-              Exaustão: {character.state.currentExhaustion}/{character.health.exhaustion}
+              Exaustão: {character.state.currentExhaustion}/
+              {character.health.exhaustion}
             </p>
           </div>
 
@@ -72,24 +114,26 @@ export default async function CharactersPage({ params }: Params) {
         <div>
           <h4>Atributos</h4>
           <ul className={styles.list}>
-            {Object.entries(character.attributes).map(([key, attr]) => (
-              <li key={key}>
-                <strong>{key}</strong>: {attr.total} ({attr.base} +{" "}
-                {attr.modifiers.join(" + ")})
-              </li>
-            ))}
+            <li>Agilidade: {character.attributes.agility.base}</li>
+            <li>Força: {character.attributes.strength.base}</li>
+            <li>Dextreza: {character.attributes.dexterity.base}</li>
+            <li>Instinto: {character.attributes.instinct.base}</li>
+            <li>Carisma: {character.attributes.charisma.base}</li>
+            <li>Conhecimento: {character.attributes.knowledge.base}</li>
+            <li>Constituição: {character.attributes.constitution.base}</li>
           </ul>
         </div>
-
         {/* Skills */}
         <div>
           <h4>Perícias</h4>
           <ul className={styles.list}>
-            {Object.entries(character.skills).map(([key, value]) => (
-              <li key={key}>
-                {key}: {value}
-              </li>
-            ))}
+            {Object.entries(character.skills)
+              .filter(([, value]) => value > 0)
+              .map(([key, value]) => (
+                <li key={key}>
+                  {skillLabels[key] ?? key}: {value}
+                </li>
+              ))}
           </ul>
         </div>
 

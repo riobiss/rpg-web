@@ -240,6 +240,154 @@ const players: PlayerCharacter[] = [
       version: 1,
     },
   },
+  {
+    id: "char_003",
+    createdAt: new Date(),
+    updatedAt: new Date(),
+    image: "/images/characters/image-char-003.jpeg",
+
+    identity: {
+      name: "Brutos Bandeira",
+      nickname: "",
+      kingdom: "Dolong",
+      race: "Humano",
+      class: "Berserk",
+      classReinforcement: "",
+    },
+
+    physical: {
+      age: 60,
+      heightCm: 170,
+      weightKg: 60,
+      eyes: "verdes",
+      skin: "clara",
+      hair: "grisalhos",
+      other: "",
+    },
+
+    personal: {
+      religion: "",
+      language: "Comum",
+      defects: "Ranzinza, Esquecido, Pidão",
+    },
+
+    attributes: {
+      agility: { base: 10, modifiers: [], total: 10 },
+      strength: { base: 23, modifiers: [], total: 23 },
+      dexterity: { base: 18, modifiers: [], total: 18 },
+      instinct: { base: 13, modifiers: [], total: 13 },
+      charisma: { base: 12, modifiers: [], total: 12 },
+      knowledge: { base: 7, modifiers: [], total: 7 },
+      constitution: { base: 18, modifiers: [], total: 18 },
+    },
+
+    defense: {
+      base: 0,
+      armor: 0,
+      shield: 0,
+      evasion: 8,
+    },
+
+    health: {
+      life: 30,
+      mana: 20,
+      sanity: 10,
+      exhaustion: 9,
+    },
+
+    state: {
+      currentLife: 30,
+      currentMana: 20,
+      currentSanity: 10,
+      currentExhaustion: 9,
+    },
+
+    skills: {
+      archery: 0,
+      crossbow: 0,
+      tolerance: 4,
+      smallBlades: 0,
+      largeBlades: 0,
+      fencing: 0,
+      staffs: 0,
+      warArt: 0,
+      athletics: 2,
+      acting: 0,
+      stealth: 0,
+      theft: 0,
+      brawl: 0,
+      riding: 0,
+      navigation: 0,
+      intimidate: 10,
+      aim: 0,
+      persuade: 0,
+      observe: 0,
+      seduce: 0,
+      history: 0,
+      acrobatics: 0,
+      arcanism: 0,
+      alchemy: 0,
+      spellcasting: 0,
+      magicResistance: 0,
+      religion: 0,
+      nature: 0,
+      medicine: 0,
+      gambling: 0,
+    },
+
+    ancestry: {
+      description:
+        "Quando falha em um teste de Atributo, pode rerrolar uma vez por sessão, aceitando o novo resultado.",
+    },
+
+    abilities: {
+      classMainIds: [
+        "berserk_golpe_ensanguentado",
+        "berserk_palma_da_destruicao",
+      ],
+      classReinforcementIds: [],
+      originId: "origem_sobrevivente",
+    },
+
+    inventory: [
+      {
+        id: "item_01",
+        name: "Livro",
+        rarity: "comum",
+        quantity: 1,
+        description:
+          "Livro de capa dura com 320 páginas, encadernado em couro marrom com letras douradas na lombada.",
+        ability: null,
+      },
+      {
+        id: "item_02",
+        name: "Saco de dormir",
+        rarity: "comum",
+        description:
+          "Saco de dormir de lã grossa, com capuz e fechamento por corda de couro.",
+        ability: null,
+        quantity: 1,
+      },
+    ],
+
+    equipment: {
+      weaponIds: [],
+      shieldId: null,
+      armorId: null,
+    },
+
+    progression: {
+      level: 1,
+      xp: 0,
+      xpToNextLevel: 100,
+    },
+
+    meta: {
+      isNPC: false,
+      isEditable: true,
+      version: 1,
+    },
+  },
 ]
 
 export default players
