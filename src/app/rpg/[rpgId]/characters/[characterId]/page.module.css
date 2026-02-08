@@ -33,6 +33,22 @@
   background: var(--bg-hover);
   border: 1px solid var(--border-soft);
 }
+.identityLink {
+  color: var(--accent-main);
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.15s ease, text-shadow 0.15s ease;
+}
+
+.identityLink:hover {
+  color: var(--accent-hot);
+  text-shadow: 0 0 6px var(--accent-hot);
+}
+
+.identityLink:active {
+  opacity: 0.8;
+}
 
 .header img {
   border-radius: 12px;

@@ -3,6 +3,7 @@ import styles from "./page.module.css"
 import players from "@/data/rpg/world-of-clans/entities/player"
 import { notFound } from "next/navigation"
 import { classAbilities } from "@/data/rpg/world-of-clans/abilities/classAbilities"
+import Link from "next/link"
 
 type Params = {
   params: Promise<{
@@ -65,15 +66,28 @@ export default async function CharactersPage({ params }: Params) {
             width={150}
             height={192}
           />
-          <div>
+          <div className={styles.identityInfo}>
             {character.identity.nickname && (
               <p>“{character.identity.nickname}”</p>
             )}
             <p>
-              {character.identity.race} · {character.identity.class}
-              {character.identity.classReinforcement &&
-                ` / ${character.identity.classReinforcement}`}
+              <Link
+                className={styles.identityLink}
+                href={`/rpg/${character.meta.version}/races/${character.identity.race}`}
+              >
+                {character.identity.race.toUpperCase()}
+              </Link>
             </p>
+
+            <p>
+              <Link
+                className={styles.identityLink}
+                href={`/rpg/${character.meta.version}/classes/${character.identity.class}`}
+              >
+                {character.identity.class.toUpperCase()}
+              </Link>
+            </p>
+
             <p>Reino: {character.identity.kingdom}</p>
           </div>
         </div>
