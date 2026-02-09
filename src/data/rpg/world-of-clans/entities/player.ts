@@ -97,8 +97,12 @@ const players: PlayerCharacter[] = [
       classReinforcementIds: [],
       originId: null,
     },
+    magic: {
+      knownSpellIds: [],
+      preparedSpellIds: [],
+      passiveSpellIds: [],
+    },
     inventory: [],
-
     equipment: {
       weaponIds: [weapons[0].id],
       shieldId: null,
@@ -218,6 +222,11 @@ const players: PlayerCharacter[] = [
       classMainIds: [],
       classReinforcementIds: [],
       originId: null,
+    },
+    magic: {
+      knownSpellIds: [],
+      preparedSpellIds: [],
+      passiveSpellIds: [],
     },
 
     inventory: [],
@@ -341,12 +350,14 @@ const players: PlayerCharacter[] = [
     },
 
     abilities: {
-      classMainIds: [
-        "berserk_golpe_ensanguentado",
-        "berserk_palma_da_destruicao",
-      ],
+      classMainIds: ["abil_03", "abil_04"],
       classReinforcementIds: [],
       originId: "origem_sobrevivente",
+    },
+    magic: {
+      knownSpellIds: [],
+      preparedSpellIds: [],
+      passiveSpellIds: [],
     },
 
     inventory: [
@@ -492,7 +503,11 @@ const players: PlayerCharacter[] = [
       classReinforcementIds: [],
       originId: null,
     },
-
+    magic: {
+      knownSpellIds: [],
+      preparedSpellIds: [],
+      passiveSpellIds: [],
+    },
     inventory: [],
 
     equipment: {

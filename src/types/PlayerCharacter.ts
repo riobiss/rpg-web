@@ -61,6 +61,11 @@ export type PlayerCharacter = BaseCharacter & {
     classReinforcementIds: string[]
     originId: string | null
   }
+  magic: {
+    knownSpellIds: string[]
+    preparedSpellIds: string[]
+    passiveSpellIds: string[]
+  }
 
   inventory: Inventory[]
 
@@ -90,4 +95,3 @@ export type PlayerCharacter = BaseCharacter & {
     version: number
   }
 }
-

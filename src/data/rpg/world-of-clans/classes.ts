@@ -1,4 +1,4 @@
-import { bersekAbilities } from "./abilities/bersekAbility"
+import { berserkerAbilities } from "./abilities/berserkerAbility"
 import { ninjaAbilities } from "./abilities/ninjaAbilities"
 
 export const classes = [
@@ -28,7 +28,7 @@ export const classes = [
   // Bárbaros
   { abilities: [], name: "Bárbaro", id: "barbaro", category: "barbaros" },
   {
-    abilities: bersekAbilities,
+    abilities: berserkerAbilities,
     name: "Berserker",
     id: "berserker",
     category: "barbaros",

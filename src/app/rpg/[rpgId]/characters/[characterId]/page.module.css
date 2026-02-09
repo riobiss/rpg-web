@@ -99,6 +99,37 @@
   opacity: 0.8;
 }
 
+.actionLinks {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.actionLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent-main), var(--accent-strong));
+  color: var(--text-alternativ);
+  font-weight: 600;
+  font-size: 13px;
+  border: 1px solid var(--accent-strong);
+  box-shadow: var(--shadow-accent);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+.actionLink:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-main), var(--shadow-accent);
+}
+
+.actionLink:active {
+  opacity: 0.85;
+  transform: translateY(0);
+}
+
 .kingdom {
   margin-top: 6px;
   color: var(--text-muted);
@@ -162,6 +193,10 @@
   }
 
   .identityMeta {
+    justify-content: center;
+  }
+
+  .actionLinks {
     justify-content: center;
   }
 }

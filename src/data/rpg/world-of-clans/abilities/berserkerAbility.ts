@@ -1,6 +1,6 @@
 import { Ability } from "@/types/Ability"
 
-export const bersekAbilities: Ability[] = [
+export const berserkerAbilities: Ability[] = [
   {
     id: "abil_03",
     source: "class",

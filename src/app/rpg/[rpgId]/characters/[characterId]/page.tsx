@@ -48,13 +48,6 @@ export default async function CharactersPage({ params }: Params) {
   if (!character) {
     notFound()
   }
-
-  /*   const classKey = character.identity.class as keyof typeof classes
-  const abilitiesFromClass = classes[classKey]?.abilities ?? []
-  const mainAbilities = abilitiesFromClass.filter((ability) =>
-    character.abilities.classMainIds.includes(ability.id),
-  ) */
-
   return (
     <div className={styles.page}>
       <section key={character.id} className={styles.card}>
@@ -84,6 +77,20 @@ export default async function CharactersPage({ params }: Params) {
                 href={`/rpg/${character.meta.version}/classes/${character.identity.class}`}
               >
                 {character.identity.class.toUpperCase()}
+              </Link>
+            </div>
+            <div className={styles.actionLinks}>
+              <Link
+                className={styles.actionLink}
+                href={`/rpg/${character.meta.version}/characters/${character.id}/abilities`}
+              >
+                Habilidades
+              </Link>
+              <Link
+                className={styles.actionLink}
+                href={`/rpg/${character.meta.version}/characters/${character.id}/magics`}
+              >
+                Magias
               </Link>
             </div>
 
