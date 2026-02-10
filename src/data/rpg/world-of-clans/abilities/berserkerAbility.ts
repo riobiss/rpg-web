@@ -2,7 +2,7 @@ import { Ability } from "@/types/Ability"
 
 export const berserkerAbilities: Ability[] = [
   {
-    id: "abil_03",
+    id: "abil_04",
     source: "class",
     name: "Golpe Ensanguentado",
     description:
@@ -17,7 +17,7 @@ export const berserkerAbilities: Ability[] = [
     },
   },
   {
-    id: "abil_04",
+    id: "abil_05",
     source: "class",
     name: "Palma da Destruição",
     description:

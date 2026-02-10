@@ -71,62 +71,59 @@ export default async function AbilitiesPage({ params }: Params) {
               <article key={ability.id} className={styles.card}>
                 <div className={styles.cardHeader}>
                   <h3 className={styles.cardTitle}>{ability.name}</h3>
-                  <span className={styles.level}>Nível {ability.level}</span>
+                  {/* Badge de Nível estilizada */}
+                  <span className={styles.levelBadge}>
+                    Nível {ability.level}
+                  </span>
                 </div>
-                <p className={styles.cardMeta}>{ability.type}</p>
-                <p className={styles.cardBody}>{ability.description}</p>
-                <div className={styles.cardDetails}>
-                  {ability.damage && (
+
+                {/* Descrição em itálico conforme a imagem */}
+                <p className={styles.cardBodyItalic}>{ability.description}</p>
+
+                <div className={styles.cardDetailsGrid}>
+                  <div className={styles.detailItem}>
+                    <span className={styles.detailLabelOrange}>DANO</span>
+                    <span className={styles.detailValue}>
+                      {ability.damage || "N/A"}
+                    </span>
+                  </div>
+
+                  <div className={styles.detailItem}>
+                    <span className={styles.detailLabelOrange}>ALCANCE</span>
+                    <span className={styles.detailValue}>
+                      {ability.range || "Pessoal"}
+                    </span>
+                  </div>
+
+                  <div className={styles.detailItem}>
+                    <span className={styles.detailLabelOrange}>TIPO</span>
+                    <span className={styles.detailValue}>{ability.type}</span>
+                  </div>
+                  {ability.cooldown && (
                     <div className={styles.detailItem}>
-                      <span className={styles.detailLabel}>Dano</span>
-                      <span className={styles.detailValue}>
-                        {ability.damage}
-                      </span>
-                    </div>
-                  )}
-                  {ability.duration && (
-                    <div className={styles.detailItem}>
-                      <span className={styles.detailLabel}>Duração</span>
-                      <span className={styles.detailValue}>
-                        {ability.duration}
-                      </span>
-                    </div>
-                  )}
-                  {ability.range && (
-                    <div className={styles.detailItem}>
-                      <span className={styles.detailLabel}>Alcance</span>
-                      <span className={styles.detailValue}>
-                        {ability.range}
-                      </span>
-                    </div>
-                  )}
-                  {ability.cooldown !== undefined && (
-                    <div className={styles.detailItem}>
-                      <span className={styles.detailLabel}>Recarga</span>
+                      <span className={styles.detailLabelOrange}>RECARGA</span>
                       <span className={styles.detailValue}>
                         {ability.cooldown} turnos
                       </span>
                     </div>
                   )}
-                  {ability.cost && (
+                  {ability.duration && (
                     <div className={styles.detailItem}>
-                      <span className={styles.detailLabel}>Custo</span>
+                      <span className={styles.detailLabelOrange}>DURAÇÃO</span>
                       <span className={styles.detailValue}>
-                        {ability.cost.mana !== undefined &&
-                          ability.cost.mana > 0 && (
-                            <span>Mana {ability.cost.mana} </span>
-                          )}
-                        {ability.cost.stamina !== undefined &&
-                          ability.cost.stamina > 0 && (
-                            <span>Estamina {ability.cost.stamina} </span>
-                          )}
-                        {ability.cost.sanity !== undefined &&
-                          ability.cost.sanity > 0 && (
-                            <span>Sanidade {ability.cost.sanity} </span>
-                          )}
+                        {ability.duration}
                       </span>
                     </div>
                   )}
+                  <div className={styles.detailItem}>
+                    <span className={styles.detailLabelOrange}>CUSTO</span>
+
+                    <span className={styles.detailValueHighlight}>
+                      {ability.cost?.stamina
+                        ? `${ability.cost.stamina} ST`
+                        : "0"}
+                    </span>
+                  </div>
                 </div>
               </article>
             ))}

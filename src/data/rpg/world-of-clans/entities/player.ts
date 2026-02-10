@@ -93,7 +93,7 @@ const players: PlayerCharacter[] = [
         "Quando falha em um teste de atributo, pode rerrolar uma vez por sessão.",
     },
     abilities: {
-      classMainIds: ["abil_01", "abil_02"],
+      classMainIds: ["abil_01"],
       classReinforcementIds: [],
       originId: null,
     },
@@ -350,7 +350,7 @@ const players: PlayerCharacter[] = [
     },
 
     abilities: {
-      classMainIds: ["abil_03", "abil_04"],
+      classMainIds: ["abil_04", "abil_05"],
       classReinforcementIds: [],
       originId: "origem_sobrevivente",
     },
