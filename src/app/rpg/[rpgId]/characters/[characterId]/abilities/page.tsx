@@ -75,6 +75,59 @@ export default async function AbilitiesPage({ params }: Params) {
                 </div>
                 <p className={styles.cardMeta}>{ability.type}</p>
                 <p className={styles.cardBody}>{ability.description}</p>
+                <div className={styles.cardDetails}>
+                  {ability.damage && (
+                    <div className={styles.detailItem}>
+                      <span className={styles.detailLabel}>Dano</span>
+                      <span className={styles.detailValue}>
+                        {ability.damage}
+                      </span>
+                    </div>
+                  )}
+                  {ability.duration && (
+                    <div className={styles.detailItem}>
+                      <span className={styles.detailLabel}>Duração</span>
+                      <span className={styles.detailValue}>
+                        {ability.duration}
+                      </span>
+                    </div>
+                  )}
+                  {ability.range && (
+                    <div className={styles.detailItem}>
+                      <span className={styles.detailLabel}>Alcance</span>
+                      <span className={styles.detailValue}>
+                        {ability.range}
+                      </span>
+                    </div>
+                  )}
+                  {ability.cooldown !== undefined && (
+                    <div className={styles.detailItem}>
+                      <span className={styles.detailLabel}>Recarga</span>
+                      <span className={styles.detailValue}>
+                        {ability.cooldown} turnos
+                      </span>
+                    </div>
+                  )}
+                  {ability.cost && (
+                    <div className={styles.detailItem}>
+                      <span className={styles.detailLabel}>Custo</span>
+                      <span className={styles.detailValue}>
+                        {ability.cost.mana !== undefined &&
+                          ability.cost.mana > 0 && (
+                            <span>Mana {ability.cost.mana} </span>
+                          )}
+                        {ability.cost.stamina !== undefined &&
+                          ability.cost.stamina > 0 && (
+                            <span>Estamina {ability.cost.stamina} </span>
+                          )}
+                        {ability.cost.sanity !== undefined &&
+                          ability.cost.sanity > 0 && (
+                            <span>Sanidade {ability.cost.sanity} </span>
+                          )}
+                      </span>
+                    </div>
+                  )}
+                </div>
               </article>
             ))}
           </div>
