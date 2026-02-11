@@ -260,7 +260,7 @@ const players: PlayerCharacter[] = [
       nickname: "",
       kingdom: "Dolong",
       race: "humanos",
-      class: "berserk",
+      class: "berserker",
       classReinforcement: "",
     },
 

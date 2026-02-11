@@ -15,22 +15,12 @@ export default async function AbilitiesPage({ params }: Params) {
     return notFound()
   }
 
-  const normalize = (value: string) =>
-    value
-      .trim()
-      .toLowerCase()
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .replace(/\s+/g, "_")
-
-  const classKey = normalize(character.identity.class)
+  const classKey = character.identity.class
   const classData =
-    classes.find(
-      (c) => normalize(c.id) === classKey || normalize(c.name) === classKey,
-    ) ??
+    classes.find((c) => c.id === classKey || c.name === classKey) ??
     classes.find((c) => {
-      const idKey = normalize(c.id)
-      const nameKey = normalize(c.name)
+      const idKey = c.id
+      const nameKey = c.name
       return (
         idKey.startsWith(classKey) ||
         classKey.startsWith(idKey) ||
@@ -50,7 +40,7 @@ export default async function AbilitiesPage({ params }: Params) {
 
   return (
     <div className={styles.page}>
-      <header className={styles.header}>
+      <div className={styles.header}>
         <div>
           <p className={styles.kicker}>Habilidades</p>
           <h1 className={styles.title}>{character.identity.name}</h1>
@@ -58,7 +48,7 @@ export default async function AbilitiesPage({ params }: Params) {
         <div className={styles.badge}>
           Classe: {classData?.name ?? "Desconhecida"}
         </div>
-      </header>
+      </div>
 
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>Habilidades do Personagem</h2>

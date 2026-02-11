@@ -64,21 +64,6 @@ export default async function CharactersPage({ params }: Params) {
               <p className={styles.nickname}>“{character.identity.nickname}”</p>
             )}
 
-            <div className={styles.identityMeta}>
-              <Link
-                className={styles.identityLink}
-                href={`/rpg/${character.meta.version}/races/${character.identity.race}`}
-              >
-                {character.identity.race.toUpperCase()}
-              </Link>
-
-              <Link
-                className={styles.identityLink}
-                href={`/rpg/${character.meta.version}/classes/${character.identity.class}`}
-              >
-                {character.identity.class.toUpperCase()}
-              </Link>
-            </div>
             <div className={styles.actionLinks}>
               <Link
                 className={styles.actionLink}
@@ -91,6 +76,18 @@ export default async function CharactersPage({ params }: Params) {
                 href={`/rpg/${character.meta.version}/characters/${character.id}/magics`}
               >
                 Magias
+              </Link>
+              <Link
+                className={styles.actionLink}
+                href={`/rpg/${character.meta.version}/characters/${character.id}/magics`}
+              >
+                Armas
+              </Link>
+              <Link
+                className={styles.actionLink}
+                href={`/rpg/${character.meta.version}/characters/${character.id}/inventory`}
+              >
+                Inventario
               </Link>
             </div>
 
@@ -178,9 +175,31 @@ export default async function CharactersPage({ params }: Params) {
 
           <div>
             <h4>Pessoal</h4>
+            <p>Reino: {character.identity.kingdom}</p>
             <p>Religião: {character.personal.religion}</p>
             <p>Língua: {character.personal.language}</p>
             <p>Defeitos: {character.personal.defects}</p>
+            <p>
+              Raça:{" "}
+              <Link
+                className={styles.identityLink}
+                href={`/rpg/${character.meta.version}/races/${character.identity.race}`}
+              >
+                {character.identity.race}
+              </Link>
+            </p>
+            <p>
+              Classe:{" "}
+              <Link
+                className={styles.identityLink}
+                href={`/rpg/${character.meta.version}/classes/${character.identity.class}`}
+              >
+                {character.identity.class}
+              </Link>
+            </p>
+            {character.identity.classReinforcement && (
+              <p>Reforço de Classe: {character.identity.classReinforcement}</p>
+            )}
           </div>
 
           <div>

@@ -1,0 +1,211 @@
+.page {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(255, 122, 24, 0.16),
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at 20% 30%,
+      rgba(255, 255, 255, 0.06),
+      transparent 60%
+    );
+  padding: 2.4rem 1.4rem 3.4rem;
+  color: var(--text-main);
+}
+
+.header {
+  max-width: 920px;
+  margin: 0 auto 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.kicker {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.title {
+  margin: 0;
+  color: var(--text-title);
+  text-shadow: 0 0 12px rgba(255, 140, 60, 0.15);
+  font-size: 2.05rem;
+}
+
+/* SECTION */
+.section {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  margin-bottom: 0.9rem;
+  font-size: 1.25rem;
+  color: var(--text-title);
+}
+
+/* GRID */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.15rem;
+}
+
+/* CARD */
+.card {
+  position: relative;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+  padding: 1.15rem 1.25rem;
+  border: 1px solid var(--bg-hover);
+  border-radius: 12px;
+  background: var(--bg-surface);
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover {
+  border-color: var(--accent-main);
+  transform: translateY(-3px);
+  background: var(--bg-hover);
+  box-shadow: var(--shadow-main);
+}
+
+/* HEADER CARD */
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.35rem;
+}
+
+.cardTitle {
+  font-size: 1.15rem;
+  margin: 0;
+  color: var(--text-title);
+}
+
+
+
+
+/* DESCRIÇÃO */
+.cardBodyItalic {
+  font-style: italic;
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 1rem 0;
+  min-height: 60px;
+}
+/* RARIDADES */
+
+/* COMUM */
+.comum {
+  border-color: #9ca3af;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.4);
+}
+
+.comum .cardTitle {
+  color: #e5e7eb;
+}
+
+/* INCOMUM */
+.incomum {
+  border-color: #22c55e;
+  box-shadow: 0 0 14px rgba(34, 197, 94, 0.25);
+}
+
+.incomum .cardTitle {
+  color: #86efac;
+}
+
+/* RARO */
+.raro {
+  border-color: #3b82f6;
+  box-shadow: 0 0 18px rgba(59, 130, 246, 0.35);
+}
+
+.raro .cardTitle {
+  color: #93c5fd;
+}
+
+/* LENDÁRIO */
+.legendary {
+  border-color: #f59e0b;
+  box-shadow:
+    0 0 22px rgba(245, 158, 11, 0.45),
+    inset 0 0 12px rgba(245, 158, 11, 0.15);
+}
+
+.legendary .cardTitle {
+  color: #fcd34d;
+}
+
+/* Hover reforça a raridade */
+.comum:hover {
+  border-color: #d1d5db;
+}
+
+.incomum:hover {
+  border-color: #4ade80;
+}
+
+.raro:hover {
+  border-color: #60a5fa;
+}
+
+.legendary:hover {
+  border-color: #fbbf24;
+}
+/* EPIC */
+.epic {
+  border-color: #a855f7;
+  box-shadow:
+    0 0 20px rgba(168, 85, 247, 0.45),
+    inset 0 0 10px rgba(168, 85, 247, 0.2);
+}
+
+.epic .cardTitle {
+  color: #d8b4fe;
+}
+
+.epic:hover {
+  border-color: #c084fc;
+}
+
+/* SECRET */
+.secret {
+  border-color: #ef4444;
+  box-shadow:
+    0 0 26px rgba(239, 68, 68, 0.6),
+    inset 0 0 14px rgba(239, 68, 68, 0.25);
+  background:
+    linear-gradient(135deg, rgba(239, 68, 68, 0.08), transparent 60%),
+    var(--bg-surface);
+}
+
+.secret .cardTitle {
+  color: #fecaca;
+}
+
+.secret:hover {
+  border-color: #f87171;
+}
+
+/* MOBILE */
+@media (max-width: 720px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+}
