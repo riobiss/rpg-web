@@ -1,6 +1,7 @@
 import players from "@/data/rpg/world-of-clans/entities/player"
 import { notFound } from "next/navigation"
 import styles from "./page.module.css"
+import { items } from "@/data/rpg/world-of-clans/items/items"
 type Params = {
   params: Promise<{
     characterId: string
@@ -12,7 +13,10 @@ export default async function InventoryPage({ params }: Params) {
   if (!character) {
     return notFound()
   }
-  const inventoryItemsExist = character.inventory.length > 0
+  const resolvedInventory = character.inventory.map((entry) => {
+    return items.find((i) => i.id === entry)
+  })
+  const inventoryItemsExist = resolvedInventory.length > 0
   return (
     <div className={styles.page}>
       <div className={styles.header}>
@@ -28,18 +32,18 @@ export default async function InventoryPage({ params }: Params) {
         )}
         {inventoryItemsExist && (
           <div className={styles.cardGrid}>
-            {character.inventory.map((item) => (
+            {resolvedInventory.map((item) => (
               <div
-                key={item.id}
-                className={`${styles.card} ${styles[item.rarity]}`}
+                key={item?.id}
+                className={`${styles.card} ${styles[item?.rarity as string]}`}
               >
                 <div className={styles.cardHeader}>
-                  <h3 className={styles.cardTitle}>{item.name}</h3>
-                  <span>{item.rarity}</span>
+                  <h3 className={styles.cardTitle}>{item?.name}</h3>
+                  <span>{item?.rarity}</span>
                 </div>
-                <p className={styles.cardBodyItalic}>{item.description}</p>
-                {item.ability && <p>Habilidade: {item.ability}</p>}
-                <span>Q.{item.quantity}</span>
+                <p className={styles.cardBodyItalic}>{item?.description}</p>
+                {item?.ability && <p>Habilidade: {item?.ability}</p>}
+                <span>Q.{item?.quantity}</span>
               </div>
             ))}
           </div>

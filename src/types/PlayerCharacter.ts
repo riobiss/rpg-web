@@ -67,7 +67,7 @@ export type PlayerCharacter = BaseCharacter & {
     passiveSpellIds: string[]
   }
 
-  inventory: Inventory[]
+  inventory: string[]
 
   equipment: {
     weaponIds: string[]

@@ -75,7 +75,7 @@ const monsterCharacter: MonsterCharacter[] = [
   },
 
   {
-    id: "monst_5003",
+    id: "monst_03",
 
     identity: {
       name: "Golem",

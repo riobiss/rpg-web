@@ -1,9 +1,9 @@
 export type Inventory = {
+  id: string
   name: string
-  rarity: "comum" | "incomum" | "raro" | "legendary" | "epic"
+  rarity: "comum" | "incomum" | "raro" | "legendary" | "epic" | "secret"
   description: string
   ability: string | null
-  id: string
   quantity: number
   equipped?: boolean
 }
