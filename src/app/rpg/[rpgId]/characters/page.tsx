@@ -29,10 +29,11 @@ export default async function CharactersPage({ params }: Params) {
                 alt={`Imagem do personagem ${c.identity.name}`}
                 fill
                 className={styles.image}
+                priority
+                sizes="(max-width: 1099px) 50vw, 33vw"
               />
               <div className={styles.overlay}>
                 <h2 className={styles.name}>{c.identity.name}</h2>
-
               </div>
             </Link>
           </article>
@@ -41,4 +42,3 @@ export default async function CharactersPage({ params }: Params) {
     </main>
   )
 }
-

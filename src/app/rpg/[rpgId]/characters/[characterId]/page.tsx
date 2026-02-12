@@ -58,6 +58,7 @@ export default async function CharactersPage({ params }: Params) {
             alt={character.identity.name}
             width={150}
             height={192}
+            priority
           />
           <div className={styles.identityInfo}>
             {character.identity.nickname && (
