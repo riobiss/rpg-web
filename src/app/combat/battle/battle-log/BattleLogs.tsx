@@ -22,6 +22,17 @@ export default function BattleLogs({ logs }: Props) {
 
       <ul ref={listRef} className={styles.list}>
         {logs.map((log, index) => {
+          if (log.type === "system") {
+            return (
+              <li key={index} className={styles.logItem}>
+                <div className={styles.header}>
+                  Evento #{index + 1} - Rodada {log.round} - Turno {log.turn}
+                </div>
+                <div className={styles.details}>{log.message}</div>
+              </li>
+            )
+          }
+
           const resultClass = !log.hit
             ? styles.miss
             : log.critical
@@ -31,7 +42,7 @@ export default function BattleLogs({ logs }: Props) {
           return (
             <li key={index} className={styles.logItem}>
               <div className={styles.header}>
-                Ataque #{index + 1} — {log.attackerId} → {log.targetId}
+                Ataque #{index + 1} - {log.attackerId} -&gt; {log.targetId}
               </div>
 
               <div className={styles.details}>

@@ -10,7 +10,9 @@ type Props = {
 
 export default function SwordView({ weapons, onConfirm }: Props) {
   const [selectedWeapon, setSelectedWeapon] = useState<Weapon | null>(null)
-
+  if (weapons.length === 0) {
+    return <p className={styles.empty}>Esse personagem nao possui armas.</p>
+  }
   return (
     <div className={styles.weaponGrid}>
       {weapons.map((w) => {
@@ -57,4 +59,3 @@ export default function SwordView({ weapons, onConfirm }: Props) {
     </div>
   )
 }
-

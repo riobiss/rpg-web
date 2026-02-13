@@ -45,6 +45,7 @@ export default function applyDamageWeapon(
   return {
     updatedTarget,
     log: {
+      type: "attack",
       attackerId: attacker.id,
       targetId: target.id,
       rollD20,

@@ -29,15 +29,3 @@
   color: var(--accent-main);
   font-weight: 500;
 }
-.activeBadge {
-  padding: 4px 10px;
-
-  background-color: var(--accent-main);
-  color: var(--text-alternativ);
-
-  font-size: 0.75rem;
-  font-weight: 600;
-
-  border-radius: 999px;
-  box-shadow: var(--shadow-accent);
-}
