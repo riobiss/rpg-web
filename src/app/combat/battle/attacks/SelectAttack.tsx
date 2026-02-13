@@ -3,15 +3,28 @@ import { Weapon } from "@/types/Weapon"
 import { useState } from "react"
 import styles from "./SelectAttack.module.css"
 import { BaseCharacter } from "@/types/BaseCharacter"
+import { Ability } from "@/types/Ability"
+import AbilityView from "./ability/AbilityView"
 
 type Props = {
   attacker: BaseCharacter
   weapons: Weapon[]
+  abilities: Ability[]
   onWeaponSelect: (weapon: Weapon) => void
+  onAbilitySelect?: (ability: Ability) => void
 }
 
-export default function SelectAttack({ weapons, onWeaponSelect }: Props) {
+export default function SelectAttack({
+  weapons,
+  abilities,
+  onWeaponSelect,
+  onAbilitySelect,
+}: Props) {
   const [attack, setAttack] = useState<"sword" | "magic" | "abilities">("sword")
+
+  function handleAbilitySelect(ability: Ability) {
+    onAbilitySelect?.(ability)
+  }
 
   return (
     <div className={styles.container}>
@@ -26,7 +39,9 @@ export default function SelectAttack({ weapons, onWeaponSelect }: Props) {
       )}
 
       {attack === "magic" && null}
-      {attack === "abilities" && null}
+      {attack === "abilities" && (
+        <AbilityView abilities={abilities} onConfirm={handleAbilitySelect} />
+      )}
     </div>
   )
 }

@@ -135,30 +135,32 @@ export default async function CharactersPage({ params }: Params) {
         </div>
 
         {/* Atributos */}
-        <div>
-          <h4>Atributos</h4>
-          <ul className={styles.list}>
-            <li>Agilidade: {character.attributes.agility.total}</li>
-            <li>Força: {character.attributes.strength.total}</li>
-            <li>Dextreza: {character.attributes.dexterity.total}</li>
-            <li>Instinto: {character.attributes.instinct.total}</li>
-            <li>Carisma: {character.attributes.charisma.total}</li>
-            <li>Conhecimento: {character.attributes.knowledge.total}</li>
-            <li>Constituição: {character.attributes.constitution.total}</li>
-          </ul>
-        </div>
-        {/* Skills */}
-        <div>
-          <h4>Perícias</h4>
-          <ul className={styles.list}>
-            {Object.entries(character.skills)
-              .filter(([, value]) => value > 0)
-              .map(([key, value]) => (
-                <li key={key}>
-                  {skillLabels[key] ?? key}: {value}
-                </li>
-              ))}
-          </ul>
+        <div className={styles.containerSkillAttributes}>
+          <div>
+            <h4>Atributos</h4>
+            <ul className={styles.list}>
+              <li>Agilidade: {character.attributes.agility.total}</li>
+              <li>Força: {character.attributes.strength.total}</li>
+              <li>Destreza: {character.attributes.dexterity.total}</li>
+              <li>Instinto: {character.attributes.instinct.total}</li>
+              <li>Carisma: {character.attributes.charisma.total}</li>
+              <li>Conhecimento: {character.attributes.knowledge.total}</li>
+              <li>Constituição: {character.attributes.constitution.total}</li>
+            </ul>
+          </div>
+          {/* Skills */}
+          <div>
+            <h4>Perícias</h4>
+            <ul className={styles.list}>
+              {Object.entries(character.skills)
+                .filter(([, value]) => value > 0)
+                .map(([key, value]) => (
+                  <li key={key}>
+                    {skillLabels[key] ?? key}: {value}
+                  </li>
+                ))}
+            </ul>
+          </div>
         </div>
 
         {/* Dados pessoais */}

@@ -87,7 +87,9 @@
   font-weight: 600;
   text-decoration: underline;
   cursor: pointer;
-  transition: color 0.15s ease, text-shadow 0.15s ease;
+  transition:
+    color 0.15s ease,
+    text-shadow 0.15s ease;
 }
 
 .identityLink:hover {
@@ -117,7 +119,10 @@
   font-size: 13px;
   border: 1px solid var(--accent-strong);
   box-shadow: var(--shadow-accent);
-  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    opacity 0.15s ease;
 }
 
 .actionLink:hover {
@@ -200,8 +205,16 @@
     justify-content: center;
   }
 }
-
-@media (min-width: 960px) {
+.containerSkillAttributes {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-direction: row;
+  div {
+    width: 100%;
+  }
+}
+@media (min-width: 660px) {
   .page {
     padding: 40px 48px 80px;
   }

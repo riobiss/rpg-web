@@ -1,4 +1,5 @@
 import { BaseCharacter } from "./BaseCharacter"
+import { Defense } from "./Defense"
 
 export type MonsterCharacter = BaseCharacter & {
   level: number
@@ -11,6 +12,7 @@ export type MonsterCharacter = BaseCharacter & {
     rolls: number
     sides: number
   }
+  defense: Defense
 
   equipment: {
     weaponIds: string[]
