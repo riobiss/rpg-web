@@ -73,7 +73,7 @@ export function MundiMap() {
       }
 
       event.evt.preventDefault()
-      applyZoom(stage, event.evt.deltaY)
+      applyZoom(stage, event.evt.deltaY, mapImageRef.current)
     }
 
     const handleDrawStart = () => {
@@ -166,7 +166,13 @@ export function MundiMap() {
         }
 
         event.evt.preventDefault()
-        applyPinchZoom(stage, touches, pinchLastCenterRef, pinchLastDistanceRef)
+        applyPinchZoom(
+          stage,
+          touches,
+          pinchLastCenterRef,
+          pinchLastDistanceRef,
+          mapImageRef.current,
+        )
         return
       }
 
@@ -500,7 +506,11 @@ function canInteractMap(isInteractive: boolean, isFullscreen: boolean) {
   return isInteractive && isFullscreen
 }
 
-function applyZoom(stage: Konva.Stage, deltaY: number) {
+function applyZoom(
+  stage: Konva.Stage,
+  deltaY: number,
+  mapImage: Konva.Image | null,
+) {
   const oldScale = stage.scaleX()
   const pointer = stage.getPointerPosition()
   if (!pointer) {
@@ -510,6 +520,8 @@ function applyZoom(stage: Konva.Stage, deltaY: number) {
   const scaleBy = 1.05
   const direction = deltaY > 0 ? -1 : 1
   const newScale = clampScale(
+    stage,
+    mapImage,
     direction > 0 ? oldScale * scaleBy : oldScale / scaleBy,
   )
 
@@ -523,6 +535,7 @@ function applyZoom(stage: Konva.Stage, deltaY: number) {
     x: pointer.x - mousePointTo.x * newScale,
     y: pointer.y - mousePointTo.y * newScale,
   })
+  constrainStagePosition(stage, mapImage)
   stage.batchDraw()
 }
 
@@ -531,6 +544,7 @@ function applyPinchZoom(
   touches: TouchList,
   pinchLastCenterRef: MutableRefObject<{ x: number; y: number } | null>,
   pinchLastDistanceRef: MutableRefObject<number | null>,
+  mapImage: Konva.Image | null,
 ) {
   if (touches.length < 2) {
     return
@@ -561,7 +575,7 @@ function applyPinchZoom(
   }
 
   const scaleRatio = distance / pinchLastDistanceRef.current
-  const newScale = clampScale(oldScale * scaleRatio)
+  const newScale = clampScale(stage, mapImage, oldScale * scaleRatio)
 
   const dx = center.x - pinchLastCenterRef.current.x
   const dy = center.y - pinchLastCenterRef.current.y
@@ -571,6 +585,7 @@ function applyPinchZoom(
     x: center.x - pointTo.x * newScale + dx,
     y: center.y - pointTo.y * newScale + dy,
   })
+  constrainStagePosition(stage, mapImage)
   stage.batchDraw()
 
   pinchLastCenterRef.current = center
@@ -606,10 +621,71 @@ function keepViewOnResize(
   })
 }
 
-function clampScale(scale: number) {
-  const MIN_SCALE = 0.4
+function clampScale(
+  stage: Konva.Stage,
+  mapImage: Konva.Image | null,
+  scale: number,
+) {
+  const fitScale = getFitScale(stage, mapImage)
+  const MIN_SCALE = fitScale ?? 0.2
   const MAX_SCALE = 8
   return Math.max(MIN_SCALE, Math.min(MAX_SCALE, scale))
+}
+
+function getFitScale(stage: Konva.Stage, mapImage: Konva.Image | null) {
+  if (!mapImage) {
+    return null
+  }
+
+  const imageSource = mapImage.image()
+  if (!imageSource) {
+    return null
+  }
+
+  const imageSize = getImageSize(imageSource)
+  if (!imageSize) {
+    return null
+  }
+
+  const widthScale = stage.width() / imageSize.width
+  const heightScale = stage.height() / imageSize.height
+  return Math.min(widthScale, heightScale)
+}
+
+function constrainStagePosition(stage: Konva.Stage, mapImage: Konva.Image | null) {
+  if (!mapImage) {
+    return
+  }
+
+  const imageSource = mapImage.image()
+  if (!imageSource) {
+    return
+  }
+
+  const imageSize = getImageSize(imageSource)
+  if (!imageSize) {
+    return
+  }
+
+  const scaledWidth = imageSize.width * stage.scaleX()
+  const scaledHeight = imageSize.height * stage.scaleY()
+  const stageWidth = stage.width()
+  const stageHeight = stage.height()
+
+  const x =
+    scaledWidth <= stageWidth
+      ? (stageWidth - scaledWidth) / 2
+      : clamp(stage.x(), stageWidth - scaledWidth, 0)
+  const y =
+    scaledHeight <= stageHeight
+      ? (stageHeight - scaledHeight) / 2
+      : clamp(stage.y(), stageHeight - scaledHeight, 0)
+
+  stage.position({ x, y })
+}
+
+function clamp(value: number, min: number, max: number) {
+  return Math.max(min, Math.min(max, value))
 }
 
 function getContentPointerPosition(stage: Konva.Stage) {
