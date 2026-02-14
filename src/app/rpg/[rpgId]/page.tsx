@@ -68,7 +68,7 @@ export default async function ViewInRpg({ params }: Params) {
           />
           <span>Personagens</span>
         </Link>
-             <Link href={`/rpg/${rpg.id}/classes`} className={styles.card}>
+        <Link href={`/rpg/${rpg.id}/classes`} className={styles.card}>
           <Image
             src="/images/bg-classes.webp"
             alt="Classes"
