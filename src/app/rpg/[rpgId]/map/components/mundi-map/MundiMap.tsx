@@ -18,6 +18,7 @@ export function MundiMap() {
   const isDrawingRef = useRef(false)
   const isBrushModeRef = useRef(false)
   const brushColorRef = useRef(BRUSH_COLORS[0])
+  const brushSizeRef = useRef(4)
   const isInteractiveRef = useRef(false)
   const isFullscreenRef = useRef(false)
   const isPinchingRef = useRef(false)
@@ -27,6 +28,7 @@ export function MundiMap() {
   const [isBrushMode, setIsBrushMode] = useState(false)
   const [isInteractive, setIsInteractive] = useState(false)
   const [brushColor, setBrushColor] = useState(BRUSH_COLORS[0])
+  const [brushSize, setBrushSize] = useState(4)
 
   useEffect(() => {
     const container = stageContainerRef.current
@@ -89,7 +91,7 @@ export function MundiMap() {
       const newLine = new Konva.Line({
         points: [pointer.x, pointer.y],
         stroke: brushColorRef.current,
-        strokeWidth: 4,
+        strokeWidth: brushSizeRef.current,
         lineCap: "round",
         lineJoin: "round",
       })
@@ -286,6 +288,10 @@ export function MundiMap() {
   }, [brushColor])
 
   useEffect(() => {
+    brushSizeRef.current = brushSize
+  }, [brushSize])
+
+  useEffect(() => {
     isFullscreenRef.current = isFullscreen
   }, [isFullscreen])
 
@@ -401,6 +407,21 @@ export function MundiMap() {
             >
               Centralizar
             </button>
+            {isBrushMode ? (
+              <label className={styles.brushSizeControl}>
+                Linha
+                <input
+                  type="range"
+                  min={1}
+                  max={20}
+                  value={brushSize}
+                  onChange={(event) =>
+                    setBrushSize(Number(event.currentTarget.value))
+                  }
+                />
+                <span>{brushSize}px</span>
+              </label>
+            ) : null}
             <div
               className={styles.colorPicker}
               role="group"
