@@ -40,7 +40,7 @@ export default async function ViewInRpg({ params }: Params) {
           <span>Biblioteca</span>
         </div>
 
-        <div className={styles.card}>
+        <Link href={`/rpg/${rpg.id}/map`} className={styles.card}>
           <Image
             src="/images/bg-regioes.jpg"
             alt="Regiões"
@@ -48,7 +48,7 @@ export default async function ViewInRpg({ params }: Params) {
             className={styles.cardImage}
           />
           <span>Regiões</span>
-        </div>
+        </Link>
 
         <Link href={`/rpg/${rpg.id}/races`} className={styles.card}>
           <Image
