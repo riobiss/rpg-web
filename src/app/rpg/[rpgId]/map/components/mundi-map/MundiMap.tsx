@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
+import { type MutableRefObject, useEffect, useRef, useState } from "react"
 import Konva from "konva"
 import Image from "next/image"
 import styles from "./MundiMap.module.css"
@@ -19,6 +19,9 @@ export function MundiMap() {
   const isBrushModeRef = useRef(false)
   const brushColorRef = useRef(BRUSH_COLORS[0])
   const isInteractiveRef = useRef(false)
+  const isFullscreenRef = useRef(false)
+  const pinchLastCenterRef = useRef<{ x: number; y: number } | null>(null)
+  const pinchLastDistanceRef = useRef<number | null>(null)
   const [isFullscreen, setIsFullscreen] = useState(false)
   const [isBrushMode, setIsBrushMode] = useState(false)
   const [isInteractive, setIsInteractive] = useState(false)
@@ -62,7 +65,7 @@ export function MundiMap() {
     }
 
     const handleWheel = (event: Konva.KonvaEventObject<WheelEvent>) => {
-      if (!isInteractiveRef.current || isBrushModeRef.current) {
+      if (!canInteractMap(isInteractiveRef.current, isFullscreenRef.current) || isBrushModeRef.current) {
         return
       }
 
@@ -71,7 +74,7 @@ export function MundiMap() {
     }
 
     const handleDrawStart = () => {
-      if (!isInteractiveRef.current || !isBrushModeRef.current) {
+      if (!canInteractMap(isInteractiveRef.current, isFullscreenRef.current) || !isBrushModeRef.current) {
         return
       }
 
@@ -96,7 +99,7 @@ export function MundiMap() {
 
     const handleDrawMove = () => {
       if (
-        !isInteractiveRef.current ||
+        !canInteractMap(isInteractiveRef.current, isFullscreenRef.current) ||
         !isBrushModeRef.current ||
         !isDrawingRef.current
       ) {
@@ -116,6 +119,42 @@ export function MundiMap() {
     const handleDrawEnd = () => {
       isDrawingRef.current = false
       currentLineRef.current = null
+    }
+
+    const handleTouchStart = (event: Konva.KonvaEventObject<TouchEvent>) => {
+      const touches = event.evt.touches
+      if (touches.length >= 2) {
+        isDrawingRef.current = false
+        currentLineRef.current = null
+        pinchLastCenterRef.current = null
+        pinchLastDistanceRef.current = null
+        return
+      }
+
+      handleDrawStart()
+    }
+
+    const handleTouchMove = (event: Konva.KonvaEventObject<TouchEvent>) => {
+      const touches = event.evt.touches
+      if (touches.length >= 2) {
+        if (!canInteractMap(isInteractiveRef.current, isFullscreenRef.current)) {
+          return
+        }
+
+        event.evt.preventDefault()
+        applyPinchZoom(stage, touches, pinchLastCenterRef, pinchLastDistanceRef)
+        return
+      }
+
+      pinchLastCenterRef.current = null
+      pinchLastDistanceRef.current = null
+      handleDrawMove()
+    }
+
+    const handleTouchEnd = () => {
+      pinchLastCenterRef.current = null
+      pinchLastDistanceRef.current = null
+      handleDrawEnd()
     }
 
     const handleResize = () => {
@@ -142,16 +181,22 @@ export function MundiMap() {
     resizeObserver.observe(container)
 
     stage.on("wheel", handleWheel)
-    stage.on("mousedown touchstart", handleDrawStart)
-    stage.on("mousemove touchmove", handleDrawMove)
-    stage.on("mouseup touchend mouseleave touchcancel", handleDrawEnd)
+    stage.on("mousedown", handleDrawStart)
+    stage.on("mousemove", handleDrawMove)
+    stage.on("mouseup mouseleave", handleDrawEnd)
+    stage.on("touchstart", handleTouchStart)
+    stage.on("touchmove", handleTouchMove)
+    stage.on("touchend touchcancel", handleTouchEnd)
 
     return () => {
       resizeObserver.disconnect()
       stage.off("wheel", handleWheel)
-      stage.off("mousedown touchstart", handleDrawStart)
-      stage.off("mousemove touchmove", handleDrawMove)
-      stage.off("mouseup touchend mouseleave touchcancel", handleDrawEnd)
+      stage.off("mousedown", handleDrawStart)
+      stage.off("mousemove", handleDrawMove)
+      stage.off("mouseup mouseleave", handleDrawEnd)
+      stage.off("touchstart", handleTouchStart)
+      stage.off("touchmove", handleTouchMove)
+      stage.off("touchend touchcancel", handleTouchEnd)
       stage.destroy()
       stageRef.current = null
       mapImageRef.current = null
@@ -174,8 +219,8 @@ export function MundiMap() {
 
   useEffect(() => {
     isInteractiveRef.current = isInteractive
-    syncInteraction(stageRef.current, isInteractive, isBrushMode)
-  }, [isInteractive, isBrushMode])
+    syncInteraction(stageRef.current, isInteractive, isBrushMode, isFullscreen)
+  }, [isInteractive, isBrushMode, isFullscreen])
 
   useEffect(() => {
     isBrushModeRef.current = isBrushMode
@@ -185,8 +230,12 @@ export function MundiMap() {
     brushColorRef.current = brushColor
   }, [brushColor])
 
+  useEffect(() => {
+    isFullscreenRef.current = isFullscreen
+  }, [isFullscreen])
+
   const handleEnableInteraction = () => {
-    if (!isInteractive) {
+    if (isFullscreen && !isInteractive) {
       setIsInteractive(true)
     }
   }
@@ -199,6 +248,7 @@ export function MundiMap() {
 
     if (document.fullscreenElement === frame) {
       await document.exitFullscreen()
+      setIsBrushMode(false)
       return
     }
 
@@ -254,7 +304,6 @@ export function MundiMap() {
       <div
         ref={frameRef}
         className={`${styles.frame} ${isFullscreen ? styles.frameFullscreen : ""}`}
-        onClick={handleEnableInteraction}
       >
         {isFullscreen ? (
           <div className={styles.topControls}>
@@ -321,13 +370,16 @@ export function MundiMap() {
 
         <div ref={stageContainerRef} className={styles.stageContainer} />
 
-        {!isInteractive ? (
+        {!canInteractMap(isInteractive, isFullscreen) ? (
           <button
             type="button"
             onClick={handleEnableInteraction}
             className={styles.interactionOverlay}
+            disabled={!isFullscreen}
           >
-            Clique no mapa para ativar interacao
+            {isFullscreen
+              ? "Clique no mapa para ativar interacao"
+              : "Abra o mapa completo para interagir"}
           </button>
         ) : null}
 
@@ -356,12 +408,17 @@ function syncInteraction(
   stage: Konva.Stage | null,
   isInteractive: boolean,
   isBrushMode: boolean,
+  isFullscreen: boolean,
 ) {
   if (!stage) {
     return
   }
 
-  stage.draggable(isInteractive && !isBrushMode)
+  stage.draggable(canInteractMap(isInteractive, isFullscreen) && !isBrushMode)
+}
+
+function canInteractMap(isInteractive: boolean, isFullscreen: boolean) {
+  return isInteractive && isFullscreen
 }
 
 function applyZoom(stage: Konva.Stage, deltaY: number) {
@@ -386,6 +443,57 @@ function applyZoom(stage: Konva.Stage, deltaY: number) {
     y: pointer.y - mousePointTo.y * newScale,
   })
   stage.batchDraw()
+}
+
+function applyPinchZoom(
+  stage: Konva.Stage,
+  touches: TouchList,
+  pinchLastCenterRef: MutableRefObject<{ x: number; y: number } | null>,
+  pinchLastDistanceRef: MutableRefObject<number | null>,
+) {
+  if (touches.length < 2) {
+    return
+  }
+
+  const touchA = touches[0]
+  const touchB = touches[1]
+  const containerRect = stage.container().getBoundingClientRect()
+  const center = {
+    x: (touchA.clientX + touchB.clientX) / 2 - containerRect.left,
+    y: (touchA.clientY + touchB.clientY) / 2 - containerRect.top,
+  }
+  const distance = Math.hypot(
+    touchB.clientX - touchA.clientX,
+    touchB.clientY - touchA.clientY,
+  )
+
+  if (!pinchLastCenterRef.current || !pinchLastDistanceRef.current) {
+    pinchLastCenterRef.current = center
+    pinchLastDistanceRef.current = distance
+    return
+  }
+
+  const oldScale = stage.scaleX()
+  const pointTo = {
+    x: (center.x - stage.x()) / oldScale,
+    y: (center.y - stage.y()) / oldScale,
+  }
+
+  const scaleRatio = distance / pinchLastDistanceRef.current
+  const newScale = oldScale * scaleRatio
+
+  const dx = center.x - pinchLastCenterRef.current.x
+  const dy = center.y - pinchLastCenterRef.current.y
+
+  stage.scale({ x: newScale, y: newScale })
+  stage.position({
+    x: center.x - pointTo.x * newScale + dx,
+    y: center.y - pointTo.y * newScale + dy,
+  })
+  stage.batchDraw()
+
+  pinchLastCenterRef.current = center
+  pinchLastDistanceRef.current = distance
 }
 
 function getContentPointerPosition(stage: Konva.Stage) {
